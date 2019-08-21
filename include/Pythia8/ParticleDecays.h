@@ -19,6 +19,7 @@
 #include "Pythia8/Settings.h"
 #include "Pythia8/TimeShower.h"
 #include "Pythia8/TauDecays.h"
+#include "Pythia8/HNLDecays.h"
 
 namespace Pythia8 {
 
@@ -107,7 +108,7 @@ private:
   // Initialization data, read from Settings.
   bool   limitTau0, limitTau, limitRadius, limitCylinder, limitDecay,
          mixB, doFSRinDecays, doGammaRad;
-  int    tauMode;
+  int    tauMode, HNLMode;
   double mSafety, tau0Max, tauMax, rMax, xyMax, zMax, xBdMix, xBsMix,
          sigmaSoft, multIncrease, multIncreaseWeak, multRefMass, multGoffset,
          colRearrange, stopMass, sRhoDal, wRhoDal;
@@ -126,6 +127,8 @@ private:
 
   // Tau particle decayer.
   TauDecays tauDecayer;
+  // HNL particle decayer.
+  HNLDecays HNLDecayer;
 
   // Check whether a decay is allowed, given the upcoming decay vertex.
   bool checkVertex(Particle& decayer);

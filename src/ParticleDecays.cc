@@ -110,9 +110,14 @@ void ParticleDecays::init(Info* infoPtrIn, Settings& settings,
 
   // Use standard decays or dedicated tau decay package
   tauMode       = settings.mode("TauDecays:mode");
+  HNLMode       = settings.mode("HNLDecays:mode");
 
   // Initialize the dedicated tau decay handler.
   if (tauMode) tauDecayer.init(infoPtr, &settings,
+    particleDataPtr, rndmPtr, couplingsPtr);
+    
+  // Initialize the dedicated tau decay handler.
+  if (HNLMode) HNLDecayer.init(infoPtr, &settings,
     particleDataPtr, rndmPtr, couplingsPtr);
 
 }
@@ -188,6 +193,12 @@ bool ParticleDecays::decay( int iDec, Event& event) {
   // Check if the particle is tau and let the special tau decayer handle it.
   if (decayer.idAbs() == 15 && !doneExternally && tauMode) {
     doneExternally = tauDecayer.decay(iDec, event);
+    if (doneExternally) return true;
+  }
+  
+  // Check if the particle is tau and let the special tau decayer handle it.
+  if (decayer.idAbs() == 9013 && !doneExternally && HNLMode) {
+    doneExternally = HNLDecayer.decay(iDec, event);
     if (doneExternally) return true;
   }
 
