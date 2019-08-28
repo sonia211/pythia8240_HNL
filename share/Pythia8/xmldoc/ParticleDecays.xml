@@ -1,3 +1,4 @@
+
 <chapter name="Particle Decays"> 
  
 <h2>Particle Decays</h2> 
@@ -251,6 +252,41 @@ Mother of the <ei>tau</ei> for forced polarization when mode <code>2</code> of
 positive identity code; to the extent an antiparticle exists it will 
 automatically obtain the inverse polarization. 
 </modeopen> 
+
+
+<h3>Heavy Neutral Leptons (HNL) decay</h3> 
+ 
+<modepick name="HNLDecays:externalMode" default="2" min="0" max="2"> 
+
+<option value="0">..</option> 
+<option value="1">..</option>
+<option value="2">..</option>
+</modepick> 
+
+ 
+<modepick name="HNLDecays:mode" default="1" min="0" max="5"> 
+<option value="0">..</option> 
+<option value="1">..</option> 
+<option value="2">..</option> 
+<option value="3">..</option> 
+<option value="4">..</option> 
+<option value="5">..</option> 
+</modepick> 
+ 
+<parm name="HNLDecays:HNLPolarization" default="0" min="-1." max="1."> 
+Polarization of the <ei>tau</ei> when mode <code>2</code> or <code>3</code> of 
+<code>TauDecays:mode</code> is selected. 
+</parm> 
+ 
+<modeopen name="HNLDecays:HNLMother" default="0" min="0"> 
+Mother of the <ei>tau</ei> for forced polarization when mode <code>2</code> of 
+<code>TauDecays:mode</code> is selected. You should give the 
+positive identity code; to the extent an antiparticle exists it will 
+automatically obtain the inverse polarization. 
+</modeopen> 
+ 
+ 
+ 
  
 <h3>QED radiation</h3> 
  

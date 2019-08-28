@@ -113,6 +113,7 @@ bool HNLDecays::decay(int idxOut1, Event& event) {
   vector<int> sistersOut1 = event[idxOut1Top].sisterList();
   int         idxOut2Top  = idxOut1Top;
   if (sistersOut1.size() == 1) idxOut2Top = sistersOut1[0];
+  // Rewrite it.. sister really important?
   else {
     // If more then one sister, select by preference HNL, nu_tau, lep, nu_lep.
     int tau(-1), tnu(-1), lep(-1), lnu(-1);

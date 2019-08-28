@@ -1,0 +1,146 @@
+\hypertarget{class_pythia8_1_1_process_container}{}\doxysection{Pythia8\+::Process\+Container Class Reference}
+\label{class_pythia8_1_1_process_container}\index{Pythia8::ProcessContainer@{Pythia8::ProcessContainer}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a174acd1d8dccc35ce5a554b29439e519}\label{class_pythia8_1_1_process_container_a174acd1d8dccc35ce5a554b29439e519}} 
+{\bfseries Process\+Container} (\mbox{\hyperlink{class_pythia8_1_1_sigma_process}{Sigma\+Process}} $\ast$sigma\+Process\+Ptr\+In=0, bool external\+Ptr\+In=false, \mbox{\hyperlink{class_pythia8_1_1_phase_space}{Phase\+Space}} $\ast$phase\+Space\+Ptr\+In=0)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_abf950ce98f9ddd3a5dfa03ef861e0219}\label{class_pythia8_1_1_process_container_abf950ce98f9ddd3a5dfa03ef861e0219}} 
+bool {\bfseries init} (bool is\+First, \mbox{\hyperlink{class_pythia8_1_1_info}{Info}} $\ast$info\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} \&settings, \mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$particle\+Data\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_rndm}{Rndm}} $\ast$rndm\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$beam\+A\+Ptr, \mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$beam\+B\+Ptr, \mbox{\hyperlink{class_pythia8_1_1_couplings}{Couplings}} $\ast$couplings, \mbox{\hyperlink{class_pythia8_1_1_sigma_total}{Sigma\+Total}} $\ast$sigma\+Tot\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_resonance_decays}{Resonance\+Decays}} $\ast$res\+Decays\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_s_l_h_ainterface}{S\+L\+H\+Ainterface}} $\ast$slha\+Interface\+Ptr, \mbox{\hyperlink{class_pythia8_1_1_user_hooks}{User\+Hooks}} $\ast$user\+Hooks\+Ptr, \mbox{\hyperlink{class_pythia8_1_1_gamma_kinematics}{Gamma\+Kinematics}} $\ast$gamma\+Kin\+Ptr\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a31458a5f735d2b4bc9aa985d6b3a2d7d}\label{class_pythia8_1_1_process_container_a31458a5f735d2b4bc9aa985d6b3a2d7d}} 
+void {\bfseries set\+L\+H\+A\+Ptr} (\mbox{\hyperlink{class_pythia8_1_1_l_h_aup}{L\+H\+Aup}} $\ast$lha\+Up\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$particle\+Data\+Ptr\+In=0, \mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} $\ast$settings\+Ptr\+In=0, \mbox{\hyperlink{class_pythia8_1_1_rndm}{Rndm}} $\ast$rndm\+Ptr\+In=0)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a577b9df7a594c1da4f14f70dc1e6fee2}\label{class_pythia8_1_1_process_container_a577b9df7a594c1da4f14f70dc1e6fee2}} 
+void {\bfseries new\+E\+CM} (double e\+CM)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_affe07dd4e40b286903ce3dde39ab04f7}\label{class_pythia8_1_1_process_container_affe07dd4e40b286903ce3dde39ab04f7}} 
+bool {\bfseries trial\+Process} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a229532c280844cea0fbbf0cf408b781e}\label{class_pythia8_1_1_process_container_a229532c280844cea0fbbf0cf408b781e}} 
+bool {\bfseries construct\+State} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a2afb31539712f95661e19afcb9390c48}\label{class_pythia8_1_1_process_container_a2afb31539712f95661e19afcb9390c48}} 
+bool {\bfseries construct\+Process} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&process, bool is\+Hardest=true)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_ab0d5c954498f0b2296bf9ebfdde62ee2}\label{class_pythia8_1_1_process_container_ab0d5c954498f0b2296bf9ebfdde62ee2}} 
+bool {\bfseries construct\+Decays} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&process)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a982fe5b77c619a3f870913ce7241bbbf}\label{class_pythia8_1_1_process_container_a982fe5b77c619a3f870913ce7241bbbf}} 
+bool {\bfseries decay\+Resonances} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&process)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_ae8cf40feeee14ff0176772058284ac99}\label{class_pythia8_1_1_process_container_ae8cf40feeee14ff0176772058284ac99}} 
+void {\bfseries accumulate} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a24011730bb62d74f6ffab8d197effbd2}\label{class_pythia8_1_1_process_container_a24011730bb62d74f6ffab8d197effbd2}} 
+void {\bfseries reset} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a91625717b288fcb1d8ae44a2f988d785}\label{class_pythia8_1_1_process_container_a91625717b288fcb1d8ae44a2f988d785}} 
+void {\bfseries set\+Beam\+Modes} (bool set\+V\+MD=false, bool is\+Sampled=true)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_afeae197110bd28b87930cd9d5bd331e6}\label{class_pythia8_1_1_process_container_afeae197110bd28b87930cd9d5bd331e6}} 
+pair$<$ int, int $>$ {\bfseries choose\+V\+M\+Dstates} (int idA, int idB, bool is\+Sampled)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_ac17fe64e400463f6e52b630937b611a2}\label{class_pythia8_1_1_process_container_ac17fe64e400463f6e52b630937b611a2}} 
+string {\bfseries name} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a9dfb77e621455a77e503e46f736d51f4}\label{class_pythia8_1_1_process_container_a9dfb77e621455a77e503e46f736d51f4}} 
+int {\bfseries code} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a0721777e9b91b5e6fcceb3b36f122b32}\label{class_pythia8_1_1_process_container_a0721777e9b91b5e6fcceb3b36f122b32}} 
+int {\bfseries n\+Final} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a9a6116ba6325ae3c083b9edc4eb0f6cc}\label{class_pythia8_1_1_process_container_a9a6116ba6325ae3c083b9edc4eb0f6cc}} 
+bool {\bfseries is\+S\+U\+SY} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a22cdadd0540b6890e628fae03bbcf11c}\label{class_pythia8_1_1_process_container_a22cdadd0540b6890e628fae03bbcf11c}} 
+bool {\bfseries is\+Non\+Diffractive} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_acffcd7779ab6d5e2d351077eadf9584e}\label{class_pythia8_1_1_process_container_acffcd7779ab6d5e2d351077eadf9584e}} 
+bool {\bfseries is\+Soft\+Q\+CD} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a50d14661ea0938d1696fe07d4a176834}\label{class_pythia8_1_1_process_container_a50d14661ea0938d1696fe07d4a176834}} 
+bool {\bfseries is\+Elastic} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a30d42dd1affebe38a2e858e01f8073f5}\label{class_pythia8_1_1_process_container_a30d42dd1affebe38a2e858e01f8073f5}} 
+bool {\bfseries new\+Sigma\+Max} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_ad2db77a9dd920b318bc99a05502a38b6}\label{class_pythia8_1_1_process_container_ad2db77a9dd920b318bc99a05502a38b6}} 
+double {\bfseries sigma\+Max} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a0bbcd7828fb90b60f29081c6c8777c36}\label{class_pythia8_1_1_process_container_a0bbcd7828fb90b60f29081c6c8777c36}} 
+long {\bfseries n\+Tried} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_af89440550f8871707453a42c8f3e47b2}\label{class_pythia8_1_1_process_container_af89440550f8871707453a42c8f3e47b2}} 
+long {\bfseries n\+Selected} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a654c65fb63996086d042f7a9ab4ab735}\label{class_pythia8_1_1_process_container_a654c65fb63996086d042f7a9ab4ab735}} 
+long {\bfseries n\+Accepted} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a02ed03521e5e98d97c91250283f89ab5}\label{class_pythia8_1_1_process_container_a02ed03521e5e98d97c91250283f89ab5}} 
+double {\bfseries weight\+Sum} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a41e94eb1067f757f275f1d8aae0e2d07}\label{class_pythia8_1_1_process_container_a41e94eb1067f757f275f1d8aae0e2d07}} 
+double {\bfseries sigma\+Sel\+MC} (bool do\+Accumulate=true)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_ade77824f9419cd4dea44be08cec0014c}\label{class_pythia8_1_1_process_container_ade77824f9419cd4dea44be08cec0014c}} 
+double {\bfseries sigma\+MC} (bool do\+Accumulate=true)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_ac04164eda1b7eb96ebfa8878bd700b04}\label{class_pythia8_1_1_process_container_ac04164eda1b7eb96ebfa8878bd700b04}} 
+double {\bfseries delta\+MC} (bool do\+Accumulate=true)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_ab1c6f31faead542f22762ecee350add1}\label{class_pythia8_1_1_process_container_ab1c6f31faead542f22762ecee350add1}} 
+int {\bfseries id1} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_aa9263b524c214a367c3c257677d91306}\label{class_pythia8_1_1_process_container_aa9263b524c214a367c3c257677d91306}} 
+int {\bfseries id2} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a4105c44dc27ae16cea48b5134cdf7262}\label{class_pythia8_1_1_process_container_a4105c44dc27ae16cea48b5134cdf7262}} 
+double {\bfseries x1} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_aeca4bc389e61c48b27f206a284b98b5f}\label{class_pythia8_1_1_process_container_aeca4bc389e61c48b27f206a284b98b5f}} 
+double {\bfseries x2} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_ad834d89ee5608d5853df18407e122771}\label{class_pythia8_1_1_process_container_ad834d89ee5608d5853df18407e122771}} 
+double {\bfseries Q2\+Fac} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a7e4dc825a303b9b4d31dcdc2574f2029}\label{class_pythia8_1_1_process_container_a7e4dc825a303b9b4d31dcdc2574f2029}} 
+double {\bfseries m\+Hat} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a3d04dd583716a08a40e80a43346d3d6c}\label{class_pythia8_1_1_process_container_a3d04dd583716a08a40e80a43346d3d6c}} 
+double {\bfseries p\+T\+Hat} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_ae03d172876a4a8f05725dbf4ae762b50}\label{class_pythia8_1_1_process_container_ae03d172876a4a8f05725dbf4ae762b50}} 
+bool {\bfseries is\+L\+H\+A\+Container} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a67b6fcb80130cfc2dc662eafc1e4a51b}\label{class_pythia8_1_1_process_container_a67b6fcb80130cfc2dc662eafc1e4a51b}} 
+int {\bfseries lha\+Strategy} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a8d95f33dd4159c5e77d392136cb77c91}\label{class_pythia8_1_1_process_container_a8d95f33dd4159c5e77d392136cb77c91}} 
+int {\bfseries code\+L\+H\+A\+Size} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a3fb78e11b09723eefd0a8e5c725d978a}\label{class_pythia8_1_1_process_container_a3fb78e11b09723eefd0a8e5c725d978a}} 
+int {\bfseries sub\+Code\+L\+HA} (int i) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a92ab419cd1a3e4f1767aa6a69dfaeaf0}\label{class_pythia8_1_1_process_container_a92ab419cd1a3e4f1767aa6a69dfaeaf0}} 
+long {\bfseries n\+Tried\+L\+HA} (int i) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_af6411c813fdcd8079b3650c1b0ebaddd}\label{class_pythia8_1_1_process_container_af6411c813fdcd8079b3650c1b0ebaddd}} 
+long {\bfseries n\+Selected\+L\+HA} (int i) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a7f9e26028d1a073f5ef4d03fa9f49a70}\label{class_pythia8_1_1_process_container_a7f9e26028d1a073f5ef4d03fa9f49a70}} 
+long {\bfseries n\+Accepted\+L\+HA} (int i) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a73200ddd3c70f7506e0a02fbcb32001b}\label{class_pythia8_1_1_process_container_a73200ddd3c70f7506e0a02fbcb32001b}} 
+void {\bfseries is\+Same} (bool is\+Same\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_process_container_a8bf81ea78baf239608c312a049e171a1}\label{class_pythia8_1_1_process_container_a8bf81ea78baf239608c312a049e171a1}} 
+bool {\bfseries is\+Same} () const
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/Process\+Container.\+h\item 
+src/Process\+Container.\+cc\end{DoxyCompactItemize}

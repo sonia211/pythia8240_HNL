@@ -1,0 +1,158 @@
+\hypertarget{class_pythia8_1_1_user_hooks_vector}{}\doxysection{Pythia8\+::User\+Hooks\+Vector Class Reference}
+\label{class_pythia8_1_1_user_hooks_vector}\index{Pythia8::UserHooksVector@{Pythia8::UserHooksVector}}
+Inheritance diagram for Pythia8\+::User\+Hooks\+Vector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pythia8_1_1_user_hooks_vector}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_acc3f02986281a2341592c426a353db72}\label{class_pythia8_1_1_user_hooks_vector_acc3f02986281a2341592c426a353db72}} 
+virtual bool {\bfseries init\+After\+Beams} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a9f710c61cd36a58204264704a67795c2}\label{class_pythia8_1_1_user_hooks_vector_a9f710c61cd36a58204264704a67795c2}} 
+virtual bool {\bfseries can\+Modify\+Sigma} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a1373519cd52d00c8d2b572c83647fd00}\label{class_pythia8_1_1_user_hooks_vector_a1373519cd52d00c8d2b572c83647fd00}} 
+virtual double {\bfseries multiply\+Sigma\+By} (const \mbox{\hyperlink{class_pythia8_1_1_sigma_process}{Sigma\+Process}} $\ast$sigma\+Process\+Ptr, const \mbox{\hyperlink{class_pythia8_1_1_phase_space}{Phase\+Space}} $\ast$phase\+Space\+Ptr, bool in\+Event)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a26911d2d114a77d962aafbcecda0c893}\label{class_pythia8_1_1_user_hooks_vector_a26911d2d114a77d962aafbcecda0c893}} 
+virtual bool {\bfseries can\+Bias\+Selection} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_ad0d28ff9d851844531e4301d7f4d7faa}\label{class_pythia8_1_1_user_hooks_vector_ad0d28ff9d851844531e4301d7f4d7faa}} 
+virtual double {\bfseries bias\+Selection\+By} (const \mbox{\hyperlink{class_pythia8_1_1_sigma_process}{Sigma\+Process}} $\ast$sigma\+Process\+Ptr, const \mbox{\hyperlink{class_pythia8_1_1_phase_space}{Phase\+Space}} $\ast$phase\+Space\+Ptr, bool in\+Event)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a9ed918df543c446fa12de1c032d523ae}\label{class_pythia8_1_1_user_hooks_vector_a9ed918df543c446fa12de1c032d523ae}} 
+virtual double {\bfseries biased\+Selection\+Weight} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_ab71b79564a4b060bb6e2f66310e838a9}\label{class_pythia8_1_1_user_hooks_vector_ab71b79564a4b060bb6e2f66310e838a9}} 
+virtual bool {\bfseries can\+Veto\+Process\+Level} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a63be26ef0f685e910d9d47ceb4e66578}\label{class_pythia8_1_1_user_hooks_vector_a63be26ef0f685e910d9d47ceb4e66578}} 
+virtual bool {\bfseries do\+Veto\+Process\+Level} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&e)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a2d5dfd5d05bb4bcd89a043ab407bb467}\label{class_pythia8_1_1_user_hooks_vector_a2d5dfd5d05bb4bcd89a043ab407bb467}} 
+virtual bool {\bfseries can\+Veto\+Resonance\+Decays} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a7af3f431d5e735f1ac30a0bf24ab0b58}\label{class_pythia8_1_1_user_hooks_vector_a7af3f431d5e735f1ac30a0bf24ab0b58}} 
+virtual bool {\bfseries do\+Veto\+Resonance\+Decays} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&e)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a7a92b173b3499da9ec7eb60c42c60ad2}\label{class_pythia8_1_1_user_hooks_vector_a7a92b173b3499da9ec7eb60c42c60ad2}} 
+virtual bool {\bfseries can\+Veto\+PT} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a511d00db689ac257a391fd70f575d1c8}\label{class_pythia8_1_1_user_hooks_vector_a511d00db689ac257a391fd70f575d1c8}} 
+virtual double {\bfseries scale\+Veto\+PT} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_adbcb65291414668f3e0643d6f8331896}\label{class_pythia8_1_1_user_hooks_vector_adbcb65291414668f3e0643d6f8331896}} 
+virtual bool {\bfseries do\+Veto\+PT} (int i\+Pos, const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&e)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_ad098c803306a03f0ea225415c95dd71e}\label{class_pythia8_1_1_user_hooks_vector_ad098c803306a03f0ea225415c95dd71e}} 
+virtual bool {\bfseries can\+Veto\+Step} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_ae0d86cf1900b282ed014b6d15522e228}\label{class_pythia8_1_1_user_hooks_vector_ae0d86cf1900b282ed014b6d15522e228}} 
+virtual int {\bfseries number\+Veto\+Step} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a1a421546947780c36c4e16546a88d15b}\label{class_pythia8_1_1_user_hooks_vector_a1a421546947780c36c4e16546a88d15b}} 
+virtual bool {\bfseries do\+Veto\+Step} (int i\+Pos, int n\+I\+SR, int n\+F\+SR, const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&e)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_addda77aab43c3fb509ca0b9d55ff1c76}\label{class_pythia8_1_1_user_hooks_vector_addda77aab43c3fb509ca0b9d55ff1c76}} 
+virtual bool {\bfseries can\+Veto\+M\+P\+I\+Step} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a1f2e915b914bbe2cdad2acd31a2d742e}\label{class_pythia8_1_1_user_hooks_vector_a1f2e915b914bbe2cdad2acd31a2d742e}} 
+virtual int {\bfseries number\+Veto\+M\+P\+I\+Step} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a0a555fef57376024135a53510f9e3d5b}\label{class_pythia8_1_1_user_hooks_vector_a0a555fef57376024135a53510f9e3d5b}} 
+virtual bool {\bfseries do\+Veto\+M\+P\+I\+Step} (int n\+M\+PI, const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&e)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a1fcbdc7ea75d7ec1ae5d39c3156bc873}\label{class_pythia8_1_1_user_hooks_vector_a1fcbdc7ea75d7ec1ae5d39c3156bc873}} 
+virtual bool {\bfseries can\+Veto\+Parton\+Level\+Early} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a5c18314de6b3b2f3eafb837521757f1d}\label{class_pythia8_1_1_user_hooks_vector_a5c18314de6b3b2f3eafb837521757f1d}} 
+virtual bool {\bfseries do\+Veto\+Parton\+Level\+Early} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&e)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a61ae5eec292a485cd18802de9c82b8d5}\label{class_pythia8_1_1_user_hooks_vector_a61ae5eec292a485cd18802de9c82b8d5}} 
+virtual bool {\bfseries retry\+Parton\+Level} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_ae6388d84dbceee45ccb9e36f14a51496}\label{class_pythia8_1_1_user_hooks_vector_ae6388d84dbceee45ccb9e36f14a51496}} 
+virtual bool {\bfseries can\+Veto\+Parton\+Level} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a5976582b12faa42ec59618615a4d6214}\label{class_pythia8_1_1_user_hooks_vector_a5976582b12faa42ec59618615a4d6214}} 
+virtual bool {\bfseries do\+Veto\+Parton\+Level} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&e)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_abc4a307e3b844e9caaaf3c913d426f96}\label{class_pythia8_1_1_user_hooks_vector_abc4a307e3b844e9caaaf3c913d426f96}} 
+virtual bool {\bfseries can\+Set\+Resonance\+Scale} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_ab9d5b6dc3b67169f2934fc25ff8dad0e}\label{class_pythia8_1_1_user_hooks_vector_ab9d5b6dc3b67169f2934fc25ff8dad0e}} 
+virtual double {\bfseries scale\+Resonance} (int i\+Res, const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&e)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_aeed57abc036211603ba650e6fad77236}\label{class_pythia8_1_1_user_hooks_vector_aeed57abc036211603ba650e6fad77236}} 
+virtual bool {\bfseries can\+Veto\+I\+S\+R\+Emission} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a6e7ae0c0b5e7d15d3d689fb2eb6de7b9}\label{class_pythia8_1_1_user_hooks_vector_a6e7ae0c0b5e7d15d3d689fb2eb6de7b9}} 
+virtual bool {\bfseries do\+Veto\+I\+S\+R\+Emission} (int size\+Old, const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&e, int i\+Sys)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_accddf6df98a6dc7a59a199b74b84473e}\label{class_pythia8_1_1_user_hooks_vector_accddf6df98a6dc7a59a199b74b84473e}} 
+virtual bool {\bfseries can\+Veto\+F\+S\+R\+Emission} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_adee15d2ffbba7549c10629e704846635}\label{class_pythia8_1_1_user_hooks_vector_adee15d2ffbba7549c10629e704846635}} 
+virtual bool {\bfseries do\+Veto\+F\+S\+R\+Emission} (int size\+Old, const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&e, int i\+Sys, bool in\+Resonance=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a865b8b447ac1a253ff075379dad854db}\label{class_pythia8_1_1_user_hooks_vector_a865b8b447ac1a253ff075379dad854db}} 
+virtual bool {\bfseries can\+Veto\+M\+P\+I\+Emission} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a436877a99ad191e5ac1ddee38c57be3d}\label{class_pythia8_1_1_user_hooks_vector_a436877a99ad191e5ac1ddee38c57be3d}} 
+virtual bool {\bfseries do\+Veto\+M\+P\+I\+Emission} (int size\+Old, const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&e)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_aa485803e428cea9253b3b33b27fbf4f5}\label{class_pythia8_1_1_user_hooks_vector_aa485803e428cea9253b3b33b27fbf4f5}} 
+virtual bool {\bfseries can\+Reconnect\+Resonance\+Systems} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_ac1dd521eae59964e8e7c1d39a916aa17}\label{class_pythia8_1_1_user_hooks_vector_ac1dd521eae59964e8e7c1d39a916aa17}} 
+virtual bool {\bfseries do\+Reconnect\+Resonance\+Systems} (int j, \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&e)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_ad6a687e1292704b0a6c3a0986bf6acd8}\label{class_pythia8_1_1_user_hooks_vector_ad6a687e1292704b0a6c3a0986bf6acd8}} 
+virtual bool {\bfseries can\+Enhance\+Emission} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a8f4b6b3cca03884959683a31f301d6c4}\label{class_pythia8_1_1_user_hooks_vector_a8f4b6b3cca03884959683a31f301d6c4}} 
+virtual double {\bfseries enhance\+Factor} (string s)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a9491bf44ff4ee56f6c8dfeb893a359ea}\label{class_pythia8_1_1_user_hooks_vector_a9491bf44ff4ee56f6c8dfeb893a359ea}} 
+virtual double {\bfseries veto\+Probability} (string s)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a64f9f6de87d56c85c0578224b342759e}\label{class_pythia8_1_1_user_hooks_vector_a64f9f6de87d56c85c0578224b342759e}} 
+virtual bool {\bfseries can\+Enhance\+Trial} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_aabf23f11c5360aab7e922f2508c642d9}\label{class_pythia8_1_1_user_hooks_vector_aabf23f11c5360aab7e922f2508c642d9}} 
+virtual bool {\bfseries can\+Change\+Frag\+Par} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a6bee5191768d914032c12dc524fb5985}\label{class_pythia8_1_1_user_hooks_vector_a6bee5191768d914032c12dc524fb5985}} 
+virtual bool {\bfseries do\+Veto\+Fragmentation} (\mbox{\hyperlink{class_pythia8_1_1_particle}{Particle}} p, const \mbox{\hyperlink{class_pythia8_1_1_string_end}{String\+End}} $\ast$now\+End)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a9a7337b2a1946cfadb7912502d74e055}\label{class_pythia8_1_1_user_hooks_vector_a9a7337b2a1946cfadb7912502d74e055}} 
+virtual bool {\bfseries do\+Veto\+Fragmentation} (\mbox{\hyperlink{class_pythia8_1_1_particle}{Particle}} p1, \mbox{\hyperlink{class_pythia8_1_1_particle}{Particle}} p2, const \mbox{\hyperlink{class_pythia8_1_1_string_end}{String\+End}} $\ast$e1, const \mbox{\hyperlink{class_pythia8_1_1_string_end}{String\+End}} $\ast$e2)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_aa4d89ed1546ade861fee3cc6a0a56bd8}\label{class_pythia8_1_1_user_hooks_vector_aa4d89ed1546ade861fee3cc6a0a56bd8}} 
+virtual bool {\bfseries can\+Set\+Impact\+Parameter} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_a575e40cd8e7c54c64ad42afcd2621601}\label{class_pythia8_1_1_user_hooks_vector_a575e40cd8e7c54c64ad42afcd2621601}} 
+virtual double {\bfseries do\+Set\+Impact\+Parameter} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_abd1b4555cf3ee843eb6166b46478b909}\label{class_pythia8_1_1_user_hooks_vector_abd1b4555cf3ee843eb6166b46478b909}} 
+vector$<$ \mbox{\hyperlink{class_pythia8_1_1_user_hooks}{User\+Hooks}} $\ast$ $>$ {\bfseries hooks}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_user_hooks_vector_adc078b804247351a25349d14ccf78f55}\label{class_pythia8_1_1_user_hooks_vector_adc078b804247351a25349d14ccf78f55}} 
+class {\bfseries Pythia}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/User\+Hooks.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,177 @@
+\hypertarget{class_pythia8_1_1_sub_collision_model}{}\doxysection{Pythia8\+::Sub\+Collision\+Model Class Reference}
+\label{class_pythia8_1_1_sub_collision_model}\index{Pythia8::SubCollisionModel@{Pythia8::SubCollisionModel}}
+
+
+{\ttfamily \#include $<$H\+I\+User\+Hooks.\+h$>$}
+
+Inheritance diagram for Pythia8\+::Sub\+Collision\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.359223cm]{class_pythia8_1_1_sub_collision_model}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_pythia8_1_1_sub_collision_model_1_1_sig_est}{Sig\+Est}}
+\begin{DoxyCompactList}\small\item\em Internal class to report cross section estimates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a9c845bcbcfafa5be67ebffcc9a538a43}\label{class_pythia8_1_1_sub_collision_model_a9c845bcbcfafa5be67ebffcc9a538a43}} 
+\mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_a9c845bcbcfafa5be67ebffcc9a538a43}{Sub\+Collision\+Model}} ()
+\begin{DoxyCompactList}\small\item\em The default constructor is empty. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_ab6a948f7431d10e3321501871f2aaf8d}\label{class_pythia8_1_1_sub_collision_model_ab6a948f7431d10e3321501871f2aaf8d}} 
+virtual \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_ab6a948f7431d10e3321501871f2aaf8d}{$\sim$\+Sub\+Collision\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor,. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a9553d7e79511f39ccc20237a6d9c9c2a}\label{class_pythia8_1_1_sub_collision_model_a9553d7e79511f39ccc20237a6d9c9c2a}} 
+virtual bool \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_a9553d7e79511f39ccc20237a6d9c9c2a}{init}} ()
+\begin{DoxyCompactList}\small\item\em Virtual init method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a2cbe594941e14a70b5d232ffc4b23978}\label{class_pythia8_1_1_sub_collision_model_a2cbe594941e14a70b5d232ffc4b23978}} 
+void {\bfseries init\+Ptr} (\mbox{\hyperlink{class_pythia8_1_1_nucleus_model}{Nucleus\+Model}} \&proj\+In, \mbox{\hyperlink{class_pythia8_1_1_nucleus_model}{Nucleus\+Model}} \&targ\+In, \mbox{\hyperlink{class_pythia8_1_1_sigma_total}{Sigma\+Total}} \&sig\+Tot\+In, \mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} \&settings\+In, \mbox{\hyperlink{class_pythia8_1_1_info}{Info}} \&info\+In, \mbox{\hyperlink{class_pythia8_1_1_rndm}{Rndm}} \&rnd\+In)
+\item 
+virtual multiset$<$ \mbox{\hyperlink{class_pythia8_1_1_sub_collision}{Sub\+Collision}} $>$ \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_aa6d9fe4e55b2b686654257cec2ab75fb}{get\+Collisions}} (vector$<$ \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $>$ \&proj, vector$<$ \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $>$ \&targ, const \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \&bvec, double \&T)=0
+\item 
+double \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_a6b8d02b6a610fb018f7fd21ba567073c}{sig\+Tot}} () const
+\begin{DoxyCompactList}\small\item\em The total cross section. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a3989e94e3cc699e3718580053fe246bf}\label{class_pythia8_1_1_sub_collision_model_a3989e94e3cc699e3718580053fe246bf}} 
+double \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_a3989e94e3cc699e3718580053fe246bf}{sig\+El}} () const
+\begin{DoxyCompactList}\small\item\em The total cross section. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a91ce00a7e0a32cc5a255b6858f805a79}\label{class_pythia8_1_1_sub_collision_model_a91ce00a7e0a32cc5a255b6858f805a79}} 
+double \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_a91ce00a7e0a32cc5a255b6858f805a79}{sig\+C\+DE}} () const
+\begin{DoxyCompactList}\small\item\em The central diffractive excitation cross section. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_aa5abab4edd3197331bfda9893522b14e}\label{class_pythia8_1_1_sub_collision_model_aa5abab4edd3197331bfda9893522b14e}} 
+double \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_aa5abab4edd3197331bfda9893522b14e}{sig\+S\+DE}} () const
+\begin{DoxyCompactList}\small\item\em The single diffractive excitation cross section (both sides summed). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a781906f15740afcd220443646b958d71}\label{class_pythia8_1_1_sub_collision_model_a781906f15740afcd220443646b958d71}} 
+double \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_a781906f15740afcd220443646b958d71}{sig\+S\+D\+EP}} () const
+\begin{DoxyCompactList}\small\item\em The single diffractive excitation cross section (excited projectile). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a9633bf4488f37dd5b54bd122dba12032}\label{class_pythia8_1_1_sub_collision_model_a9633bf4488f37dd5b54bd122dba12032}} 
+double \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_a9633bf4488f37dd5b54bd122dba12032}{sig\+S\+D\+ET}} () const
+\begin{DoxyCompactList}\small\item\em The single diffractive excitation cross section (excited target). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a4f98813d870b45d55c6be0834018f9c9}\label{class_pythia8_1_1_sub_collision_model_a4f98813d870b45d55c6be0834018f9c9}} 
+double \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_a4f98813d870b45d55c6be0834018f9c9}{sig\+D\+DE}} () const
+\begin{DoxyCompactList}\small\item\em The double diffractive excitation cross section. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_aeffe05f451bf75e1be8d0e1c61a5b05b}\label{class_pythia8_1_1_sub_collision_model_aeffe05f451bf75e1be8d0e1c61a5b05b}} 
+double \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_aeffe05f451bf75e1be8d0e1c61a5b05b}{sig\+ND}} () const
+\begin{DoxyCompactList}\small\item\em The non-\/diffractive (absorptive) cross section. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_ae0d32f3f3815019535d33cfa7b07a728}\label{class_pythia8_1_1_sub_collision_model_ae0d32f3f3815019535d33cfa7b07a728}} 
+double \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_ae0d32f3f3815019535d33cfa7b07a728}{b\+Slope}} () const
+\begin{DoxyCompactList}\small\item\em The elastic b-\/slope parameter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_aebd18f230329f9a6972f077b05b270dd}\label{class_pythia8_1_1_sub_collision_model_aebd18f230329f9a6972f077b05b270dd}} 
+virtual \mbox{\hyperlink{struct_pythia8_1_1_sub_collision_model_1_1_sig_est}{Sig\+Est}} \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_aebd18f230329f9a6972f077b05b270dd}{get\+Sig}} () const
+\begin{DoxyCompactList}\small\item\em Calculate the cross sections for the given set of parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a66aed5d66adeacd1e276bdb13f6bf624}\label{class_pythia8_1_1_sub_collision_model_a66aed5d66adeacd1e276bdb13f6bf624}} 
+double \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_a66aed5d66adeacd1e276bdb13f6bf624}{av\+N\+DB}} () const
+\begin{DoxyCompactList}\small\item\em Return the average non-\/diffractive impact parameter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_abece4171d7522fed64dbfacd2739a9e7}\label{class_pythia8_1_1_sub_collision_model_abece4171d7522fed64dbfacd2739a9e7}} 
+double \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_abece4171d7522fed64dbfacd2739a9e7}{Chi2}} (const \mbox{\hyperlink{struct_pythia8_1_1_sub_collision_model_1_1_sig_est}{Sig\+Est}} \&sigs, int npar) const
+\begin{DoxyCompactList}\small\item\em Calculate the Chi2 for the given cross section estimates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_afe4d0723905c2e38b321012fa05f76ab}\label{class_pythia8_1_1_sub_collision_model_afe4d0723905c2e38b321012fa05f76ab}} 
+virtual bool \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_afe4d0723905c2e38b321012fa05f76ab}{evolve}} ()
+\begin{DoxyCompactList}\small\item\em Use a simlified genetic algorithm to fit the parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a83fe3667bb907d87a6f7b3baf0daba43}\label{class_pythia8_1_1_sub_collision_model_a83fe3667bb907d87a6f7b3baf0daba43}} 
+virtual void \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_a83fe3667bb907d87a6f7b3baf0daba43}{set\+Parm}} (const vector$<$ double $>$ \&)
+\begin{DoxyCompactList}\small\item\em Set the parameters of this model. \end{DoxyCompactList}\item 
+virtual vector$<$ double $>$ \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_a23ebd7d75a7d05e0a244c2425dd1b308}{get\+Parm}} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a1c64f94fd23f4e058b0735872ed62869}\label{class_pythia8_1_1_sub_collision_model_a1c64f94fd23f4e058b0735872ed62869}} 
+virtual vector$<$ double $>$ {\bfseries min\+Parm} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a0d70810c80a91cbff43fdb9d8ce53d8d}\label{class_pythia8_1_1_sub_collision_model_a0d70810c80a91cbff43fdb9d8ce53d8d}} 
+virtual vector$<$ double $>$ {\bfseries max\+Parm} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_aa44bf3618111ceaf69e10472aefe97e1}{N\+Int}}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_ab73897a5e5ac5deebc1f2c959f9fd72a}\label{class_pythia8_1_1_sub_collision_model_ab73897a5e5ac5deebc1f2c959f9fd72a}} 
+int {\bfseries N\+Gen}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a7e32720bd5490216cd8e03c07f1007c0}\label{class_pythia8_1_1_sub_collision_model_a7e32720bd5490216cd8e03c07f1007c0}} 
+int {\bfseries N\+Pop}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a5b7d5848cb8c34e9cc163a2e0a5f6c83}\label{class_pythia8_1_1_sub_collision_model_a5b7d5848cb8c34e9cc163a2e0a5f6c83}} 
+double {\bfseries sig\+Fuzz}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a410182ead03c24478b6878451021893a}\label{class_pythia8_1_1_sub_collision_model_a410182ead03c24478b6878451021893a}} 
+bool {\bfseries fit\+Print}
+\item 
+double \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_a1a44944b01eeb212a041e69ef4f7e03b}{av\+N\+Db}}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_ae48f0413d7002ebe96aa0c0bc0198f3d}\label{class_pythia8_1_1_sub_collision_model_ae48f0413d7002ebe96aa0c0bc0198f3d}} 
+\mbox{\hyperlink{class_pythia8_1_1_nucleus_model}{Nucleus\+Model}} $\ast$ \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_ae48f0413d7002ebe96aa0c0bc0198f3d}{proj\+Ptr}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_pythia8_1_1_info}{Info}} from the controlling \mbox{\hyperlink{class_pythia8_1_1_heavy_ions}{Heavy\+Ions}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_ab4128cb668f7d5cc29d1161f63c7f819}\label{class_pythia8_1_1_sub_collision_model_ab4128cb668f7d5cc29d1161f63c7f819}} 
+\mbox{\hyperlink{class_pythia8_1_1_nucleus_model}{Nucleus\+Model}} $\ast$ {\bfseries targ\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a57b4e2434e3640a427d422b396b70bb2}\label{class_pythia8_1_1_sub_collision_model_a57b4e2434e3640a427d422b396b70bb2}} 
+\mbox{\hyperlink{class_pythia8_1_1_sigma_total}{Sigma\+Total}} $\ast$ {\bfseries sig\+Tot\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_accdb0bf20aa278b4cdf9c132a6c57baa}\label{class_pythia8_1_1_sub_collision_model_accdb0bf20aa278b4cdf9c132a6c57baa}} 
+\mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} $\ast$ {\bfseries settings\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a0271a18b3b3dfb9230d32bbc953f24da}\label{class_pythia8_1_1_sub_collision_model_a0271a18b3b3dfb9230d32bbc953f24da}} 
+\mbox{\hyperlink{class_pythia8_1_1_info}{Info}} $\ast$ {\bfseries info\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a257fde5ccb13047ff9055a4d6aeec939}\label{class_pythia8_1_1_sub_collision_model_a257fde5ccb13047ff9055a4d6aeec939}} 
+\mbox{\hyperlink{class_pythia8_1_1_rndm}{Rndm}} $\ast$ {\bfseries rnd\+Ptr}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model}{Sub\+Collision\+Model}} is is able to model the collision between two nucleons to tell which type of collision has occurred. The model may manipulate the corresponing state of the nucleons. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_aa6d9fe4e55b2b686654257cec2ab75fb}\label{class_pythia8_1_1_sub_collision_model_aa6d9fe4e55b2b686654257cec2ab75fb}} 
+\index{Pythia8::SubCollisionModel@{Pythia8::SubCollisionModel}!getCollisions@{getCollisions}}
+\index{getCollisions@{getCollisions}!Pythia8::SubCollisionModel@{Pythia8::SubCollisionModel}}
+\doxysubsubsection{\texorpdfstring{getCollisions()}{getCollisions()}}
+{\footnotesize\ttfamily multiset$<$ \mbox{\hyperlink{class_pythia8_1_1_sub_collision}{Sub\+Collision}} $>$ Pythia8\+::\+Sub\+Collision\+Model\+::get\+Collisions (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $>$ \&}]{proj,  }\item[{vector$<$ \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $>$ \&}]{targ,  }\item[{const \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \&}]{bvec,  }\item[{double \&}]{T }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Take two vectors of Nucleons and an impact parameter vector and produce the corrsponding sub-\/collisions. Note that states of the nucleons may be changed. The function in this abstract base class will reset the nucleon states for convenience. The sub-\/collisions are ordered in the impact parameter distance between the nucleons. The T-\/variable will be set to the summed elastic amplityde. 
+
+Implemented in \mbox{\hyperlink{class_pythia8_1_1_multi_radial_a9c6398e87b7cec2beb0b3d89f0c14fa4}{Pythia8\+::\+Multi\+Radial}}, \mbox{\hyperlink{class_pythia8_1_1_double_strikman_a0c72338232acf5d028744c0e35d805b6}{Pythia8\+::\+Double\+Strikman}}, \mbox{\hyperlink{class_pythia8_1_1_naive_sub_collision_model_a1390400355d62422427b211dbcf0e6e8}{Pythia8\+::\+Naive\+Sub\+Collision\+Model}}, and \mbox{\hyperlink{class_pythia8_1_1_black_sub_collision_model_abe19480d31ae0ec3abe2f4ec9a934448}{Pythia8\+::\+Black\+Sub\+Collision\+Model}}.
+
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a23ebd7d75a7d05e0a244c2425dd1b308}\label{class_pythia8_1_1_sub_collision_model_a23ebd7d75a7d05e0a244c2425dd1b308}} 
+\index{Pythia8::SubCollisionModel@{Pythia8::SubCollisionModel}!getParm@{getParm}}
+\index{getParm@{getParm}!Pythia8::SubCollisionModel@{Pythia8::SubCollisionModel}}
+\doxysubsubsection{\texorpdfstring{getParm()}{getParm()}}
+{\footnotesize\ttfamily virtual vector$<$double$>$ Pythia8\+::\+Sub\+Collision\+Model\+::get\+Parm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Return the current parameters and the minimum and maximum allowed values for the parameters of this model. 
+
+Reimplemented in \mbox{\hyperlink{class_pythia8_1_1_multi_radial_a87d17affed609dac93e1574cf18822e9}{Pythia8\+::\+Multi\+Radial}}, and \mbox{\hyperlink{class_pythia8_1_1_double_strikman_aef3a634dfdbb1aae0f243f52594fa6e5}{Pythia8\+::\+Double\+Strikman}}.
+
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a6b8d02b6a610fb018f7fd21ba567073c}\label{class_pythia8_1_1_sub_collision_model_a6b8d02b6a610fb018f7fd21ba567073c}} 
+\index{Pythia8::SubCollisionModel@{Pythia8::SubCollisionModel}!sigTot@{sigTot}}
+\index{sigTot@{sigTot}!Pythia8::SubCollisionModel@{Pythia8::SubCollisionModel}}
+\doxysubsubsection{\texorpdfstring{sigTot()}{sigTot()}}
+{\footnotesize\ttfamily double Pythia8\+::\+Sub\+Collision\+Model\+::sig\+Tot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The total cross section. 
+
+Access the nucleon-\/nucleon cross sections assumed for this model. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_a1a44944b01eeb212a041e69ef4f7e03b}\label{class_pythia8_1_1_sub_collision_model_a1a44944b01eeb212a041e69ef4f7e03b}} 
+\index{Pythia8::SubCollisionModel@{Pythia8::SubCollisionModel}!avNDb@{avNDb}}
+\index{avNDb@{avNDb}!Pythia8::SubCollisionModel@{Pythia8::SubCollisionModel}}
+\doxysubsubsection{\texorpdfstring{avNDb}{avNDb}}
+{\footnotesize\ttfamily double Pythia8\+::\+Sub\+Collision\+Model\+::av\+N\+Db\hspace{0.3cm}{\ttfamily [protected]}}
+
+The estimated average impact parameter distance (in femtometer) for absorptive collisions. \mbox{\Hypertarget{class_pythia8_1_1_sub_collision_model_aa44bf3618111ceaf69e10472aefe97e1}\label{class_pythia8_1_1_sub_collision_model_aa44bf3618111ceaf69e10472aefe97e1}} 
+\index{Pythia8::SubCollisionModel@{Pythia8::SubCollisionModel}!NInt@{NInt}}
+\index{NInt@{NInt}!Pythia8::SubCollisionModel@{Pythia8::SubCollisionModel}}
+\doxysubsubsection{\texorpdfstring{NInt}{NInt}}
+{\footnotesize\ttfamily int Pythia8\+::\+Sub\+Collision\+Model\+::\+N\+Int\hspace{0.3cm}{\ttfamily [protected]}}
+
+The parameters stearing the fitting of internal parameters to the different nucleon-\/nucleon cross sections. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/H\+I\+User\+Hooks.\+h\item 
+src/H\+I\+User\+Hooks.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\hypertarget{class_pythia8_1_1_impact_parameter_generator}{}\doxysection{Pythia8\+::Impact\+Parameter\+Generator Class Reference}
+\label{class_pythia8_1_1_impact_parameter_generator}\index{Pythia8::ImpactParameterGenerator@{Pythia8::ImpactParameterGenerator}}
+
+
+{\ttfamily \#include $<$H\+I\+User\+Hooks.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pythia8_1_1_impact_parameter_generator_a7472a8126803df5b9247b7f3af5f24d6}{Impact\+Parameter\+Generator}} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_impact_parameter_generator_a6495ea3365a50b6bc424f721cc5a5d9d}\label{class_pythia8_1_1_impact_parameter_generator_a6495ea3365a50b6bc424f721cc5a5d9d}} 
+virtual \mbox{\hyperlink{class_pythia8_1_1_impact_parameter_generator_a6495ea3365a50b6bc424f721cc5a5d9d}{$\sim$\+Impact\+Parameter\+Generator}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_impact_parameter_generator_a4f44085ba23defa917c46fbe68530c58}\label{class_pythia8_1_1_impact_parameter_generator_a4f44085ba23defa917c46fbe68530c58}} 
+virtual bool \mbox{\hyperlink{class_pythia8_1_1_impact_parameter_generator_a4f44085ba23defa917c46fbe68530c58}{init}} ()
+\begin{DoxyCompactList}\small\item\em Virtual init method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_impact_parameter_generator_a843f817a000dc647c2ccae1ab720e5fc}\label{class_pythia8_1_1_impact_parameter_generator_a843f817a000dc647c2ccae1ab720e5fc}} 
+void {\bfseries init\+Ptr} (\mbox{\hyperlink{class_pythia8_1_1_sub_collision_model}{Sub\+Collision\+Model}} \&coll\+In, \mbox{\hyperlink{class_pythia8_1_1_nucleus_model}{Nucleus\+Model}} \&proj\+In, \mbox{\hyperlink{class_pythia8_1_1_nucleus_model}{Nucleus\+Model}} \&targ\+In, \mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} \&settings\+In, \mbox{\hyperlink{class_pythia8_1_1_rndm}{Rndm}} \&rnd\+In)
+\item 
+virtual \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \mbox{\hyperlink{class_pythia8_1_1_impact_parameter_generator_a0f11910b616e68c77bbde392c2fbe0ef}{generate}} (double \&weight) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_impact_parameter_generator_ac308d7acad92b95f628fdc99c2c72d6b}\label{class_pythia8_1_1_impact_parameter_generator_ac308d7acad92b95f628fdc99c2c72d6b}} 
+void \mbox{\hyperlink{class_pythia8_1_1_impact_parameter_generator_ac308d7acad92b95f628fdc99c2c72d6b}{width}} (double width\+In)
+\begin{DoxyCompactList}\small\item\em Set the width (in femtometers). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_impact_parameter_generator_a991264b678efa64bdef16cf2c38b276d}\label{class_pythia8_1_1_impact_parameter_generator_a991264b678efa64bdef16cf2c38b276d}} 
+double \mbox{\hyperlink{class_pythia8_1_1_impact_parameter_generator_a991264b678efa64bdef16cf2c38b276d}{width}} () const
+\begin{DoxyCompactList}\small\item\em Get the width. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_impact_parameter_generator_a9cd505ac9f8ede958ef9928dc4b0b7eb}\label{class_pythia8_1_1_impact_parameter_generator_a9cd505ac9f8ede958ef9928dc4b0b7eb}} 
+\mbox{\hyperlink{class_pythia8_1_1_sub_collision_model}{Sub\+Collision\+Model}} $\ast$ \mbox{\hyperlink{class_pythia8_1_1_impact_parameter_generator_a9cd505ac9f8ede958ef9928dc4b0b7eb}{coll\+Ptr}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_pythia8_1_1_info}{Info}} from the controlling \mbox{\hyperlink{class_pythia8_1_1_heavy_ions}{Heavy\+Ions}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_impact_parameter_generator_ab536c74841ec0ee38b3ef47960c112c7}\label{class_pythia8_1_1_impact_parameter_generator_ab536c74841ec0ee38b3ef47960c112c7}} 
+\mbox{\hyperlink{class_pythia8_1_1_nucleus_model}{Nucleus\+Model}} $\ast$ {\bfseries proj\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_impact_parameter_generator_ab73531f37551ba2ceb42e5a87e3925ad}\label{class_pythia8_1_1_impact_parameter_generator_ab73531f37551ba2ceb42e5a87e3925ad}} 
+\mbox{\hyperlink{class_pythia8_1_1_nucleus_model}{Nucleus\+Model}} $\ast$ {\bfseries targ\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_impact_parameter_generator_a8e3e5caccdbf3ae12f96e7e17150f936}\label{class_pythia8_1_1_impact_parameter_generator_a8e3e5caccdbf3ae12f96e7e17150f936}} 
+\mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} $\ast$ {\bfseries settings\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_impact_parameter_generator_a6d1f38329f5eee8589f59e11b9016570}\label{class_pythia8_1_1_impact_parameter_generator_a6d1f38329f5eee8589f59e11b9016570}} 
+\mbox{\hyperlink{class_pythia8_1_1_rndm}{Rndm}} $\ast$ {\bfseries rnd\+Ptr}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_pythia8_1_1_impact_parameter_generator}{Impact\+Parameter\+Generator}} is able to generate a specific impact parameter together with a weight such that aweighted average over any quantity X(b) corresponds to the infinite integral over d$^\wedge$2b X(b). This base class gives a Gaussian profile, d$^\wedge$2b exp(-\/b$^\wedge$2/2w$^\wedge$2). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_impact_parameter_generator_a7472a8126803df5b9247b7f3af5f24d6}\label{class_pythia8_1_1_impact_parameter_generator_a7472a8126803df5b9247b7f3af5f24d6}} 
+\index{Pythia8::ImpactParameterGenerator@{Pythia8::ImpactParameterGenerator}!ImpactParameterGenerator@{ImpactParameterGenerator}}
+\index{ImpactParameterGenerator@{ImpactParameterGenerator}!Pythia8::ImpactParameterGenerator@{Pythia8::ImpactParameterGenerator}}
+\doxysubsubsection{\texorpdfstring{ImpactParameterGenerator()}{ImpactParameterGenerator()}}
+{\footnotesize\ttfamily Pythia8\+::\+Impact\+Parameter\+Generator\+::\+Impact\+Parameter\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The default constructor takes a gneral width (in femtometers) as argument. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_impact_parameter_generator_a0f11910b616e68c77bbde392c2fbe0ef}\label{class_pythia8_1_1_impact_parameter_generator_a0f11910b616e68c77bbde392c2fbe0ef}} 
+\index{Pythia8::ImpactParameterGenerator@{Pythia8::ImpactParameterGenerator}!generate@{generate}}
+\index{generate@{generate}!Pythia8::ImpactParameterGenerator@{Pythia8::ImpactParameterGenerator}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} Pythia8\+::\+Impact\+Parameter\+Generator\+::generate (\begin{DoxyParamCaption}\item[{double \&}]{weight }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return a new impact parameter and set the corresponding weight provided. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/H\+I\+User\+Hooks.\+h\item 
+src/H\+I\+User\+Hooks.\+cc\end{DoxyCompactItemize}

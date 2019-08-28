@@ -1,0 +1,76 @@
+\hypertarget{class_search_tree}{}\doxysection{Search\+Tree$<$ T $>$ Class Template Reference}
+\label{class_search_tree}\index{SearchTree$<$ T $>$@{SearchTree$<$ T $>$}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_search_tree_1_1circulator}{circulator}}
+\item 
+class \mbox{\hyperlink{class_search_tree_1_1const__circulator}{const\+\_\+circulator}}
+\item 
+class \mbox{\hyperlink{class_search_tree_1_1_node}{Node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_search_tree_a4cead9021101b863ad970d7d70814aae}\label{class_search_tree_a4cead9021101b863ad970d7d70814aae}} 
+{\bfseries Search\+Tree} (const std\+::vector$<$ T $>$ \&init)
+\item 
+\mbox{\Hypertarget{class_search_tree_a3b883e9efb8911e9e1276c29d9ad5ce8}\label{class_search_tree_a3b883e9efb8911e9e1276c29d9ad5ce8}} 
+{\bfseries Search\+Tree} (const std\+::vector$<$ T $>$ \&init, unsigned int max\+\_\+size)
+\item 
+\mbox{\Hypertarget{class_search_tree_acb8e801394f89194cf918697ff98bb00}\label{class_search_tree_acb8e801394f89194cf918697ff98bb00}} 
+void {\bfseries remove} (unsigned node\+\_\+index)
+\item 
+\mbox{\Hypertarget{class_search_tree_a3728f89c348653064ff2738d7ebc6d62}\label{class_search_tree_a3728f89c348653064ff2738d7ebc6d62}} 
+void {\bfseries remove} (typename \mbox{\hyperlink{class_search_tree_1_1_node}{Search\+Tree\+::\+Node}} $\ast$node)
+\item 
+\mbox{\Hypertarget{class_search_tree_a5d0294334f691d7826a7279e1df0dfbb}\label{class_search_tree_a5d0294334f691d7826a7279e1df0dfbb}} 
+void {\bfseries remove} (typename \mbox{\hyperlink{class_search_tree_1_1circulator}{Search\+Tree\+::circulator}} \&circ)
+\item 
+\mbox{\Hypertarget{class_search_tree_a17c712e71c65d1aaf0f940398221f283}\label{class_search_tree_a17c712e71c65d1aaf0f940398221f283}} 
+\mbox{\hyperlink{class_search_tree_1_1circulator}{circulator}} {\bfseries insert} (const T \&value)
+\item 
+\mbox{\Hypertarget{class_search_tree_aa697afdbee49615194541383698bc2a1}\label{class_search_tree_aa697afdbee49615194541383698bc2a1}} 
+const \mbox{\hyperlink{class_search_tree_1_1_node}{Node}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int i) const
+\item 
+\mbox{\Hypertarget{class_search_tree_aeeb5e9a860d71f2b95a4478c28be3ef3}\label{class_search_tree_aeeb5e9a860d71f2b95a4478c28be3ef3}} 
+unsigned int {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{class_search_tree_ae03e6908758cc32977f3f273a1cdc9b1}\label{class_search_tree_ae03e6908758cc32977f3f273a1cdc9b1}} 
+void {\bfseries verify\+\_\+structure} ()
+\item 
+\mbox{\Hypertarget{class_search_tree_ae724ad7899ea31bb53c378d42547d14d}\label{class_search_tree_ae724ad7899ea31bb53c378d42547d14d}} 
+void {\bfseries verify\+\_\+structure\+\_\+linear} () const
+\item 
+\mbox{\Hypertarget{class_search_tree_a60da230467a302b3a55587419d71a033}\label{class_search_tree_a60da230467a302b3a55587419d71a033}} 
+void {\bfseries verify\+\_\+structure\+\_\+recursive} (const \mbox{\hyperlink{class_search_tree_1_1_node}{Node}} $\ast$, const \mbox{\hyperlink{class_search_tree_1_1_node}{Node}} $\ast$, const \mbox{\hyperlink{class_search_tree_1_1_node}{Node}} $\ast$) const
+\item 
+\mbox{\Hypertarget{class_search_tree_a5ba49d6fa7b4335696d3670359650ac6}\label{class_search_tree_a5ba49d6fa7b4335696d3670359650ac6}} 
+void {\bfseries print\+\_\+elements} ()
+\item 
+\mbox{\Hypertarget{class_search_tree_ac3f1d15e3d95021eec886eefc722c26a}\label{class_search_tree_ac3f1d15e3d95021eec886eefc722c26a}} 
+unsigned int {\bfseries max\+\_\+depth} () const
+\item 
+\mbox{\Hypertarget{class_search_tree_adb16ebf1353878f48dcc58d975ddbbbc}\label{class_search_tree_adb16ebf1353878f48dcc58d975ddbbbc}} 
+int {\bfseries loc} (const \mbox{\hyperlink{class_search_tree_1_1_node}{Node}} $\ast$node) const
+\item 
+\mbox{\Hypertarget{class_search_tree_a93eafe3698bd40450db1c40ddfad76ee}\label{class_search_tree_a93eafe3698bd40450db1c40ddfad76ee}} 
+\mbox{\hyperlink{class_search_tree_1_1_node}{Node}} $\ast$ {\bfseries \+\_\+find\+\_\+predecessor} (const \mbox{\hyperlink{class_search_tree_1_1_node}{Node}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_search_tree_add449169ba7ac64a28ba7a9833ac56cd}\label{class_search_tree_add449169ba7ac64a28ba7a9833ac56cd}} 
+\mbox{\hyperlink{class_search_tree_1_1_node}{Node}} $\ast$ {\bfseries \+\_\+find\+\_\+successor} (const \mbox{\hyperlink{class_search_tree_1_1_node}{Node}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_search_tree_a1bcb4113b2604eee7682496b1b91fd52}\label{class_search_tree_a1bcb4113b2604eee7682496b1b91fd52}} 
+const \mbox{\hyperlink{class_search_tree_1_1_node}{Node}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (unsigned int i) const
+\item 
+\mbox{\Hypertarget{class_search_tree_a38a7c8ef909cb272fe1dad9f01c9e6e9}\label{class_search_tree_a38a7c8ef909cb272fe1dad9f01c9e6e9}} 
+\mbox{\hyperlink{class_search_tree_1_1const__circulator}{const\+\_\+circulator}} {\bfseries somewhere} () const
+\item 
+\mbox{\Hypertarget{class_search_tree_a5859e81047211ca76c7829b615e069d4}\label{class_search_tree_a5859e81047211ca76c7829b615e069d4}} 
+\mbox{\hyperlink{class_search_tree_1_1circulator}{circulator}} {\bfseries somewhere} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/F\+Jcore.\+cc\end{DoxyCompactItemize}

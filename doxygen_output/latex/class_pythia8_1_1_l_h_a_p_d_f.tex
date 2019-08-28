@@ -1,0 +1,60 @@
+\hypertarget{class_pythia8_1_1_l_h_a_p_d_f}{}\doxysection{Pythia8\+::L\+H\+A\+P\+DF Class Reference}
+\label{class_pythia8_1_1_l_h_a_p_d_f}\index{Pythia8::LHAPDF@{Pythia8::LHAPDF}}
+Inheritance diagram for Pythia8\+::L\+H\+A\+P\+DF\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pythia8_1_1_l_h_a_p_d_f}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_l_h_a_p_d_f_aec90a02cadbe584dda44d131e74edcff}\label{class_pythia8_1_1_l_h_a_p_d_f_aec90a02cadbe584dda44d131e74edcff}} 
+{\bfseries L\+H\+A\+P\+DF} (int id\+In, string p\+Set, \mbox{\hyperlink{class_pythia8_1_1_info}{Info}} $\ast$info\+Ptr\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_l_h_a_p_d_f_aa2385b39f36de91547989da511a0401a}\label{class_pythia8_1_1_l_h_a_p_d_f_aa2385b39f36de91547989da511a0401a}} 
+bool {\bfseries is\+Setup} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_l_h_a_p_d_f_a78d7c6541c9c96f4998df1d9a80ba4b4}\label{class_pythia8_1_1_l_h_a_p_d_f_a78d7c6541c9c96f4998df1d9a80ba4b4}} 
+void {\bfseries new\+Valence\+Content} (int id\+Val1\+In, int id\+Val2\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_l_h_a_p_d_f_abbc2b0c9ef837694105c72bf859708bc}\label{class_pythia8_1_1_l_h_a_p_d_f_abbc2b0c9ef837694105c72bf859708bc}} 
+void {\bfseries set\+Extrapolate} (bool extrapolate)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_l_h_a_p_d_f_a128e699c134fc0e354a9bd39e1414ce9}\label{class_pythia8_1_1_l_h_a_p_d_f_a128e699c134fc0e354a9bd39e1414ce9}} 
+double {\bfseries xf} (int id, double x, double Q2)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_l_h_a_p_d_f_ac0c34878373174121fe220e94110040e}\label{class_pythia8_1_1_l_h_a_p_d_f_ac0c34878373174121fe220e94110040e}} 
+double {\bfseries xf\+Val} (int id, double x, double Q2)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_l_h_a_p_d_f_a0d01100e1a6246557906b8fa68973e75}\label{class_pythia8_1_1_l_h_a_p_d_f_a0d01100e1a6246557906b8fa68973e75}} 
+double {\bfseries xf\+Sea} (int id, double x, double Q2)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_l_h_a_p_d_f_a374c7eb69ca63bee180272d2c1935001}\label{class_pythia8_1_1_l_h_a_p_d_f_a374c7eb69ca63bee180272d2c1935001}} 
+bool {\bfseries inside\+Bounds} (double x, double Q2)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_l_h_a_p_d_f_af5bc997177e5d5e2b07f4a11a8c1967b}\label{class_pythia8_1_1_l_h_a_p_d_f_af5bc997177e5d5e2b07f4a11a8c1967b}} 
+double {\bfseries alphaS} (double Q2)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_l_h_a_p_d_f_addc61a562aef4dbe485783f2032c422b}\label{class_pythia8_1_1_l_h_a_p_d_f_addc61a562aef4dbe485783f2032c422b}} 
+double {\bfseries m\+Quark\+P\+DF} (int id\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_l_h_a_p_d_f_a5c8268668f50c8c28ef5f800e2fcffa6}\label{class_pythia8_1_1_l_h_a_p_d_f_a5c8268668f50c8c28ef5f800e2fcffa6}} 
+int {\bfseries n\+Members} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_l_h_a_p_d_f_a19fd915dd136fb390f87dad9b32ed873}\label{class_pythia8_1_1_l_h_a_p_d_f_a19fd915dd136fb390f87dad9b32ed873}} 
+void {\bfseries calc\+P\+D\+F\+Envelope} (int id\+Now, double x\+Now, double Q2\+Now, int val\+Sea)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_l_h_a_p_d_f_aa1146abea45f3cb09482ad7a53b847c5}\label{class_pythia8_1_1_l_h_a_p_d_f_aa1146abea45f3cb09482ad7a53b847c5}} 
+void {\bfseries calc\+P\+D\+F\+Envelope} (pair$<$ int, int $>$ id\+Nows, pair$<$ double, double $>$ x\+Nows, double Q2\+Now, int val\+Sea)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_l_h_a_p_d_f_a8a300df9ac2b88db0861ad5c907d5a47}\label{class_pythia8_1_1_l_h_a_p_d_f_a8a300df9ac2b88db0861ad5c907d5a47}} 
+\mbox{\hyperlink{struct_pythia8_1_1_p_d_f_1_1_p_d_f_envelope}{P\+D\+F\+Envelope}} {\bfseries get\+P\+D\+F\+Envelope} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/Parton\+Distributions.\+h\item 
+src/Parton\+Distributions.\+cc\end{DoxyCompactItemize}

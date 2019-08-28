@@ -1,0 +1,74 @@
+\hypertarget{class_pythia8_1_1_parton_level}{}\doxysection{Pythia8\+::Parton\+Level Class Reference}
+\label{class_pythia8_1_1_parton_level}\index{Pythia8::PartonLevel@{Pythia8::PartonLevel}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_acbf3548b86343fe2b622aad3592b5683}\label{class_pythia8_1_1_parton_level_acbf3548b86343fe2b622aad3592b5683}} 
+bool {\bfseries init} (\mbox{\hyperlink{class_pythia8_1_1_info}{Info}} $\ast$info\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} \&settings, \mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$particle\+Data\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_rndm}{Rndm}} $\ast$rndm\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$beam\+A\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$beam\+B\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$beam\+Pom\+A\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$beam\+Pom\+B\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$beam\+Gam\+A\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$beam\+Gam\+B\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$beam\+V\+M\+D\+A\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$beam\+V\+M\+D\+B\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_couplings}{Couplings}} $\ast$couplings\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_parton_systems}{Parton\+Systems}} $\ast$parton\+Systems\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_sigma_total}{Sigma\+Total}} $\ast$sigma\+Tot\+Ptr, \mbox{\hyperlink{class_pythia8_1_1_time_shower}{Time\+Shower}} $\ast$times\+Dec\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_time_shower}{Time\+Shower}} $\ast$times\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_space_shower}{Space\+Shower}} $\ast$space\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_r_hadrons}{R\+Hadrons}} $\ast$r\+Hadrons\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_user_hooks}{User\+Hooks}} $\ast$user\+Hooks\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_merging_hooks}{Merging\+Hooks}} $\ast$merging\+Hooks\+Ptr, \mbox{\hyperlink{class_pythia8_1_1_parton_vertex}{Parton\+Vertex}} $\ast$parton\+Vertex\+Ptr\+In, bool use\+As\+Trial)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_abfbe33cc11cd76886c11e2e0dd9b1b54}\label{class_pythia8_1_1_parton_level_abfbe33cc11cd76886c11e2e0dd9b1b54}} 
+bool {\bfseries next} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&process, \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&event)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_a63d0161e2b65b44dea6b87b9a8582a27}\label{class_pythia8_1_1_parton_level_a63d0161e2b65b44dea6b87b9a8582a27}} 
+void {\bfseries setup\+Shower\+Sys} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&process, \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&event)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_aea676f3df1fb0e5a7a3aa1645c03da20}\label{class_pythia8_1_1_parton_level_aea676f3df1fb0e5a7a3aa1645c03da20}} 
+bool {\bfseries resonance\+Showers} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&process, \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&event, bool skip\+ForR)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_a597aba30f46c132d79a45d6027ca4e4c}\label{class_pythia8_1_1_parton_level_a597aba30f46c132d79a45d6027ca4e4c}} 
+bool {\bfseries wz\+Decay\+Showers} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&event)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_a0dac8dd465274234d9273af0551978af}\label{class_pythia8_1_1_parton_level_a0dac8dd465274234d9273af0551978af}} 
+bool {\bfseries has\+Vetoed} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_a6d86862036ff64b84b908f3f0794d3fd}\label{class_pythia8_1_1_parton_level_a6d86862036ff64b84b908f3f0794d3fd}} 
+bool {\bfseries has\+Vetoed\+Diff} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_ae52dd3c710adb393871ed9e8242a57db}\label{class_pythia8_1_1_parton_level_ae52dd3c710adb393871ed9e8242a57db}} 
+void {\bfseries accumulate} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_a5c30fe6cbe42077a637d38618d2f021b}\label{class_pythia8_1_1_parton_level_a5c30fe6cbe42077a637d38618d2f021b}} 
+void {\bfseries statistics} (bool reset=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_a273918729abc7e4e434fe00872ff69ba}\label{class_pythia8_1_1_parton_level_a273918729abc7e4e434fe00872ff69ba}} 
+void {\bfseries reset\+Statistics} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_a185bf2e33a3293630fd3a827e3fc2045}\label{class_pythia8_1_1_parton_level_a185bf2e33a3293630fd3a827e3fc2045}} 
+void {\bfseries reset\+Trial} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_a68da6cca7ef9dcc1072d1cac1b138e6d}\label{class_pythia8_1_1_parton_level_a68da6cca7ef9dcc1072d1cac1b138e6d}} 
+double {\bfseries p\+T\+Last\+In\+Shower} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_ad5d4ea226c0d44aac86cb5f70f2e74f2}\label{class_pythia8_1_1_parton_level_ad5d4ea226c0d44aac86cb5f70f2e74f2}} 
+int {\bfseries type\+Last\+In\+Shower} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_a97aba8b8037d75fefc16dca1493d036b}\label{class_pythia8_1_1_parton_level_a97aba8b8037d75fefc16dca1493d036b}} 
+\mbox{\hyperlink{class_pythia8_1_1_time_shower}{Time\+Shower}} $\ast$ {\bfseries times\+Dec\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_a925742267c6798a224f383179470d10a}\label{class_pythia8_1_1_parton_level_a925742267c6798a224f383179470d10a}} 
+\mbox{\hyperlink{class_pythia8_1_1_time_shower}{Time\+Shower}} $\ast$ {\bfseries times\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_aae79772d6c664c4ec06cb00703c0c413}\label{class_pythia8_1_1_parton_level_aae79772d6c664c4ec06cb00703c0c413}} 
+\mbox{\hyperlink{class_pythia8_1_1_space_shower}{Space\+Shower}} $\ast$ {\bfseries space\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_a433e53ea47f9e2ac041f9b6e6ac254c4}\label{class_pythia8_1_1_parton_level_a433e53ea47f9e2ac041f9b6e6ac254c4}} 
+\mbox{\hyperlink{class_pythia8_1_1_user_hooks}{User\+Hooks}} $\ast$ {\bfseries user\+Hooks\+Ptr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_a12790c6b4f2fb95ff77fbfec4dd07867}\label{class_pythia8_1_1_parton_level_a12790c6b4f2fb95ff77fbfec4dd07867}} 
+class {\bfseries History}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_parton_level_ae827cc07d32f551a07292c65e1b2475f}\label{class_pythia8_1_1_parton_level_ae827cc07d32f551a07292c65e1b2475f}} 
+class {\bfseries Merging\+Hooks}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/Parton\+Level.\+h\item 
+src/Parton\+Level.\+cc\end{DoxyCompactItemize}

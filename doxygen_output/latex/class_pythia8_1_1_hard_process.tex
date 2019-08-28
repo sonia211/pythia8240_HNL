@@ -1,0 +1,110 @@
+\hypertarget{class_pythia8_1_1_hard_process}{}\doxysection{Pythia8\+::Hard\+Process Class Reference}
+\label{class_pythia8_1_1_hard_process}\index{Pythia8::HardProcess@{Pythia8::HardProcess}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_ab1863834bc407a5455c87b9c6e975e3d}\label{class_pythia8_1_1_hard_process_ab1863834bc407a5455c87b9c6e975e3d}} 
+{\bfseries Hard\+Process} (const \mbox{\hyperlink{class_pythia8_1_1_hard_process}{Hard\+Process}} \&hard\+Process\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_a8f45c3e203fab53e3331dd179b7e1c8d}\label{class_pythia8_1_1_hard_process_a8f45c3e203fab53e3331dd179b7e1c8d}} 
+{\bfseries Hard\+Process} (string L\+H\+Efile, \mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$particle\+Data)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_a6304b8d2b88768f72553dd29c115b5c4}\label{class_pythia8_1_1_hard_process_a6304b8d2b88768f72553dd29c115b5c4}} 
+virtual void {\bfseries init\+On\+Process} (string process, \mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$particle\+Data)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_a119a75044659e68c0b8e6e529d954342}\label{class_pythia8_1_1_hard_process_a119a75044659e68c0b8e6e529d954342}} 
+void {\bfseries init\+On\+L\+H\+EF} (string L\+H\+Efile, \mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$particle\+Data)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_ac195b8899a9157585e135ae145c3b93d}\label{class_pythia8_1_1_hard_process_ac195b8899a9157585e135ae145c3b93d}} 
+void {\bfseries translate\+L\+H\+E\+F\+String} (string L\+H\+Epath)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_a238b72fc5e0ae263df93b52b4a72e3dd}\label{class_pythia8_1_1_hard_process_a238b72fc5e0ae263df93b52b4a72e3dd}} 
+virtual void {\bfseries translate\+Process\+String} (string process)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_abd0313194806b59dc016f34a91912c49}\label{class_pythia8_1_1_hard_process_abd0313194806b59dc016f34a91912c49}} 
+void {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_a20f4592b9e0b789e528d78916ea38931}\label{class_pythia8_1_1_hard_process_a20f4592b9e0b789e528d78916ea38931}} 
+virtual bool {\bfseries allow\+Candidates} (int i\+Pos, vector$<$ int $>$ Pos1, vector$<$ int $>$ Pos2, const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&event)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_a99549ca28af059b8be423942a0ecfed2}\label{class_pythia8_1_1_hard_process_a99549ca28af059b8be423942a0ecfed2}} 
+virtual void {\bfseries store\+Candidates} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&event, string process)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_a95ee0dfd37e365c744bbd48be44f0c00}\label{class_pythia8_1_1_hard_process_a95ee0dfd37e365c744bbd48be44f0c00}} 
+virtual bool {\bfseries matches\+Any\+Outgoing} (int i\+Pos, const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&event)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_aacb5e2c8863bfb9939e76e00fe82e784}\label{class_pythia8_1_1_hard_process_aacb5e2c8863bfb9939e76e00fe82e784}} 
+virtual bool {\bfseries find\+Other\+Candidates} (int i\+Pos, const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&event, bool do\+Replace)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_ad5fbed90915cdefe05b6120c5258fbee}\label{class_pythia8_1_1_hard_process_ad5fbed90915cdefe05b6120c5258fbee}} 
+virtual bool {\bfseries exchange\+Candidates} (vector$<$ int $>$ candidates1, vector$<$ int $>$ candidates2, map$<$ int, int $>$ further1, map$<$ int, int $>$ further2)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_a7ef6e3e0cb39e44f95a0272b15ad0ab1}\label{class_pythia8_1_1_hard_process_a7ef6e3e0cb39e44f95a0272b15ad0ab1}} 
+int {\bfseries n\+Quarks\+Out} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_aa293fba0b6ca2c7397a062ab3172ba7f}\label{class_pythia8_1_1_hard_process_aa293fba0b6ca2c7397a062ab3172ba7f}} 
+int {\bfseries n\+Lepton\+Out} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_aadf6f90f9062a2202e0530922dbdc6cf}\label{class_pythia8_1_1_hard_process_aadf6f90f9062a2202e0530922dbdc6cf}} 
+int {\bfseries n\+Bosons\+Out} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_a0a09f58d73c17debbb66e776cd11b594}\label{class_pythia8_1_1_hard_process_a0a09f58d73c17debbb66e776cd11b594}} 
+int {\bfseries n\+Quarks\+In} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_adb4ae10e01792fadd7d1632baa324bfc}\label{class_pythia8_1_1_hard_process_adb4ae10e01792fadd7d1632baa324bfc}} 
+int {\bfseries n\+Lepton\+In} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_accd73ce8885de9f9914a43a689f22023}\label{class_pythia8_1_1_hard_process_accd73ce8885de9f9914a43a689f22023}} 
+int {\bfseries has\+Res\+In\+Current} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_a0fc7c3afc1ad7f95e1479884017067cb}\label{class_pythia8_1_1_hard_process_a0fc7c3afc1ad7f95e1479884017067cb}} 
+int {\bfseries n\+Res\+In\+Current} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_a35751589295c98535a4ec55ad1b8fc51}\label{class_pythia8_1_1_hard_process_a35751589295c98535a4ec55ad1b8fc51}} 
+bool {\bfseries has\+Res\+In\+Proc} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_aea57cdf80832dc1a41eff2bd2a31dfe7}\label{class_pythia8_1_1_hard_process_aea57cdf80832dc1a41eff2bd2a31dfe7}} 
+void {\bfseries list} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_ad93eb573f277734cecb118d7a8993f01}\label{class_pythia8_1_1_hard_process_ad93eb573f277734cecb118d7a8993f01}} 
+void {\bfseries list\+Candidates} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_adc6e507badd6542f9c9dfd8042d3e4a6}\label{class_pythia8_1_1_hard_process_adc6e507badd6542f9c9dfd8042d3e4a6}} 
+int {\bfseries hard\+Incoming1}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_adb207741ffd2e7b87cc69dcaff67fc2a}\label{class_pythia8_1_1_hard_process_adb207741ffd2e7b87cc69dcaff67fc2a}} 
+int {\bfseries hard\+Incoming2}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_adf3c85520bd62ac83fd85ba7177bbe52}\label{class_pythia8_1_1_hard_process_adf3c85520bd62ac83fd85ba7177bbe52}} 
+vector$<$ int $>$ {\bfseries hard\+Outgoing1}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_a8d53bdff4d41742440da8bad30404a12}\label{class_pythia8_1_1_hard_process_a8d53bdff4d41742440da8bad30404a12}} 
+vector$<$ int $>$ {\bfseries hard\+Outgoing2}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_ad48a4b327209c95249cdff7d2464fbd3}\label{class_pythia8_1_1_hard_process_ad48a4b327209c95249cdff7d2464fbd3}} 
+vector$<$ int $>$ {\bfseries hard\+Intermediate}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_ae69427e867f33dcb8298444f497ba49f}\label{class_pythia8_1_1_hard_process_ae69427e867f33dcb8298444f497ba49f}} 
+\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} {\bfseries state}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_abd513aa6c59a670ea9a4be5fbe7cbebb}\label{class_pythia8_1_1_hard_process_abd513aa6c59a670ea9a4be5fbe7cbebb}} 
+vector$<$ int $>$ {\bfseries Pos\+Outgoing1}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_a0de026ea505cee09403763d6c63d54a0}\label{class_pythia8_1_1_hard_process_a0de026ea505cee09403763d6c63d54a0}} 
+vector$<$ int $>$ {\bfseries Pos\+Outgoing2}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_a7e3bc9529b1d094a9a26586edb3997ca}\label{class_pythia8_1_1_hard_process_a7e3bc9529b1d094a9a26586edb3997ca}} 
+vector$<$ int $>$ {\bfseries Pos\+Intermediate}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_hard_process_a0045234e53879364c7c4fd369a852d45}\label{class_pythia8_1_1_hard_process_a0045234e53879364c7c4fd369a852d45}} 
+double {\bfseries tms}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/Merging\+Hooks.\+h\item 
+src/Merging\+Hooks.\+cc\end{DoxyCompactItemize}

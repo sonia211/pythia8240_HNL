@@ -1,0 +1,28 @@
+\hypertarget{class_dynamic_nearest_neighbours}{}\doxysection{Dynamic\+Nearest\+Neighbours Class Reference}
+\label{class_dynamic_nearest_neighbours}\index{DynamicNearestNeighbours@{DynamicNearestNeighbours}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dynamic_nearest_neighbours_a9762a280b8ea18d307c39acdfb5beed2}\label{class_dynamic_nearest_neighbours_a9762a280b8ea18d307c39acdfb5beed2}} 
+virtual int {\bfseries Nearest\+Neighbour\+Index} (const int ii) const =0
+\item 
+\mbox{\Hypertarget{class_dynamic_nearest_neighbours_a2b6c193655063a2a2c2603e087df8429}\label{class_dynamic_nearest_neighbours_a2b6c193655063a2a2c2603e087df8429}} 
+virtual double {\bfseries Nearest\+Neighbour\+Distance} (const int ii) const =0
+\item 
+\mbox{\Hypertarget{class_dynamic_nearest_neighbours_a53cff4eef90b4a25607b67cbb98dc17f}\label{class_dynamic_nearest_neighbours_a53cff4eef90b4a25607b67cbb98dc17f}} 
+virtual bool {\bfseries Valid} (const int index) const =0
+\item 
+\mbox{\Hypertarget{class_dynamic_nearest_neighbours_ac4cb369829da8d3d5bcf1796ebf8c6ba}\label{class_dynamic_nearest_neighbours_ac4cb369829da8d3d5bcf1796ebf8c6ba}} 
+virtual void {\bfseries Remove\+And\+Add\+Points} (const std\+::vector$<$ int $>$ \&indices\+\_\+to\+\_\+remove, const std\+::vector$<$ \mbox{\hyperlink{class_eta_phi}{Eta\+Phi}} $>$ \&points\+\_\+to\+\_\+add, std\+::vector$<$ int $>$ \&indices\+\_\+added, std\+::vector$<$ int $>$ \&indices\+\_\+of\+\_\+updated\+\_\+neighbours)=0
+\item 
+\mbox{\Hypertarget{class_dynamic_nearest_neighbours_a485b79ebf4b097ad546895cc2a93b33c}\label{class_dynamic_nearest_neighbours_a485b79ebf4b097ad546895cc2a93b33c}} 
+void {\bfseries Remove\+Point} (const int index, std\+::vector$<$ int $>$ \&indices\+\_\+of\+\_\+updated\+\_\+neighbours)
+\item 
+\mbox{\Hypertarget{class_dynamic_nearest_neighbours_a5845461780a7ffa9655203b247bb95aa}\label{class_dynamic_nearest_neighbours_a5845461780a7ffa9655203b247bb95aa}} 
+void {\bfseries Remove\+Combined\+Add\+Combination} (const int index1, const int index2, const \mbox{\hyperlink{class_eta_phi}{Eta\+Phi}} \&newpoint, int \&index3, std\+::vector$<$ int $>$ \&indices\+\_\+of\+\_\+updated\+\_\+neighbours)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/F\+Jcore.\+cc\end{DoxyCompactItemize}

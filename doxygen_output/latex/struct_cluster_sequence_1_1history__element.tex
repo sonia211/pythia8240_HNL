@@ -1,0 +1,45 @@
+\hypertarget{struct_cluster_sequence_1_1history__element}{}\doxysection{Cluster\+Sequence\+::history\+\_\+element Struct Reference}
+\label{struct_cluster_sequence_1_1history__element}\index{ClusterSequence::history\_element@{ClusterSequence::history\_element}}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_cluster_sequence_1_1history__element_a64525f01b03a4228c97d3a81a5763036}\label{struct_cluster_sequence_1_1history__element_a64525f01b03a4228c97d3a81a5763036}} 
+int {\bfseries parent1}
+\item 
+\mbox{\Hypertarget{struct_cluster_sequence_1_1history__element_a65698121f0159831c064563c1930a94d}\label{struct_cluster_sequence_1_1history__element_a65698121f0159831c064563c1930a94d}} 
+int \mbox{\hyperlink{struct_cluster_sequence_1_1history__element_a65698121f0159831c064563c1930a94d}{parent2}}
+\begin{DoxyCompactList}\small\item\em index in \+\_\+history where first parent of this jet \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_cluster_sequence_1_1history__element_a57507057bb6f8cbaf48a438128fd1299}\label{struct_cluster_sequence_1_1history__element_a57507057bb6f8cbaf48a438128fd1299}} 
+int \mbox{\hyperlink{struct_cluster_sequence_1_1history__element_a57507057bb6f8cbaf48a438128fd1299}{child}}
+\begin{DoxyCompactList}\small\item\em index in \+\_\+history where second parent of this jet \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_cluster_sequence_1_1history__element_a2eef7a323a6aa3a9c79553fa8a28b5a4}{jetp\+\_\+index}}
+\item 
+\mbox{\Hypertarget{struct_cluster_sequence_1_1history__element_ad42ca5ff5a02ddabd30df5bab4dc7b58}\label{struct_cluster_sequence_1_1history__element_ad42ca5ff5a02ddabd30df5bab4dc7b58}} 
+double \mbox{\hyperlink{struct_cluster_sequence_1_1history__element_ad42ca5ff5a02ddabd30df5bab4dc7b58}{dij}}
+\begin{DoxyCompactList}\small\item\em index in the \+\_\+jets vector where we will find the \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{struct_cluster_sequence_1_1history__element_add6b029a2b4a8977b188e9e79ef4b5fc}{max\+\_\+dij\+\_\+so\+\_\+far}}
+\begin{DoxyCompactList}\small\item\em at this stage of the clustering. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_cluster_sequence_1_1history__element_a2eef7a323a6aa3a9c79553fa8a28b5a4}\label{struct_cluster_sequence_1_1history__element_a2eef7a323a6aa3a9c79553fa8a28b5a4}} 
+\index{ClusterSequence::history\_element@{ClusterSequence::history\_element}!jetp\_index@{jetp\_index}}
+\index{jetp\_index@{jetp\_index}!ClusterSequence::history\_element@{ClusterSequence::history\_element}}
+\doxysubsubsection{\texorpdfstring{jetp\_index}{jetp\_index}}
+{\footnotesize\ttfamily int Cluster\+Sequence\+::history\+\_\+element\+::jetp\+\_\+index}
+
+index in \+\_\+history where the current jet is recombined with another jet to form its child. It is Invalid if this jet does not further recombine. \mbox{\Hypertarget{struct_cluster_sequence_1_1history__element_add6b029a2b4a8977b188e9e79ef4b5fc}\label{struct_cluster_sequence_1_1history__element_add6b029a2b4a8977b188e9e79ef4b5fc}} 
+\index{ClusterSequence::history\_element@{ClusterSequence::history\_element}!max\_dij\_so\_far@{max\_dij\_so\_far}}
+\index{max\_dij\_so\_far@{max\_dij\_so\_far}!ClusterSequence::history\_element@{ClusterSequence::history\_element}}
+\doxysubsubsection{\texorpdfstring{max\_dij\_so\_far}{max\_dij\_so\_far}}
+{\footnotesize\ttfamily double Cluster\+Sequence\+::history\+\_\+element\+::max\+\_\+dij\+\_\+so\+\_\+far}
+
+
+
+at this stage of the clustering. 
+
+the distance corresponding to the recombination 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/F\+Jcore.\+h\end{DoxyCompactItemize}

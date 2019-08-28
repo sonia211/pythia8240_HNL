@@ -1,0 +1,170 @@
+\hypertarget{class_pythia8_1_1_string_end}{}\doxysection{Pythia8\+::String\+End Class Reference}
+\label{class_pythia8_1_1_string_end}\index{Pythia8::StringEnd@{Pythia8::StringEnd}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_accd96a13cd81c4b0d2b445f18b85f6dd}\label{class_pythia8_1_1_string_end_accd96a13cd81c4b0d2b445f18b85f6dd}} 
+void {\bfseries init} (\mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$particle\+Data\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_string_flav}{String\+Flav}} $\ast$flav\+Sel\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_string_p_t}{String\+PT}} $\ast$p\+T\+Sel\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_string_z}{StringZ}} $\ast$z\+Sel\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} \&settings)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a065d7871b33a631828636d8adec4ce28}\label{class_pythia8_1_1_string_end_a065d7871b33a631828636d8adec4ce28}} 
+void {\bfseries set\+Up} (bool from\+Pos\+In, int i\+End\+In, int id\+Old\+In, int i\+Max\+In, double px\+In, double py\+In, double Gamma\+In, double x\+Pos\+In, double x\+Neg\+In, int col\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_aa0f9a2ab3eed5aaa7bf4faf824f1e069}\label{class_pythia8_1_1_string_end_aa0f9a2ab3eed5aaa7bf4faf824f1e069}} 
+void {\bfseries new\+Hadron} (double n\+N\+SP=0.\+0)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a86c0455bf586a5cd98ca0f0e058f01c2}\label{class_pythia8_1_1_string_end_a86c0455bf586a5cd98ca0f0e058f01c2}} 
+\mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} {\bfseries kinematics\+Hadron} (\mbox{\hyperlink{class_pythia8_1_1_string_system}{String\+System}} \&system, vector$<$ \mbox{\hyperlink{class_pythia8_1_1_string_vertex}{String\+Vertex}} $>$ \&string\+Vertices, bool use\+InputZ=false, double z\+Had\+In=0.)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a633b7bd28e34b4689d3fb67d446bf2d7}\label{class_pythia8_1_1_string_end_a633b7bd28e34b4689d3fb67d446bf2d7}} 
+\mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} {\bfseries kinematics\+Hadron\+Tmp} (\mbox{\hyperlink{class_pythia8_1_1_string_system}{String\+System}} system, \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} p\+Rem, double phi, double mult)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_ab7ff1a9dbe1d6b319b89e2859b816036}\label{class_pythia8_1_1_string_end_ab7ff1a9dbe1d6b319b89e2859b816036}} 
+void {\bfseries update} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a8e5dac2c818b978691940d955593b301}\label{class_pythia8_1_1_string_end_a8e5dac2c818b978691940d955593b301}} 
+\mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$ {\bfseries particle\+Data\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a4975dbbcf36ad79325c016cbdfa13eab}\label{class_pythia8_1_1_string_end_a4975dbbcf36ad79325c016cbdfa13eab}} 
+\mbox{\hyperlink{class_pythia8_1_1_string_flav}{String\+Flav}} $\ast$ {\bfseries flav\+Sel\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a62a89c0c14616d34c508706b13b8763a}\label{class_pythia8_1_1_string_end_a62a89c0c14616d34c508706b13b8763a}} 
+\mbox{\hyperlink{class_pythia8_1_1_string_p_t}{String\+PT}} $\ast$ {\bfseries p\+T\+Sel\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a3e67edd64edcab3bed9ed0c23800a468}\label{class_pythia8_1_1_string_end_a3e67edd64edcab3bed9ed0c23800a468}} 
+\mbox{\hyperlink{class_pythia8_1_1_string_z}{StringZ}} $\ast$ {\bfseries z\+Sel\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_aec2ae535a3306953037ea3d54d9742f3}\label{class_pythia8_1_1_string_end_aec2ae535a3306953037ea3d54d9742f3}} 
+bool {\bfseries from\+Pos}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a5589ead224b248901f07df614c552593}\label{class_pythia8_1_1_string_end_a5589ead224b248901f07df614c552593}} 
+bool {\bfseries thermal\+Model}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_af1fbd7dd0969a352b57dfed5d5131e33}\label{class_pythia8_1_1_string_end_af1fbd7dd0969a352b57dfed5d5131e33}} 
+bool {\bfseries m\+T2suppression}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a9348496ba6dfb7fa7d784ce23a6f26f0}\label{class_pythia8_1_1_string_end_a9348496ba6dfb7fa7d784ce23a6f26f0}} 
+int {\bfseries i\+End}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_ae43c37585ea23f18d589c3bebc5fa546}\label{class_pythia8_1_1_string_end_ae43c37585ea23f18d589c3bebc5fa546}} 
+int {\bfseries i\+Max}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a6228fe97da0b2b02285908bfb1fc1ec3}\label{class_pythia8_1_1_string_end_a6228fe97da0b2b02285908bfb1fc1ec3}} 
+int {\bfseries id\+Had}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a39b23952b5615acbb9a53dff26a0a4cf}\label{class_pythia8_1_1_string_end_a39b23952b5615acbb9a53dff26a0a4cf}} 
+int {\bfseries i\+Pos\+Old}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a1620915d38fede166b3e10dd84a20f84}\label{class_pythia8_1_1_string_end_a1620915d38fede166b3e10dd84a20f84}} 
+int {\bfseries i\+Neg\+Old}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a76e1e3eae92eadadd0e3ff127292cdde}\label{class_pythia8_1_1_string_end_a76e1e3eae92eadadd0e3ff127292cdde}} 
+int {\bfseries i\+Pos\+New}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a23f07baa3428df9f0a368425bb10571a}\label{class_pythia8_1_1_string_end_a23f07baa3428df9f0a368425bb10571a}} 
+int {\bfseries i\+Neg\+New}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_ad294998099751c82a60df0ff7eeb5ae1}\label{class_pythia8_1_1_string_end_ad294998099751c82a60df0ff7eeb5ae1}} 
+int {\bfseries had\+So\+Far}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_aeda1826b6d12d93152665cbb6bfdafa8}\label{class_pythia8_1_1_string_end_aeda1826b6d12d93152665cbb6bfdafa8}} 
+int {\bfseries col\+Old}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_ad0d9d1ce62a59dfc3e53c96de1510445}\label{class_pythia8_1_1_string_end_ad0d9d1ce62a59dfc3e53c96de1510445}} 
+int {\bfseries col\+New}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a174036a9c9bfdfd314331b506c8807de}\label{class_pythia8_1_1_string_end_a174036a9c9bfdfd314331b506c8807de}} 
+double {\bfseries px\+Old}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a2de6dd82db1382280adf4a13c8422a7c}\label{class_pythia8_1_1_string_end_a2de6dd82db1382280adf4a13c8422a7c}} 
+double {\bfseries py\+Old}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a078ccbf1cd524035a952078fe9c1d6a2}\label{class_pythia8_1_1_string_end_a078ccbf1cd524035a952078fe9c1d6a2}} 
+double {\bfseries px\+New}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a3e66266e0a3f411046970df88b5a26c4}\label{class_pythia8_1_1_string_end_a3e66266e0a3f411046970df88b5a26c4}} 
+double {\bfseries py\+New}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a5d86b097763a18c82e1ce5d9354fe5b6}\label{class_pythia8_1_1_string_end_a5d86b097763a18c82e1ce5d9354fe5b6}} 
+double {\bfseries px\+Had}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_af3486c236602957b6b0107972179a173}\label{class_pythia8_1_1_string_end_af3486c236602957b6b0107972179a173}} 
+double {\bfseries py\+Had}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a3918f7304d270bcda2bb9e38f93eea32}\label{class_pythia8_1_1_string_end_a3918f7304d270bcda2bb9e38f93eea32}} 
+double {\bfseries m\+Had}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_aad67eedf12b738779c18e039dfc806b3}\label{class_pythia8_1_1_string_end_aad67eedf12b738779c18e039dfc806b3}} 
+double {\bfseries m\+T2\+Had}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_ab96cf6a43189586311e44ef42290feda}\label{class_pythia8_1_1_string_end_ab96cf6a43189586311e44ef42290feda}} 
+double {\bfseries z\+Had}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a183829d8cff3f231d0d2763fb07dff4f}\label{class_pythia8_1_1_string_end_a183829d8cff3f231d0d2763fb07dff4f}} 
+double {\bfseries Gamma\+Old}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_aa36885430deea62818e0b9f2f91b74bf}\label{class_pythia8_1_1_string_end_aa36885430deea62818e0b9f2f91b74bf}} 
+double {\bfseries Gamma\+New}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_add30366247a687e8d93bf5d970817383}\label{class_pythia8_1_1_string_end_add30366247a687e8d93bf5d970817383}} 
+double {\bfseries x\+Pos\+Old}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_ab8206a18d8211d42114755650de906a6}\label{class_pythia8_1_1_string_end_ab8206a18d8211d42114755650de906a6}} 
+double {\bfseries x\+Pos\+New}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a7a923496f3c446fee8f88cc5c8a2787f}\label{class_pythia8_1_1_string_end_a7a923496f3c446fee8f88cc5c8a2787f}} 
+double {\bfseries x\+Pos\+Had}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a9a0f82b261d4ab08e43beb10debbe120}\label{class_pythia8_1_1_string_end_a9a0f82b261d4ab08e43beb10debbe120}} 
+double {\bfseries x\+Neg\+Old}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_ac46a203c014c2bf6650dc260bce52ded}\label{class_pythia8_1_1_string_end_ac46a203c014c2bf6650dc260bce52ded}} 
+double {\bfseries x\+Neg\+New}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a9644cd1adda564113b0a1bd8220dfe56}\label{class_pythia8_1_1_string_end_a9644cd1adda564113b0a1bd8220dfe56}} 
+double {\bfseries x\+Neg\+Had}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a570dd180f534c8c87c205580c6fded9f}\label{class_pythia8_1_1_string_end_a570dd180f534c8c87c205580c6fded9f}} 
+double {\bfseries a\+Lund}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a83e0c45379837675847f2eddf524cbcf}\label{class_pythia8_1_1_string_end_a83e0c45379837675847f2eddf524cbcf}} 
+double {\bfseries b\+Lund}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_aee90100e7e8ceb486e32395701a6a744}\label{class_pythia8_1_1_string_end_aee90100e7e8ceb486e32395701a6a744}} 
+\mbox{\hyperlink{class_pythia8_1_1_flav_container}{Flav\+Container}} {\bfseries flav\+Old}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_ad9639d0cad3228c1c3f1e5eaca4592c2}\label{class_pythia8_1_1_string_end_ad9639d0cad3228c1c3f1e5eaca4592c2}} 
+\mbox{\hyperlink{class_pythia8_1_1_flav_container}{Flav\+Container}} {\bfseries flav\+New}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_ace26c5c4e03ccf477665a8c03671d6cd}\label{class_pythia8_1_1_string_end_ace26c5c4e03ccf477665a8c03671d6cd}} 
+\mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} {\bfseries p\+Had}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a4e86b626d12dade3ea60b7391b44e8fb}\label{class_pythia8_1_1_string_end_a4e86b626d12dade3ea60b7391b44e8fb}} 
+\mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} {\bfseries p\+So\+Far}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a3d4216e10892e036c500116870f6631d}\label{class_pythia8_1_1_string_end_a3d4216e10892e036c500116870f6631d}} 
+static const double {\bfseries T\+I\+NY} = 1e-\/6
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a7f2133f3aceabf30996bfe526e097f31}\label{class_pythia8_1_1_string_end_a7f2133f3aceabf30996bfe526e097f31}} 
+static const double {\bfseries P\+T2\+S\+A\+ME} = 0.\+01
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a0363fea16e3afe587b80d204f5c03f83}\label{class_pythia8_1_1_string_end_a0363fea16e3afe587b80d204f5c03f83}} 
+static const double {\bfseries M\+E\+A\+N\+M\+M\+IN} = 0.\+2
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_a548b31b4b0c461d66ea992ec56b2d591}\label{class_pythia8_1_1_string_end_a548b31b4b0c461d66ea992ec56b2d591}} 
+static const double {\bfseries M\+E\+A\+NM} = 0.\+8
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_string_end_adf4cf094a0b13a3da3239754223533a4}\label{class_pythia8_1_1_string_end_adf4cf094a0b13a3da3239754223533a4}} 
+static const double {\bfseries M\+E\+A\+N\+PT} = 0.\+4
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/String\+Fragmentation.\+h\item 
+src/String\+Fragmentation.\+cc\end{DoxyCompactItemize}

@@ -158,7 +158,7 @@ bool TauDecays::decay(int idxOut1, Event& event) {
 
   // Determine if correlated (allow lepton flavor violating partner).
   correlated = false;
-  if (idxOut1 != idxOut2 &&
+  if ( idxOut1 != idxOut2 &&
       (abs(out2.id()) == 11 || abs(out2.id()) == 13 || abs(out2.id()) == 15)) {
     correlated = true;
     // Check partner vertex is within limits.

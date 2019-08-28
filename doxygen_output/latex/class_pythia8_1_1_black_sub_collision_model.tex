@@ -1,0 +1,54 @@
+\hypertarget{class_pythia8_1_1_black_sub_collision_model}{}\doxysection{Pythia8\+::Black\+Sub\+Collision\+Model Class Reference}
+\label{class_pythia8_1_1_black_sub_collision_model}\index{Pythia8::BlackSubCollisionModel@{Pythia8::BlackSubCollisionModel}}
+
+
+{\ttfamily \#include $<$H\+I\+User\+Hooks.\+h$>$}
+
+Inheritance diagram for Pythia8\+::Black\+Sub\+Collision\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pythia8_1_1_black_sub_collision_model}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pythia8_1_1_black_sub_collision_model_aaf0167045265139f68f5adf36660a6d1}{Black\+Sub\+Collision\+Model}} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_black_sub_collision_model_abc1f350d4a494d7c467212493d80b91c}\label{class_pythia8_1_1_black_sub_collision_model_abc1f350d4a494d7c467212493d80b91c}} 
+virtual \mbox{\hyperlink{class_pythia8_1_1_black_sub_collision_model_abc1f350d4a494d7c467212493d80b91c}{$\sim$\+Black\+Sub\+Collision\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor,. \end{DoxyCompactList}\item 
+virtual multiset$<$ \mbox{\hyperlink{class_pythia8_1_1_sub_collision}{Sub\+Collision}} $>$ \mbox{\hyperlink{class_pythia8_1_1_black_sub_collision_model_abe19480d31ae0ec3abe2f4ec9a934448}{get\+Collisions}} (vector$<$ \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $>$ \&proj, vector$<$ \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $>$ \&targ, const \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \&bvec, double \&T)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The most naive sub-\/collision model, asuming static nucleons and the absorptive cross section equal to the total inelastic. No fluctuations, meaning no diffraction. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_black_sub_collision_model_aaf0167045265139f68f5adf36660a6d1}\label{class_pythia8_1_1_black_sub_collision_model_aaf0167045265139f68f5adf36660a6d1}} 
+\index{Pythia8::BlackSubCollisionModel@{Pythia8::BlackSubCollisionModel}!BlackSubCollisionModel@{BlackSubCollisionModel}}
+\index{BlackSubCollisionModel@{BlackSubCollisionModel}!Pythia8::BlackSubCollisionModel@{Pythia8::BlackSubCollisionModel}}
+\doxysubsubsection{\texorpdfstring{BlackSubCollisionModel()}{BlackSubCollisionModel()}}
+{\footnotesize\ttfamily Pythia8\+::\+Black\+Sub\+Collision\+Model\+::\+Black\+Sub\+Collision\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The default constructor simply lists the nucleon-\/nucleon cross sections. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_black_sub_collision_model_abe19480d31ae0ec3abe2f4ec9a934448}\label{class_pythia8_1_1_black_sub_collision_model_abe19480d31ae0ec3abe2f4ec9a934448}} 
+\index{Pythia8::BlackSubCollisionModel@{Pythia8::BlackSubCollisionModel}!getCollisions@{getCollisions}}
+\index{getCollisions@{getCollisions}!Pythia8::BlackSubCollisionModel@{Pythia8::BlackSubCollisionModel}}
+\doxysubsubsection{\texorpdfstring{getCollisions()}{getCollisions()}}
+{\footnotesize\ttfamily multiset$<$ \mbox{\hyperlink{class_pythia8_1_1_sub_collision}{Sub\+Collision}} $>$ Pythia8\+::\+Black\+Sub\+Collision\+Model\+::get\+Collisions (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $>$ \&}]{proj,  }\item[{vector$<$ \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $>$ \&}]{targ,  }\item[{const \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \&}]{bvec,  }\item[{double \&}]{T }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Take two vectors of Nucleons and an impact parameter vector and produce the corrsponding sub-\/collisions. Note that states of the nucleons may be changed. 
+
+Implements \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_aa6d9fe4e55b2b686654257cec2ab75fb}{Pythia8\+::\+Sub\+Collision\+Model}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/H\+I\+User\+Hooks.\+h\item 
+src/H\+I\+User\+Hooks.\+cc\end{DoxyCompactItemize}

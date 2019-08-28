@@ -1,0 +1,242 @@
+\hypertarget{class_pythia8_1_1_settings}{}\doxysection{Pythia8\+::Settings Class Reference}
+\label{class_pythia8_1_1_settings}\index{Pythia8::Settings@{Pythia8::Settings}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_aaca7b957d9c8ffce2de2bf128e3ac132}\label{class_pythia8_1_1_settings_aaca7b957d9c8ffce2de2bf128e3ac132}} 
+void {\bfseries init\+Ptr} (\mbox{\hyperlink{class_pythia8_1_1_info}{Info}} $\ast$info\+Ptr\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_aa6374e96ce34eadaf7a1227dedd9dfd9}\label{class_pythia8_1_1_settings_aa6374e96ce34eadaf7a1227dedd9dfd9}} 
+bool {\bfseries init} (string start\+File=\char`\"{}../share/Pythia8/xmldoc/Index.\+xml\char`\"{}, bool append=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a9c7951a529ab124549f8c4f0b5f31763}\label{class_pythia8_1_1_settings_a9c7951a529ab124549f8c4f0b5f31763}} 
+bool {\bfseries init} (istream \&is, bool append=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a08c511d03123a8b018560faafb915f25}\label{class_pythia8_1_1_settings_a08c511d03123a8b018560faafb915f25}} 
+bool {\bfseries re\+Init} (string start\+File=\char`\"{}../share/Pythia8/xmldoc/Index.\+xml\char`\"{})
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a6f215d35508ee7a07e38bd78612166fa}\label{class_pythia8_1_1_settings_a6f215d35508ee7a07e38bd78612166fa}} 
+bool {\bfseries read\+String} (string line, bool warn=true)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a90e0c99742e84f46a1c5c332a108c4d5}\label{class_pythia8_1_1_settings_a90e0c99742e84f46a1c5c332a108c4d5}} 
+bool {\bfseries write\+File} (string to\+File, bool write\+All=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a117fa25be310d55f0b09e71037ad8e39}\label{class_pythia8_1_1_settings_a117fa25be310d55f0b09e71037ad8e39}} 
+bool {\bfseries write\+File} (ostream \&os=cout, bool write\+All=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a53efd97a3d5a1cae0e450e031f00a516}\label{class_pythia8_1_1_settings_a53efd97a3d5a1cae0e450e031f00a516}} 
+bool {\bfseries write\+File\+X\+ML} (ostream \&os=cout)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_ab96bad26c05cb68b5b93bcb5fe6f022e}\label{class_pythia8_1_1_settings_ab96bad26c05cb68b5b93bcb5fe6f022e}} 
+void {\bfseries list\+All} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_aa9964e697be39656ef82111861e6c42b}\label{class_pythia8_1_1_settings_aa9964e697be39656ef82111861e6c42b}} 
+void {\bfseries list\+Changed} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a668fe749509645ba7dd6fae8eb7e221d}\label{class_pythia8_1_1_settings_a668fe749509645ba7dd6fae8eb7e221d}} 
+void {\bfseries list} (string match)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_aa9604f2c42e7ae3e949941970edf0182}\label{class_pythia8_1_1_settings_aa9604f2c42e7ae3e949941970edf0182}} 
+string {\bfseries output} (string key\+In, bool full\+Line=true)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_ae61af9b2a16ccfcb30a4f995e6160443}\label{class_pythia8_1_1_settings_ae61af9b2a16ccfcb30a4f995e6160443}} 
+vector$<$ string $>$ {\bfseries get\+Read\+History} (int subrun=-\/999)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a8b782b8e2d3a53b0d2701145df2e84e4}\label{class_pythia8_1_1_settings_a8b782b8e2d3a53b0d2701145df2e84e4}} 
+void {\bfseries reset\+All} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a4ed103add5df2f1f76bca77d8f3e81c6}\label{class_pythia8_1_1_settings_a4ed103add5df2f1f76bca77d8f3e81c6}} 
+bool {\bfseries is\+Flag} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_afd8fe2906eb3909b808767fd6dcc3772}\label{class_pythia8_1_1_settings_afd8fe2906eb3909b808767fd6dcc3772}} 
+bool {\bfseries is\+Mode} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_af803dde4ef19ccb4b9796de0177da0de}\label{class_pythia8_1_1_settings_af803dde4ef19ccb4b9796de0177da0de}} 
+bool {\bfseries is\+Parm} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_ac3ccae4e7f4a8e776c8fd9dd3ebcf782}\label{class_pythia8_1_1_settings_ac3ccae4e7f4a8e776c8fd9dd3ebcf782}} 
+bool {\bfseries is\+Word} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_ae7b4095ffc530deed5f83fc647ade291}\label{class_pythia8_1_1_settings_ae7b4095ffc530deed5f83fc647ade291}} 
+bool {\bfseries is\+F\+Vec} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a09eb20d79ccf26c7e5e6bfe0f8e1565f}\label{class_pythia8_1_1_settings_a09eb20d79ccf26c7e5e6bfe0f8e1565f}} 
+bool {\bfseries is\+M\+Vec} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a7fc1b74c0f7ce2cacb1711762ce43a92}\label{class_pythia8_1_1_settings_a7fc1b74c0f7ce2cacb1711762ce43a92}} 
+bool {\bfseries is\+P\+Vec} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a34143f7a75e1c243abb1170932b21e31}\label{class_pythia8_1_1_settings_a34143f7a75e1c243abb1170932b21e31}} 
+bool {\bfseries is\+W\+Vec} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a921fec6f83874122da3429a93e06d30b}\label{class_pythia8_1_1_settings_a921fec6f83874122da3429a93e06d30b}} 
+void {\bfseries add\+Flag} (string key\+In, bool default\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_afb3b4dace0d025926d3ada76eec038ee}\label{class_pythia8_1_1_settings_afb3b4dace0d025926d3ada76eec038ee}} 
+void {\bfseries add\+Mode} (string key\+In, int default\+In, bool has\+Min\+In, bool has\+Max\+In, int min\+In, int max\+In, bool opt\+Only\+In=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a572136cb3a671e4df79f5f97cf221925}\label{class_pythia8_1_1_settings_a572136cb3a671e4df79f5f97cf221925}} 
+void {\bfseries add\+Parm} (string key\+In, double default\+In, bool has\+Min\+In, bool has\+Max\+In, double min\+In, double max\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a5b7e4c21ec9435c568bd68ef7502c191}\label{class_pythia8_1_1_settings_a5b7e4c21ec9435c568bd68ef7502c191}} 
+void {\bfseries add\+Word} (string key\+In, string default\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_af777d4fd81366bc4157ee14c2689096a}\label{class_pythia8_1_1_settings_af777d4fd81366bc4157ee14c2689096a}} 
+void {\bfseries add\+F\+Vec} (string key\+In, vector$<$ bool $>$ default\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a79cf5d3534756c57f009d56d63b2242c}\label{class_pythia8_1_1_settings_a79cf5d3534756c57f009d56d63b2242c}} 
+void {\bfseries add\+M\+Vec} (string key\+In, vector$<$ int $>$ default\+In, bool has\+Min\+In, bool has\+Max\+In, int min\+In, int max\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a08c15d2f770774ee866bebdcdccfd2b5}\label{class_pythia8_1_1_settings_a08c15d2f770774ee866bebdcdccfd2b5}} 
+void {\bfseries add\+P\+Vec} (string key\+In, vector$<$ double $>$ default\+In, bool has\+Min\+In, bool has\+Max\+In, double min\+In, double max\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a88c5e4538561c46f50e2d143f245fcf7}\label{class_pythia8_1_1_settings_a88c5e4538561c46f50e2d143f245fcf7}} 
+void {\bfseries add\+W\+Vec} (string key\+In, vector$<$ string $>$ default\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_ab903b3b64b973c34b72e1bafc11c0d9d}\label{class_pythia8_1_1_settings_ab903b3b64b973c34b72e1bafc11c0d9d}} 
+bool {\bfseries flag} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a6692dd0f933d23816cdfeba7004201e6}\label{class_pythia8_1_1_settings_a6692dd0f933d23816cdfeba7004201e6}} 
+int {\bfseries mode} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a2705d717204553dc90620586414055b0}\label{class_pythia8_1_1_settings_a2705d717204553dc90620586414055b0}} 
+double {\bfseries parm} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a938aa3b28dd5ab14d666b67feb231445}\label{class_pythia8_1_1_settings_a938aa3b28dd5ab14d666b67feb231445}} 
+string {\bfseries word} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a769a1f0ee80acea8bab442eea4741b6c}\label{class_pythia8_1_1_settings_a769a1f0ee80acea8bab442eea4741b6c}} 
+vector$<$ bool $>$ {\bfseries fvec} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_aaba2d5dd114054bce402e8ff4e779aba}\label{class_pythia8_1_1_settings_aaba2d5dd114054bce402e8ff4e779aba}} 
+vector$<$ int $>$ {\bfseries mvec} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_abcd369053593bd33f275f8624fc3e0a7}\label{class_pythia8_1_1_settings_abcd369053593bd33f275f8624fc3e0a7}} 
+vector$<$ double $>$ {\bfseries pvec} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_af3dd3633ea0074cf1ead3960bbb279ee}\label{class_pythia8_1_1_settings_af3dd3633ea0074cf1ead3960bbb279ee}} 
+vector$<$ string $>$ {\bfseries wvec} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_ac6df00262d669d5e0c5149f8217fec23}\label{class_pythia8_1_1_settings_ac6df00262d669d5e0c5149f8217fec23}} 
+bool {\bfseries flag\+Default} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_aff84b5a6ac70dda23494a1c3c2ce7709}\label{class_pythia8_1_1_settings_aff84b5a6ac70dda23494a1c3c2ce7709}} 
+int {\bfseries mode\+Default} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a58d05f9fe5c17015c496f7e3ea1fa97a}\label{class_pythia8_1_1_settings_a58d05f9fe5c17015c496f7e3ea1fa97a}} 
+double {\bfseries parm\+Default} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_aa8222a389486c9f657a3b34ac16e36dd}\label{class_pythia8_1_1_settings_aa8222a389486c9f657a3b34ac16e36dd}} 
+string {\bfseries word\+Default} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_ad7199e2c2986d2c50e5be2740baf3e28}\label{class_pythia8_1_1_settings_ad7199e2c2986d2c50e5be2740baf3e28}} 
+vector$<$ bool $>$ {\bfseries fvec\+Default} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_ab457ddd749bdf4b8c486501cc591b236}\label{class_pythia8_1_1_settings_ab457ddd749bdf4b8c486501cc591b236}} 
+vector$<$ int $>$ {\bfseries mvec\+Default} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_acae64b2620152d5142dfb2b9a80efd55}\label{class_pythia8_1_1_settings_acae64b2620152d5142dfb2b9a80efd55}} 
+vector$<$ double $>$ {\bfseries pvec\+Default} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_adcd8abdba3ebd31172dbddaa0d830c15}\label{class_pythia8_1_1_settings_adcd8abdba3ebd31172dbddaa0d830c15}} 
+vector$<$ string $>$ {\bfseries wvec\+Default} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_ab47aaf7f9e0b1c31d0e623b3931ae70d}\label{class_pythia8_1_1_settings_ab47aaf7f9e0b1c31d0e623b3931ae70d}} 
+map$<$ string, \mbox{\hyperlink{class_pythia8_1_1_flag}{Flag}} $>$ {\bfseries get\+Flag\+Map} (string match)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_aa87e4c23e6100ba50c1c1dfb6fd384e7}\label{class_pythia8_1_1_settings_aa87e4c23e6100ba50c1c1dfb6fd384e7}} 
+map$<$ string, \mbox{\hyperlink{class_pythia8_1_1_mode}{Mode}} $>$ {\bfseries get\+Mode\+Map} (string match)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_ae63af0aea9d796c59d895192bbd324f2}\label{class_pythia8_1_1_settings_ae63af0aea9d796c59d895192bbd324f2}} 
+map$<$ string, \mbox{\hyperlink{class_pythia8_1_1_parm}{Parm}} $>$ {\bfseries get\+Parm\+Map} (string match)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a7058faf9b7efc459772b0fd6005773d0}\label{class_pythia8_1_1_settings_a7058faf9b7efc459772b0fd6005773d0}} 
+map$<$ string, \mbox{\hyperlink{class_pythia8_1_1_word}{Word}} $>$ {\bfseries get\+Word\+Map} (string match)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a25ca0d59e50bd7710d91295ef586de4c}\label{class_pythia8_1_1_settings_a25ca0d59e50bd7710d91295ef586de4c}} 
+map$<$ string, \mbox{\hyperlink{class_pythia8_1_1_f_vec}{F\+Vec}} $>$ {\bfseries get\+F\+Vec\+Map} (string match)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_ad83fa836e41757913e2798ccf08fbf78}\label{class_pythia8_1_1_settings_ad83fa836e41757913e2798ccf08fbf78}} 
+map$<$ string, \mbox{\hyperlink{class_pythia8_1_1_m_vec}{M\+Vec}} $>$ {\bfseries get\+M\+Vec\+Map} (string match)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_ac09dd24a3c45f7eba3d8a1664b677eda}\label{class_pythia8_1_1_settings_ac09dd24a3c45f7eba3d8a1664b677eda}} 
+map$<$ string, \mbox{\hyperlink{class_pythia8_1_1_p_vec}{P\+Vec}} $>$ {\bfseries get\+P\+Vec\+Map} (string match)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_ae9ae4f27567fc7586a0ec0e243c21cb3}\label{class_pythia8_1_1_settings_ae9ae4f27567fc7586a0ec0e243c21cb3}} 
+map$<$ string, \mbox{\hyperlink{class_pythia8_1_1_w_vec}{W\+Vec}} $>$ {\bfseries get\+W\+Vec\+Map} (string match)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a81da5eee0d4e633e0de9d84b9e8cd227}\label{class_pythia8_1_1_settings_a81da5eee0d4e633e0de9d84b9e8cd227}} 
+void {\bfseries flag} (string key\+In, bool now\+In, bool force=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a5c4e3438c22d4e8f98a20ecd67e32b92}\label{class_pythia8_1_1_settings_a5c4e3438c22d4e8f98a20ecd67e32b92}} 
+bool {\bfseries mode} (string key\+In, int now\+In, bool force=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a89e0b12ae116157331616494f0aa3e97}\label{class_pythia8_1_1_settings_a89e0b12ae116157331616494f0aa3e97}} 
+void {\bfseries parm} (string key\+In, double now\+In, bool force=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a9d0a475fffd64e5ff684fd3682d29dc1}\label{class_pythia8_1_1_settings_a9d0a475fffd64e5ff684fd3682d29dc1}} 
+void {\bfseries word} (string key\+In, string now\+In, bool force=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_adafe3a1a75b6a52d7df3fb367ad8d6ab}\label{class_pythia8_1_1_settings_adafe3a1a75b6a52d7df3fb367ad8d6ab}} 
+void {\bfseries fvec} (string key\+In, vector$<$ bool $>$ now\+In, bool force=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a4206e1b588d842887d1037d462301fae}\label{class_pythia8_1_1_settings_a4206e1b588d842887d1037d462301fae}} 
+void {\bfseries mvec} (string key\+In, vector$<$ int $>$ now\+In, bool force=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a8305bc7b8b0743c4c4feb04e592ad9ce}\label{class_pythia8_1_1_settings_a8305bc7b8b0743c4c4feb04e592ad9ce}} 
+void {\bfseries pvec} (string key\+In, vector$<$ double $>$ now\+In, bool force=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a2243e752198e3430b49d663200cd336f}\label{class_pythia8_1_1_settings_a2243e752198e3430b49d663200cd336f}} 
+void {\bfseries wvec} (string key\+In, vector$<$ string $>$ now\+In, bool force=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a5b3a0da13e3d2e87a33a60c05b7fba34}\label{class_pythia8_1_1_settings_a5b3a0da13e3d2e87a33a60c05b7fba34}} 
+void {\bfseries force\+Mode} (string key\+In, int now\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_ab6953a4c625553455a663169e9eab5fc}\label{class_pythia8_1_1_settings_ab6953a4c625553455a663169e9eab5fc}} 
+void {\bfseries force\+Parm} (string key\+In, double now\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_ae2d4541bd4a55d3c63a3e20ef239bc29}\label{class_pythia8_1_1_settings_ae2d4541bd4a55d3c63a3e20ef239bc29}} 
+void {\bfseries force\+M\+Vec} (string key\+In, vector$<$ int $>$ now\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a377ea857d8c8bed4aa48ea760c4d2eac}\label{class_pythia8_1_1_settings_a377ea857d8c8bed4aa48ea760c4d2eac}} 
+void {\bfseries force\+P\+Vec} (string key\+In, vector$<$ double $>$ now\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a6caa5c11d2c8ea79bedb484aa498401e}\label{class_pythia8_1_1_settings_a6caa5c11d2c8ea79bedb484aa498401e}} 
+void {\bfseries reset\+Flag} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_aa9ea5ef91936674a77ee3a6d040d22dc}\label{class_pythia8_1_1_settings_aa9ea5ef91936674a77ee3a6d040d22dc}} 
+void {\bfseries reset\+Mode} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a079a5795eebf94f536582c96b3739317}\label{class_pythia8_1_1_settings_a079a5795eebf94f536582c96b3739317}} 
+void {\bfseries reset\+Parm} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a38d7f61338e69d925b9b939e3a771d02}\label{class_pythia8_1_1_settings_a38d7f61338e69d925b9b939e3a771d02}} 
+void {\bfseries reset\+Word} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a3b37ef6d5d5f8a5e8f880c6bc0957473}\label{class_pythia8_1_1_settings_a3b37ef6d5d5f8a5e8f880c6bc0957473}} 
+void {\bfseries reset\+F\+Vec} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_ac9e7be4193ccbd228e3089dad4353897}\label{class_pythia8_1_1_settings_ac9e7be4193ccbd228e3089dad4353897}} 
+void {\bfseries reset\+M\+Vec} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a22c7da67d69812488b45904d157ca680}\label{class_pythia8_1_1_settings_a22c7da67d69812488b45904d157ca680}} 
+void {\bfseries reset\+P\+Vec} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a4dea02c92594c4be9d89d63cbff6d16f}\label{class_pythia8_1_1_settings_a4dea02c92594c4be9d89d63cbff6d16f}} 
+void {\bfseries reset\+W\+Vec} (string key\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a5ee84930a1776beec9adf673ccb5b10a}\label{class_pythia8_1_1_settings_a5ee84930a1776beec9adf673ccb5b10a}} 
+bool {\bfseries get\+Is\+Init} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a4033a62d10127a01f2bab7d820a82302}\label{class_pythia8_1_1_settings_a4033a62d10127a01f2bab7d820a82302}} 
+bool {\bfseries reading\+Failed} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_settings_a9cc82de5083d7fe2eea23b116e746438}\label{class_pythia8_1_1_settings_a9cc82de5083d7fe2eea23b116e746438}} 
+bool {\bfseries unfinished\+Input} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/Settings.\+h\item 
+src/Settings.\+cc\end{DoxyCompactItemize}

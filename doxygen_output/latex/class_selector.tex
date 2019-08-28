@@ -1,0 +1,84 @@
+\hypertarget{class_selector}{}\doxysection{Selector Class Reference}
+\label{class_selector}\index{Selector@{Selector}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_selector_1_1_invalid_area}{Invalid\+Area}}
+\item 
+class \mbox{\hyperlink{class_selector_1_1_invalid_worker}{Invalid\+Worker}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_selector_aa90485c0046ab55f02ba8d17fe4a2f66}\label{class_selector_aa90485c0046ab55f02ba8d17fe4a2f66}} 
+{\bfseries Selector} (\mbox{\hyperlink{class_selector_worker}{Selector\+Worker}} $\ast$worker\+\_\+in)
+\item 
+\mbox{\Hypertarget{class_selector_a9f0a6fad340f1f69c6f6ab82247e5511}\label{class_selector_a9f0a6fad340f1f69c6f6ab82247e5511}} 
+bool {\bfseries pass} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&jet) const
+\item 
+\mbox{\Hypertarget{class_selector_a918fd9bf03c4c9bf9b74200240962791}\label{class_selector_a918fd9bf03c4c9bf9b74200240962791}} 
+bool {\bfseries operator()} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&jet) const
+\item 
+\mbox{\Hypertarget{class_selector_aa837bed81e020784e55a3c2a452e80bd}\label{class_selector_aa837bed81e020784e55a3c2a452e80bd}} 
+unsigned int {\bfseries count} (const std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ \&jets) const
+\item 
+\mbox{\Hypertarget{class_selector_a5d860301684a6ec228bc09708ce12237}\label{class_selector_a5d860301684a6ec228bc09708ce12237}} 
+\mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} {\bfseries sum} (const std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ \&jets) const
+\item 
+\mbox{\Hypertarget{class_selector_a600b29f8a7d00df697a5be7e2ea41b5c}\label{class_selector_a600b29f8a7d00df697a5be7e2ea41b5c}} 
+double {\bfseries scalar\+\_\+pt\+\_\+sum} (const std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ \&jets) const
+\item 
+\mbox{\Hypertarget{class_selector_af2afdd0c70679f0f9e4603885d60c01f}\label{class_selector_af2afdd0c70679f0f9e4603885d60c01f}} 
+void {\bfseries sift} (const std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ \&jets, std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ \&jets\+\_\+that\+\_\+pass, std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ \&jets\+\_\+that\+\_\+fail) const
+\item 
+\mbox{\Hypertarget{class_selector_a1bebe9d9fc00dd642e1a901bdea3c0c9}\label{class_selector_a1bebe9d9fc00dd642e1a901bdea3c0c9}} 
+bool {\bfseries applies\+\_\+jet\+\_\+by\+\_\+jet} () const
+\item 
+\mbox{\Hypertarget{class_selector_ac0d9f0fcfcfaa1a90af5fce8fa2b5e2b}\label{class_selector_ac0d9f0fcfcfaa1a90af5fce8fa2b5e2b}} 
+std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ {\bfseries operator()} (const std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ \&jets) const
+\item 
+\mbox{\Hypertarget{class_selector_ab0f0b3359bbc718cf8277d1223bba509}\label{class_selector_ab0f0b3359bbc718cf8277d1223bba509}} 
+virtual void {\bfseries nullify\+\_\+non\+\_\+selected} (std\+::vector$<$ const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $\ast$ $>$ \&jets) const
+\item 
+\mbox{\Hypertarget{class_selector_afe650d58d013ac2c10978fe023ec512e}\label{class_selector_afe650d58d013ac2c10978fe023ec512e}} 
+void {\bfseries get\+\_\+rapidity\+\_\+extent} (double \&rapmin, double \&rapmax) const
+\item 
+\mbox{\Hypertarget{class_selector_a1cb9ea7f4934a16a136f06984e57d129}\label{class_selector_a1cb9ea7f4934a16a136f06984e57d129}} 
+std\+::string {\bfseries description} () const
+\item 
+\mbox{\Hypertarget{class_selector_a676cb037fec07daba92511aabf5064e3}\label{class_selector_a676cb037fec07daba92511aabf5064e3}} 
+bool {\bfseries is\+\_\+geometric} () const
+\item 
+\mbox{\Hypertarget{class_selector_aee6627476d98b0b06369b4c651f853a2}\label{class_selector_aee6627476d98b0b06369b4c651f853a2}} 
+bool {\bfseries has\+\_\+finite\+\_\+area} () const
+\item 
+\mbox{\Hypertarget{class_selector_a1f9c9de8296272df8157b9fc8448c524}\label{class_selector_a1f9c9de8296272df8157b9fc8448c524}} 
+const \mbox{\hyperlink{class_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_selector_worker}{Selector\+Worker}} $>$ \& {\bfseries worker} () const
+\item 
+\mbox{\Hypertarget{class_selector_a4abca690711f4cc9228c6747094a4ab6}\label{class_selector_a4abca690711f4cc9228c6747094a4ab6}} 
+const \mbox{\hyperlink{class_selector_worker}{Selector\+Worker}} $\ast$ {\bfseries validated\+\_\+worker} () const
+\item 
+\mbox{\Hypertarget{class_selector_a4b36b61091a55fdeb03aa6dbd35d3b76}\label{class_selector_a4b36b61091a55fdeb03aa6dbd35d3b76}} 
+bool {\bfseries takes\+\_\+reference} () const
+\item 
+\mbox{\Hypertarget{class_selector_abf3ea666975091643ee7a2bc8c8196cf}\label{class_selector_abf3ea666975091643ee7a2bc8c8196cf}} 
+const \mbox{\hyperlink{class_selector}{Selector}} \& {\bfseries set\+\_\+reference} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&reference)
+\item 
+\mbox{\Hypertarget{class_selector_a5a9861721292f63e2cf29209c0f7132f}\label{class_selector_a5a9861721292f63e2cf29209c0f7132f}} 
+\mbox{\hyperlink{class_selector}{Selector}} \& {\bfseries operator\&=} (const \mbox{\hyperlink{class_selector}{Selector}} \&b)
+\item 
+\mbox{\Hypertarget{class_selector_ace7da132f85c252b945771424bb163bd}\label{class_selector_ace7da132f85c252b945771424bb163bd}} 
+\mbox{\hyperlink{class_selector}{Selector}} \& {\bfseries operator$\vert$=} (const \mbox{\hyperlink{class_selector}{Selector}} \&b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_selector_acdc2da22a19f81e017702136899cf180}\label{class_selector_acdc2da22a19f81e017702136899cf180}} 
+void {\bfseries \+\_\+copy\+\_\+worker\+\_\+if\+\_\+needed} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/F\+Jcore.\+h\item 
+src/F\+Jcore.\+cc\end{DoxyCompactItemize}

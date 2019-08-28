@@ -1,0 +1,115 @@
+\hypertarget{class_lazy_tiling9_alt}{}\doxysection{Lazy\+Tiling9\+Alt Class Reference}
+\label{class_lazy_tiling9_alt}\index{LazyTiling9Alt@{LazyTiling9Alt}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_ab913591cbf2ebdf06ca97a54ec474dd8}\label{class_lazy_tiling9_alt_ab913591cbf2ebdf06ca97a54ec474dd8}} 
+{\bfseries Lazy\+Tiling9\+Alt} (\mbox{\hyperlink{class_cluster_sequence}{Cluster\+Sequence}} \&cs)
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_ac84f56586f04bf876590c60b0b015806}\label{class_lazy_tiling9_alt_ac84f56586f04bf876590c60b0b015806}} 
+void {\bfseries run} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a49b58fbc44131003e18059ae573ffc52}\label{class_lazy_tiling9_alt_a49b58fbc44131003e18059ae573ffc52}} 
+void {\bfseries \+\_\+initialise\+\_\+tiles} ()
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a7025bc4007f5b0f821af6d2025a533bd}\label{class_lazy_tiling9_alt_a7025bc4007f5b0f821af6d2025a533bd}} 
+int {\bfseries \+\_\+tile\+\_\+index} (int ieta, int iphi) const
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a34935a01ded9d31425d43fcbf3047c9e}\label{class_lazy_tiling9_alt_a34935a01ded9d31425d43fcbf3047c9e}} 
+void {\bfseries \+\_\+bj\+\_\+remove\+\_\+from\+\_\+tiles} (\mbox{\hyperlink{class_tiled_jet}{Tiled\+Jet}} $\ast$const jet)
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a9eab38e5f0232b98bc96a62bcbe7c0a8}\label{class_lazy_tiling9_alt_a9eab38e5f0232b98bc96a62bcbe7c0a8}} 
+int {\bfseries \+\_\+tile\+\_\+index} (const double eta, const double phi) const
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_ab06aa2645325f0dc3cf75704834898ec}\label{class_lazy_tiling9_alt_ab06aa2645325f0dc3cf75704834898ec}} 
+void {\bfseries \+\_\+tj\+\_\+set\+\_\+jetinfo} (\mbox{\hyperlink{class_tiled_jet}{Tiled\+Jet}} $\ast$const jet, const int \+\_\+jets\+\_\+index)
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a3e17a3511f199a44e9a68041e3c0b3a1}\label{class_lazy_tiling9_alt_a3e17a3511f199a44e9a68041e3c0b3a1}} 
+void {\bfseries \+\_\+print\+\_\+tiles} (\mbox{\hyperlink{class_tiled_jet}{Tiled\+Jet}} $\ast$briefjets) const
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_ac0b304d4781b2627178c13bf08c2bc05}\label{class_lazy_tiling9_alt_ac0b304d4781b2627178c13bf08c2bc05}} 
+void {\bfseries \+\_\+add\+\_\+neighbours\+\_\+to\+\_\+tile\+\_\+union} (const int tile\+\_\+index, std\+::vector$<$ int $>$ \&tile\+\_\+union, int \&n\+\_\+near\+\_\+tiles) const
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a0b6dca001f406eae6eb03a4b41f6d5c7}\label{class_lazy_tiling9_alt_a0b6dca001f406eae6eb03a4b41f6d5c7}} 
+void {\bfseries \+\_\+add\+\_\+untagged\+\_\+neighbours\+\_\+to\+\_\+tile\+\_\+union} (const int tile\+\_\+index, std\+::vector$<$ int $>$ \&tile\+\_\+union, int \&n\+\_\+near\+\_\+tiles)
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a494f7447beed4925b4e0cefbda761ee8}\label{class_lazy_tiling9_alt_a494f7447beed4925b4e0cefbda761ee8}} 
+void {\bfseries \+\_\+add\+\_\+untagged\+\_\+neighbours\+\_\+to\+\_\+tile\+\_\+union\+\_\+using\+\_\+max\+\_\+info} (const \mbox{\hyperlink{class_tiled_jet}{Tiled\+Jet}} $\ast$const jet, std\+::vector$<$ int $>$ \&tile\+\_\+union, int \&n\+\_\+near\+\_\+tiles)
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_abe7dd3e938c46d2625e2e9a6a8657aa2}\label{class_lazy_tiling9_alt_abe7dd3e938c46d2625e2e9a6a8657aa2}} 
+void {\bfseries \+\_\+update\+\_\+jet\+X\+\_\+jet\+I\+\_\+\+NN} (\mbox{\hyperlink{class_tiled_jet}{Tiled\+Jet}} $\ast$jetX, \mbox{\hyperlink{class_tiled_jet}{Tiled\+Jet}} $\ast$jetI, std\+::vector$<$ \mbox{\hyperlink{class_tiled_jet}{Tiled\+Jet}} $\ast$ $>$ \&jets\+\_\+for\+\_\+minheap)
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a610f988049ee51f745cdd79a0b97df01}\label{class_lazy_tiling9_alt_a610f988049ee51f745cdd79a0b97df01}} 
+void {\bfseries \+\_\+set\+\_\+\+NN} (\mbox{\hyperlink{class_tiled_jet}{Tiled\+Jet}} $\ast$jetI, std\+::vector$<$ \mbox{\hyperlink{class_tiled_jet}{Tiled\+Jet}} $\ast$ $>$ \&jets\+\_\+for\+\_\+minheap)
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a6a4c6e177fb987ab7a70f4e43cd04bb0}\label{class_lazy_tiling9_alt_a6a4c6e177fb987ab7a70f4e43cd04bb0}} 
+{\footnotesize template$<$class J $>$ }\\double {\bfseries \+\_\+bj\+\_\+diJ} (const J $\ast$const jet) const
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_aa88855312c3c7763e4e4c9ebd1be1987}\label{class_lazy_tiling9_alt_aa88855312c3c7763e4e4c9ebd1be1987}} 
+{\footnotesize template$<$class J $>$ }\\void {\bfseries \+\_\+bj\+\_\+set\+\_\+jetinfo} (J $\ast$const jetA, const int \+\_\+jets\+\_\+index) const
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a50e5749e4be4f6d1314ed7bf13f1bf13}\label{class_lazy_tiling9_alt_a50e5749e4be4f6d1314ed7bf13f1bf13}} 
+{\footnotesize template$<$class J $>$ }\\double {\bfseries \+\_\+bj\+\_\+dist} (const J $\ast$const jetA, const J $\ast$const jetB) const
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_aa0a17849173b02e24b3cb2db3cabec71}\label{class_lazy_tiling9_alt_aa0a17849173b02e24b3cb2db3cabec71}} 
+{\footnotesize template$<$class J $>$ }\\double {\bfseries \+\_\+bj\+\_\+dist\+\_\+not\+\_\+periodic} (const J $\ast$const jetA, const J $\ast$const jetB) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_aa178ac68f7b0cde61f9102276957cdb5}\label{class_lazy_tiling9_alt_aa178ac68f7b0cde61f9102276957cdb5}} 
+\mbox{\hyperlink{class_cluster_sequence}{Cluster\+Sequence}} \& {\bfseries \+\_\+cs}
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a3d3a32b461c65d2de87fc0bf3f46757b}\label{class_lazy_tiling9_alt_a3d3a32b461c65d2de87fc0bf3f46757b}} 
+const std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ \& {\bfseries \+\_\+jets}
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_adef8064e807ea59bcad029deaa66883a}\label{class_lazy_tiling9_alt_adef8064e807ea59bcad029deaa66883a}} 
+std\+::vector$<$ \mbox{\hyperlink{class_tile}{Tile}} $>$ {\bfseries \+\_\+tiles}
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a9fc9bfd272cca34b93ded55e9269fa85}\label{class_lazy_tiling9_alt_a9fc9bfd272cca34b93ded55e9269fa85}} 
+double {\bfseries \+\_\+\+Rparam}
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a5f9fae9719f3b1bbdf0d3c12fcd5f2b4}\label{class_lazy_tiling9_alt_a5f9fae9719f3b1bbdf0d3c12fcd5f2b4}} 
+double {\bfseries \+\_\+\+R2}
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a72e777ed159e2d08314079248787ee07}\label{class_lazy_tiling9_alt_a72e777ed159e2d08314079248787ee07}} 
+double {\bfseries \+\_\+inv\+R2}
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_ac32fb405bf33639ccff8298608f61e93}\label{class_lazy_tiling9_alt_ac32fb405bf33639ccff8298608f61e93}} 
+double {\bfseries \+\_\+tiles\+\_\+eta\+\_\+min}
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_af12c3d5af7b660271ecb42d9ed7ce8f2}\label{class_lazy_tiling9_alt_af12c3d5af7b660271ecb42d9ed7ce8f2}} 
+double {\bfseries \+\_\+tiles\+\_\+eta\+\_\+max}
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a311e075e7c55de8df64ec224ab173f48}\label{class_lazy_tiling9_alt_a311e075e7c55de8df64ec224ab173f48}} 
+double {\bfseries \+\_\+tile\+\_\+size\+\_\+eta}
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a8cd3408521104c153b58709bd47b578f}\label{class_lazy_tiling9_alt_a8cd3408521104c153b58709bd47b578f}} 
+double {\bfseries \+\_\+tile\+\_\+size\+\_\+phi}
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a07d6b04e9ba468108741f255374824d9}\label{class_lazy_tiling9_alt_a07d6b04e9ba468108741f255374824d9}} 
+double {\bfseries \+\_\+tile\+\_\+half\+\_\+size\+\_\+eta}
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_ab44b92c53982b5265ff23b819e723c22}\label{class_lazy_tiling9_alt_ab44b92c53982b5265ff23b819e723c22}} 
+double {\bfseries \+\_\+tile\+\_\+half\+\_\+size\+\_\+phi}
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a094538bf3c56ecfc1cb1193b44f86a1b}\label{class_lazy_tiling9_alt_a094538bf3c56ecfc1cb1193b44f86a1b}} 
+int {\bfseries \+\_\+n\+\_\+tiles\+\_\+phi}
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_acbe0b1edd05c6897941261f4441048dc}\label{class_lazy_tiling9_alt_acbe0b1edd05c6897941261f4441048dc}} 
+int {\bfseries \+\_\+tiles\+\_\+ieta\+\_\+min}
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_af353acf9bd821a65c0c3aa7f1f88b81d}\label{class_lazy_tiling9_alt_af353acf9bd821a65c0c3aa7f1f88b81d}} 
+int {\bfseries \+\_\+tiles\+\_\+ieta\+\_\+max}
+\item 
+\mbox{\Hypertarget{class_lazy_tiling9_alt_a7860071f55e0ff4cdadd30e13995c0d0}\label{class_lazy_tiling9_alt_a7860071f55e0ff4cdadd30e13995c0d0}} 
+std\+::vector$<$ \mbox{\hyperlink{class_tiled_jet}{Tiled\+Jet}} $\ast$ $>$ {\bfseries \+\_\+jets\+\_\+for\+\_\+minheap}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/F\+Jcore.\+cc\end{DoxyCompactItemize}

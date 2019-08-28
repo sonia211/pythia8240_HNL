@@ -1,0 +1,92 @@
+\hypertarget{class_pythia8_1_1_helicity_matrix_element}{}\doxysection{Pythia8\+::Helicity\+Matrix\+Element Class Reference}
+\label{class_pythia8_1_1_helicity_matrix_element}\index{Pythia8::HelicityMatrixElement@{Pythia8::HelicityMatrixElement}}
+Inheritance diagram for Pythia8\+::Helicity\+Matrix\+Element\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.311828cm]{class_pythia8_1_1_helicity_matrix_element}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_a364a607db9cb6c6120723876ff877038}\label{class_pythia8_1_1_helicity_matrix_element_a364a607db9cb6c6120723876ff877038}} 
+virtual void {\bfseries init\+Pointers} (\mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$, \mbox{\hyperlink{class_pythia8_1_1_couplings}{Couplings}} $\ast$, \mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} $\ast$=0)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_a81183ada9205e018f57224fbe4bbff1c}\label{class_pythia8_1_1_helicity_matrix_element_a81183ada9205e018f57224fbe4bbff1c}} 
+virtual \mbox{\hyperlink{class_pythia8_1_1_helicity_matrix_element}{Helicity\+Matrix\+Element}} $\ast$ {\bfseries init\+Channel} (vector$<$ \mbox{\hyperlink{class_pythia8_1_1_helicity_particle}{Helicity\+Particle}} $>$ \&)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_a28e92210520b89902fdc5bc15ac145f3}\label{class_pythia8_1_1_helicity_matrix_element_a28e92210520b89902fdc5bc15ac145f3}} 
+virtual double {\bfseries decay\+Weight} (vector$<$ \mbox{\hyperlink{class_pythia8_1_1_helicity_particle}{Helicity\+Particle}} $>$ \&)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_a88729e8ab3ca1cef813069ea75412669}\label{class_pythia8_1_1_helicity_matrix_element_a88729e8ab3ca1cef813069ea75412669}} 
+virtual double {\bfseries decay\+Weight\+Max} (vector$<$ \mbox{\hyperlink{class_pythia8_1_1_helicity_particle}{Helicity\+Particle}} $>$ \&)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_a7e33c51a9430fe164f73b2bb9c41660e}\label{class_pythia8_1_1_helicity_matrix_element_a7e33c51a9430fe164f73b2bb9c41660e}} 
+virtual complex {\bfseries calculate\+ME} (vector$<$ int $>$)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_ac033fe797375515f7c7413a38ccf3db0}\label{class_pythia8_1_1_helicity_matrix_element_ac033fe797375515f7c7413a38ccf3db0}} 
+virtual void {\bfseries calculateD} (vector$<$ \mbox{\hyperlink{class_pythia8_1_1_helicity_particle}{Helicity\+Particle}} $>$ \&)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_acf7d370ef49e78bde49cbb4ff0c41349}\label{class_pythia8_1_1_helicity_matrix_element_acf7d370ef49e78bde49cbb4ff0c41349}} 
+virtual void {\bfseries calculate\+Rho} (unsigned int, vector$<$ \mbox{\hyperlink{class_pythia8_1_1_helicity_particle}{Helicity\+Particle}} $>$ \&)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_aa4b9acc9ebd428428f6ce3cbd834dda7}\label{class_pythia8_1_1_helicity_matrix_element_aa4b9acc9ebd428428f6ce3cbd834dda7}} 
+void {\bfseries set\+Fermion\+Line} (int, \mbox{\hyperlink{class_pythia8_1_1_helicity_particle}{Helicity\+Particle}} \&, \mbox{\hyperlink{class_pythia8_1_1_helicity_particle}{Helicity\+Particle}} \&)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_a01726c316d9559e66eaac8446a32e171}\label{class_pythia8_1_1_helicity_matrix_element_a01726c316d9559e66eaac8446a32e171}} 
+virtual complex {\bfseries breit\+Wigner} (double s, double M, double G)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_a7dfb4a34646a5459d997f8a59a2126f6}\label{class_pythia8_1_1_helicity_matrix_element_a7dfb4a34646a5459d997f8a59a2126f6}} 
+virtual complex {\bfseries s\+Breit\+Wigner} (double m0, double m1, double s, double M, double G)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_a4fe75ddd9ffa4321d933443f36b387ce}\label{class_pythia8_1_1_helicity_matrix_element_a4fe75ddd9ffa4321d933443f36b387ce}} 
+virtual complex {\bfseries p\+Breit\+Wigner} (double m0, double m1, double s, double M, double G)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_a8e1d5ede39f4c6f93df6107101e3ea90}\label{class_pythia8_1_1_helicity_matrix_element_a8e1d5ede39f4c6f93df6107101e3ea90}} 
+virtual complex {\bfseries d\+Breit\+Wigner} (double m0, double m1, double s, double M, double G)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_aa8ee1a44e810649502461d650c61df53}\label{class_pythia8_1_1_helicity_matrix_element_aa8ee1a44e810649502461d650c61df53}} 
+virtual void {\bfseries init\+Constants} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_aeb8a4f4f7f6089f3ae79324ea0c7f260}\label{class_pythia8_1_1_helicity_matrix_element_aeb8a4f4f7f6089f3ae79324ea0c7f260}} 
+virtual void {\bfseries init\+Waves} (vector$<$ \mbox{\hyperlink{class_pythia8_1_1_helicity_particle}{Helicity\+Particle}} $>$ \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_af39a497124615fb4bb8bc7c6f997e720}\label{class_pythia8_1_1_helicity_matrix_element_af39a497124615fb4bb8bc7c6f997e720}} 
+double {\bfseries D\+E\+C\+A\+Y\+W\+E\+I\+G\+H\+T\+M\+AX}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_a104617d75f7da0741faab7e74f845b4f}\label{class_pythia8_1_1_helicity_matrix_element_a104617d75f7da0741faab7e74f845b4f}} 
+vector$<$ \mbox{\hyperlink{class_pythia8_1_1_gamma_matrix}{Gamma\+Matrix}} $>$ {\bfseries gamma}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_a5365a219d16ccc52b27703d30a4d9f28}\label{class_pythia8_1_1_helicity_matrix_element_a5365a219d16ccc52b27703d30a4d9f28}} 
+vector$<$ int $>$ {\bfseries p\+Map}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_a3afb8f0d4e265e6ab5f8b0af445ebf01}\label{class_pythia8_1_1_helicity_matrix_element_a3afb8f0d4e265e6ab5f8b0af445ebf01}} 
+vector$<$ int $>$ {\bfseries p\+ID}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_af402ca10eb694d7e76b3a05b6a04f0a0}\label{class_pythia8_1_1_helicity_matrix_element_af402ca10eb694d7e76b3a05b6a04f0a0}} 
+vector$<$ double $>$ {\bfseries pM}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_ab6f4faee86c0ce0a119aa29831c9d8f6}\label{class_pythia8_1_1_helicity_matrix_element_ab6f4faee86c0ce0a119aa29831c9d8f6}} 
+vector$<$ vector$<$ \mbox{\hyperlink{class_pythia8_1_1_wave4}{Wave4}} $>$ $>$ {\bfseries u}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_a3a8b9178484de9f37b6e7be016cbd0f4}\label{class_pythia8_1_1_helicity_matrix_element_a3a8b9178484de9f37b6e7be016cbd0f4}} 
+\mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$ {\bfseries particle\+Data\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_a1c95b13e08964c2db1f3cf59d948f511}\label{class_pythia8_1_1_helicity_matrix_element_a1c95b13e08964c2db1f3cf59d948f511}} 
+\mbox{\hyperlink{class_pythia8_1_1_couplings}{Couplings}} $\ast$ {\bfseries couplings\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_helicity_matrix_element_ad6b3784c1224357d40d35aebbaa4ad46}\label{class_pythia8_1_1_helicity_matrix_element_ad6b3784c1224357d40d35aebbaa4ad46}} 
+\mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} $\ast$ {\bfseries settings\+Ptr}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/Helicity\+Matrix\+Elements.\+h\item 
+src/Helicity\+Matrix\+Elements.\+cc\end{DoxyCompactItemize}

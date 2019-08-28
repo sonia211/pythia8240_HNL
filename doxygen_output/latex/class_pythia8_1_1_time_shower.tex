@@ -1,0 +1,205 @@
+\hypertarget{class_pythia8_1_1_time_shower}{}\doxysection{Pythia8\+::Time\+Shower Class Reference}
+\label{class_pythia8_1_1_time_shower}\index{Pythia8::TimeShower@{Pythia8::TimeShower}}
+Inheritance diagram for Pythia8\+::Time\+Shower\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pythia8_1_1_time_shower}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_aa98e643ec6dd5e71bef89117e96518ea}\label{class_pythia8_1_1_time_shower_aa98e643ec6dd5e71bef89117e96518ea}} 
+void {\bfseries init\+Ptr} (\mbox{\hyperlink{class_pythia8_1_1_info}{Info}} $\ast$info\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} $\ast$settings\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$particle\+Data\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_rndm}{Rndm}} $\ast$rndm\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_coup_s_m}{Coup\+SM}} $\ast$coup\+S\+M\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_parton_systems}{Parton\+Systems}} $\ast$parton\+Systems\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_user_hooks}{User\+Hooks}} $\ast$user\+Hooks\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_merging_hooks}{Merging\+Hooks}} $\ast$merging\+Hooks\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_parton_vertex}{Parton\+Vertex}} $\ast$parton\+Vertex\+Ptr\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a930b68d56982c872b2af653c3af96da5}\label{class_pythia8_1_1_time_shower_a930b68d56982c872b2af653c3af96da5}} 
+void {\bfseries reassign\+Beam\+Ptrs} (\mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$beam\+A\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$beam\+B\+Ptr\+In, int beam\+Offset\+In=0)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a192c6aa7ffd27ec77dd32ecb3c980f1b}\label{class_pythia8_1_1_time_shower_a192c6aa7ffd27ec77dd32ecb3c980f1b}} 
+virtual void {\bfseries init} (\mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$=0, \mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$=0)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a28597fa6ee40fd7dec9fb9ee8cf53a78}\label{class_pythia8_1_1_time_shower_a28597fa6ee40fd7dec9fb9ee8cf53a78}} 
+virtual bool {\bfseries limit\+P\+Tmax} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, double=0., double=0.)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a46809deb28199198dee273189f163eb0}\label{class_pythia8_1_1_time_shower_a46809deb28199198dee273189f163eb0}} 
+virtual int {\bfseries shower} (int, int, \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, double, int=0)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a3d82365fa1520d553da8e9498491820f}\label{class_pythia8_1_1_time_shower_a3d82365fa1520d553da8e9498491820f}} 
+virtual int {\bfseries shower\+Q\+ED} (int, int, \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, double)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a616ee47496cc4fb8b83e6bfe5915b569}\label{class_pythia8_1_1_time_shower_a616ee47496cc4fb8b83e6bfe5915b569}} 
+virtual int {\bfseries shower\+Q\+E\+Dafter\+Remnants} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a2adcf5ab0484fe033044c3496ffc2699}\label{class_pythia8_1_1_time_shower_a2adcf5ab0484fe033044c3496ffc2699}} 
+virtual void {\bfseries prepare\+Global} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a4a781d75b84a0ecc52935c9867e217f5}\label{class_pythia8_1_1_time_shower_a4a781d75b84a0ecc52935c9867e217f5}} 
+virtual void {\bfseries prepare} (int, \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, bool=true)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_ace85feae5e2f0e8c223360194d28a23a}\label{class_pythia8_1_1_time_shower_ace85feae5e2f0e8c223360194d28a23a}} 
+virtual void {\bfseries rescatter\+Update} (int, \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_ab979dbdc6d7be348b45d767804c160e8}\label{class_pythia8_1_1_time_shower_ab979dbdc6d7be348b45d767804c160e8}} 
+virtual void {\bfseries update} (int, \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, bool=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a174975678d34f7812745a95d456c27dc}\label{class_pythia8_1_1_time_shower_a174975678d34f7812745a95d456c27dc}} 
+virtual double {\bfseries p\+Tnext} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, double, double, bool=false, bool=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_aa1173aa361d738e4de026dcdbe7502ac}\label{class_pythia8_1_1_time_shower_aa1173aa361d738e4de026dcdbe7502ac}} 
+virtual bool {\bfseries branch} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, bool=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a7ab13eea25f7a43acd9aa09fa25fe843}\label{class_pythia8_1_1_time_shower_a7ab13eea25f7a43acd9aa09fa25fe843}} 
+virtual void {\bfseries list} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a2a3937e66844a8fef5919f74cb912a76}\label{class_pythia8_1_1_time_shower_a2a3937e66844a8fef5919f74cb912a76}} 
+virtual bool {\bfseries init\+Uncertainties} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a4437ae37ba097c6646bda3754b54efa8}\label{class_pythia8_1_1_time_shower_a4437ae37ba097c6646bda3754b54efa8}} 
+virtual bool {\bfseries get\+Has\+Weakly\+Radiated} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a32e12b39791b1dac80601b8fd4f83f13}\label{class_pythia8_1_1_time_shower_a32e12b39791b1dac80601b8fd4f83f13}} 
+virtual int {\bfseries system} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a15613b996bd36618102e25abd602d68c}\label{class_pythia8_1_1_time_shower_a15613b996bd36618102e25abd602d68c}} 
+virtual double {\bfseries enhance\+P\+Tmax} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a32a503706a1eb6e2347483bae8d5204f}\label{class_pythia8_1_1_time_shower_a32a503706a1eb6e2347483bae8d5204f}} 
+virtual double {\bfseries p\+T\+Last\+In\+Shower} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a5892c4287608f7d8e6395f0b0d93a9c4}\label{class_pythia8_1_1_time_shower_a5892c4287608f7d8e6395f0b0d93a9c4}} 
+virtual \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} {\bfseries clustered} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, int, int, int, string)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_aea88be52c45f0da2b409f30485dc4ef7}\label{class_pythia8_1_1_time_shower_aea88be52c45f0da2b409f30485dc4ef7}} 
+virtual map$<$ string, double $>$ {\bfseries get\+State\+Variables} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, int, int, int, string)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a31de856e4f9f644fe0a9e777d004ce17}\label{class_pythia8_1_1_time_shower_a31de856e4f9f644fe0a9e777d004ce17}} 
+virtual bool {\bfseries is\+Timelike} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, int, int, int, string)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_aba85e96211990b0265f99dbf732440bc}\label{class_pythia8_1_1_time_shower_aba85e96211990b0265f99dbf732440bc}} 
+virtual vector$<$ string $>$ {\bfseries get\+Splitting\+Name} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, int, int, int)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_ae6197aa617f6ba65a494a28ef82f1475}\label{class_pythia8_1_1_time_shower_ae6197aa617f6ba65a494a28ef82f1475}} 
+virtual double {\bfseries get\+Splitting\+Prob} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, int, int, int, string)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_ad44f3490a37c67f5e51f9e00507ed337}\label{class_pythia8_1_1_time_shower_ad44f3490a37c67f5e51f9e00507ed337}} 
+virtual bool {\bfseries allowed\+Splitting} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, int, int)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a70704dbfd4bb2161d267600e7591370a}\label{class_pythia8_1_1_time_shower_a70704dbfd4bb2161d267600e7591370a}} 
+virtual vector$<$ int $>$ {\bfseries get\+Recoilers} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, int, int, string)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a80823707c4c484f4a0d68fa2e13f823f}\label{class_pythia8_1_1_time_shower_a80823707c4c484f4a0d68fa2e13f823f}} 
+\mbox{\hyperlink{class_pythia8_1_1_merging_hooks}{Merging\+Hooks}} $\ast$ {\bfseries merging\+Hooks\+Ptr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a6958ad80b73d357610442dfc937475a4}\label{class_pythia8_1_1_time_shower_a6958ad80b73d357610442dfc937475a4}} 
+\mbox{\hyperlink{class_pythia8_1_1_info}{Info}} $\ast$ {\bfseries info\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a1cb2ef7dd1fb53e35342720fcb53ab8b}\label{class_pythia8_1_1_time_shower_a1cb2ef7dd1fb53e35342720fcb53ab8b}} 
+\mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} $\ast$ {\bfseries settings\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a44a1c237c760eab0699c5d6c88605e19}\label{class_pythia8_1_1_time_shower_a44a1c237c760eab0699c5d6c88605e19}} 
+\mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$ {\bfseries particle\+Data\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_adf5258c7ed941ec291ffffcda82868d5}\label{class_pythia8_1_1_time_shower_adf5258c7ed941ec291ffffcda82868d5}} 
+\mbox{\hyperlink{class_pythia8_1_1_rndm}{Rndm}} $\ast$ {\bfseries rndm\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a26d47cc29364ad09eac9183360db14f0}\label{class_pythia8_1_1_time_shower_a26d47cc29364ad09eac9183360db14f0}} 
+\mbox{\hyperlink{class_pythia8_1_1_coup_s_m}{Coup\+SM}} $\ast$ {\bfseries coup\+S\+M\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_ab319575c2cdb0b1149344dc992004e0d}\label{class_pythia8_1_1_time_shower_ab319575c2cdb0b1149344dc992004e0d}} 
+\mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$ {\bfseries beam\+A\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a8b2e3759835caebeeee745d8a946646c}\label{class_pythia8_1_1_time_shower_a8b2e3759835caebeeee745d8a946646c}} 
+\mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$ {\bfseries beam\+B\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a6602f623b793112df6967b1b81fbb4b3}\label{class_pythia8_1_1_time_shower_a6602f623b793112df6967b1b81fbb4b3}} 
+int {\bfseries beam\+Offset}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a10d0c76d5205f44651addf2d68c76398}\label{class_pythia8_1_1_time_shower_a10d0c76d5205f44651addf2d68c76398}} 
+\mbox{\hyperlink{class_pythia8_1_1_parton_systems}{Parton\+Systems}} $\ast$ {\bfseries parton\+Systems\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a8d36d42749a1f170ee52e6d97f472f83}\label{class_pythia8_1_1_time_shower_a8d36d42749a1f170ee52e6d97f472f83}} 
+\mbox{\hyperlink{class_pythia8_1_1_user_hooks}{User\+Hooks}} $\ast$ {\bfseries user\+Hooks\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a017d4c0d6a9cd835452213230618d54d}\label{class_pythia8_1_1_time_shower_a017d4c0d6a9cd835452213230618d54d}} 
+\mbox{\hyperlink{class_pythia8_1_1_parton_vertex}{Parton\+Vertex}} $\ast$ {\bfseries parton\+Vertex\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_ac1d195e5eaab468cb044cbbe831a5a4a}\label{class_pythia8_1_1_time_shower_ac1d195e5eaab468cb044cbbe831a5a4a}} 
+bool {\bfseries do\+Uncertainties}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a1fbe1cb1bca66579956b9b2047cc9f97}\label{class_pythia8_1_1_time_shower_a1fbe1cb1bca66579956b9b2047cc9f97}} 
+bool {\bfseries u\+Var\+Mu\+Soft\+Corr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_af87f240065142f381c7647e4346f8b33}\label{class_pythia8_1_1_time_shower_af87f240065142f381c7647e4346f8b33}} 
+bool {\bfseries u\+Var\+M\+P\+Ishowers}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_aea9a5ee74d06e38f86954d5a29d70204}\label{class_pythia8_1_1_time_shower_aea9a5ee74d06e38f86954d5a29d70204}} 
+bool {\bfseries no\+Res\+Variations}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_abddf9ffd5b3b35903fae98cfeca6521a}\label{class_pythia8_1_1_time_shower_abddf9ffd5b3b35903fae98cfeca6521a}} 
+bool {\bfseries no\+Proc\+Variations}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a368d9c25d50093f4e0e3b6bedb5a9976}\label{class_pythia8_1_1_time_shower_a368d9c25d50093f4e0e3b6bedb5a9976}} 
+int {\bfseries n\+Uncertainty\+Variations}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_adf4380fffff87b06c099f6059dbc0a19}\label{class_pythia8_1_1_time_shower_adf4380fffff87b06c099f6059dbc0a19}} 
+int {\bfseries n\+Var\+Q\+CD}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_ac89687f5c677ff8afd7d1e1056da2ca2}\label{class_pythia8_1_1_time_shower_ac89687f5c677ff8afd7d1e1056da2ca2}} 
+int {\bfseries u\+Var\+NflavQ}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_ab9b0c5f5102600ba8746853600b00f48}\label{class_pythia8_1_1_time_shower_ab9b0c5f5102600ba8746853600b00f48}} 
+double {\bfseries d\+A\+Smax}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a03dea864efda1526a4c6a98cddf4ea6e}\label{class_pythia8_1_1_time_shower_a03dea864efda1526a4c6a98cddf4ea6e}} 
+double {\bfseries c\+N\+Sp\+Tmin}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_aa70d13c8b63601f9b9f96605676fdaf8}\label{class_pythia8_1_1_time_shower_aa70d13c8b63601f9b9f96605676fdaf8}} 
+double {\bfseries u\+Varp\+Tmin2}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a23bb5966862f8500004082e1626ae470}\label{class_pythia8_1_1_time_shower_a23bb5966862f8500004082e1626ae470}} 
+double {\bfseries over\+Factor}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_ade56c2b8c53888ccc66c368076bb4a91}\label{class_pythia8_1_1_time_shower_ade56c2b8c53888ccc66c368076bb4a91}} 
+map$<$ int, double $>$ {\bfseries var\+G2\+G\+Gmu\+Rfac}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_af61667e21cae1849d31148f420adcb9e}\label{class_pythia8_1_1_time_shower_af61667e21cae1849d31148f420adcb9e}} 
+map$<$ int, double $>$ {\bfseries var\+Q2\+Q\+Gmu\+Rfac}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a666763c56578599495c5b6893140fe75}\label{class_pythia8_1_1_time_shower_a666763c56578599495c5b6893140fe75}} 
+map$<$ int, double $>$ {\bfseries var\+G2\+Q\+Qmu\+Rfac}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a0448372281f8c2327bb970963abdcd24}\label{class_pythia8_1_1_time_shower_a0448372281f8c2327bb970963abdcd24}} 
+map$<$ int, double $>$ {\bfseries var\+X2\+X\+Gmu\+Rfac}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_abf3373f0b817efa1fe0ceb2e5ac19632}\label{class_pythia8_1_1_time_shower_abf3373f0b817efa1fe0ceb2e5ac19632}} 
+map$<$ int, double $>$ {\bfseries var\+G2\+G\+Gc\+NS}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a007735c1f51d2eff5d3fe208b1274be4}\label{class_pythia8_1_1_time_shower_a007735c1f51d2eff5d3fe208b1274be4}} 
+map$<$ int, double $>$ {\bfseries var\+Q2\+Q\+Gc\+NS}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_aa2c5ad7219eaec6e4735959aa2a7ffa7}\label{class_pythia8_1_1_time_shower_aa2c5ad7219eaec6e4735959aa2a7ffa7}} 
+map$<$ int, double $>$ {\bfseries var\+G2\+Q\+Qc\+NS}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a5a08ec085afb789af2dde1bda030857e}\label{class_pythia8_1_1_time_shower_a5a08ec085afb789af2dde1bda030857e}} 
+map$<$ int, double $>$ {\bfseries var\+X2\+X\+Gc\+NS}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_ab1bad77d7f0f1acaf8ebefc9f9453ffe}\label{class_pythia8_1_1_time_shower_ab1bad77d7f0f1acaf8ebefc9f9453ffe}} 
+map$<$ int, double $>$ $\ast$ {\bfseries var\+P\+D\+Fplus}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a3fbe59adeee34dede595db14424fee8a}\label{class_pythia8_1_1_time_shower_a3fbe59adeee34dede595db14424fee8a}} 
+map$<$ int, double $>$ $\ast$ {\bfseries var\+P\+D\+Fminus}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_time_shower_a9dc9ae48f56485701d47076a2e6d2484}\label{class_pythia8_1_1_time_shower_a9dc9ae48f56485701d47076a2e6d2484}} 
+map$<$ int, double $>$ $\ast$ {\bfseries var\+P\+D\+Fmember}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/Time\+Shower.\+h\end{DoxyCompactItemize}

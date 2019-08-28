@@ -1,0 +1,193 @@
+\hypertarget{class_pythia8_1_1_space_shower}{}\doxysection{Pythia8\+::Space\+Shower Class Reference}
+\label{class_pythia8_1_1_space_shower}\index{Pythia8::SpaceShower@{Pythia8::SpaceShower}}
+Inheritance diagram for Pythia8\+::Space\+Shower\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pythia8_1_1_space_shower}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_ac1172f67843b7c1437b247a36b77b92b}\label{class_pythia8_1_1_space_shower_ac1172f67843b7c1437b247a36b77b92b}} 
+void {\bfseries init\+Ptr} (\mbox{\hyperlink{class_pythia8_1_1_info}{Info}} $\ast$info\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} $\ast$settings\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$particle\+Data\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_rndm}{Rndm}} $\ast$rndm\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_coup_s_m}{Coup\+SM}} $\ast$coup\+S\+M\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_parton_systems}{Parton\+Systems}} $\ast$parton\+Systems\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_user_hooks}{User\+Hooks}} $\ast$user\+Hooks\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_merging_hooks}{Merging\+Hooks}} $\ast$merging\+Hooks\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_parton_vertex}{Parton\+Vertex}} $\ast$parton\+Vertex\+Ptr\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_ac53a875bed5e29b3249f59cbc50b5f01}\label{class_pythia8_1_1_space_shower_ac53a875bed5e29b3249f59cbc50b5f01}} 
+void {\bfseries reassign\+Beam\+Ptrs} (\mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$beam\+A\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$beam\+B\+Ptr\+In, int beam\+Offset\+In=0)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_afddae082fe8f162230135bd97bf548bb}\label{class_pythia8_1_1_space_shower_afddae082fe8f162230135bd97bf548bb}} 
+virtual void {\bfseries init} (\mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$, \mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a300257c3773d4166d15bd00313a1f4ea}\label{class_pythia8_1_1_space_shower_a300257c3773d4166d15bd00313a1f4ea}} 
+virtual bool {\bfseries limit\+P\+Tmax} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, double=0., double=0.)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a27b045f0faa449a82f5af605bbcf9016}\label{class_pythia8_1_1_space_shower_a27b045f0faa449a82f5af605bbcf9016}} 
+virtual void {\bfseries prepare} (int, \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, bool=true)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_aeeb3149c6caf83af3e9e6538ea8bc6cc}\label{class_pythia8_1_1_space_shower_aeeb3149c6caf83af3e9e6538ea8bc6cc}} 
+virtual void {\bfseries update} (int, \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, bool=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a4a37493fdd094d1e812ab30025df5512}\label{class_pythia8_1_1_space_shower_a4a37493fdd094d1e812ab30025df5512}} 
+virtual double {\bfseries p\+Tnext} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, double, double, int=-\/1, bool=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_af7e86ce02f7c165456c157dd18160a47}\label{class_pythia8_1_1_space_shower_af7e86ce02f7c165456c157dd18160a47}} 
+virtual bool {\bfseries branch} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a8267d32d601bdd78ddde0868a138084f}\label{class_pythia8_1_1_space_shower_a8267d32d601bdd78ddde0868a138084f}} 
+virtual void {\bfseries list} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a0a1d0569aadfe325e35f2ef9b264019e}\label{class_pythia8_1_1_space_shower_a0a1d0569aadfe325e35f2ef9b264019e}} 
+virtual bool {\bfseries init\+Uncertainties} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_af301ddbad1019b08255f7ea1485cb66a}\label{class_pythia8_1_1_space_shower_af301ddbad1019b08255f7ea1485cb66a}} 
+virtual bool {\bfseries do\+Restart} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a1d88d338f06a5043f08d134eae5a6afe}\label{class_pythia8_1_1_space_shower_a1d88d338f06a5043f08d134eae5a6afe}} 
+virtual bool {\bfseries was\+Gamma2qqbar} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_ab079eb9e01f2c9802656655aa205acb9}\label{class_pythia8_1_1_space_shower_ab079eb9e01f2c9802656655aa205acb9}} 
+virtual bool {\bfseries get\+Has\+Weakly\+Radiated} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_accd5491ea2578338d64678d5c3dac265}\label{class_pythia8_1_1_space_shower_accd5491ea2578338d64678d5c3dac265}} 
+virtual int {\bfseries system} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a3e6d1c68944fa5fddc991d02f2da3da7}\label{class_pythia8_1_1_space_shower_a3e6d1c68944fa5fddc991d02f2da3da7}} 
+virtual double {\bfseries enhance\+P\+Tmax} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_af996d2fb558be27cff2cd62fd6f49e3f}\label{class_pythia8_1_1_space_shower_af996d2fb558be27cff2cd62fd6f49e3f}} 
+virtual \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} {\bfseries clustered} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, int, int, int, string)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_ae6c115d01cfd913ab4f80832bff21ab8}\label{class_pythia8_1_1_space_shower_ae6c115d01cfd913ab4f80832bff21ab8}} 
+virtual map$<$ string, double $>$ {\bfseries get\+State\+Variables} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, int, int, int, string)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a91deaccfae16571961ea32e246ba5d58}\label{class_pythia8_1_1_space_shower_a91deaccfae16571961ea32e246ba5d58}} 
+virtual bool {\bfseries is\+Spacelike} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, int, int, int, string)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_ae021b3b4618f28fd06dff79137bf6e39}\label{class_pythia8_1_1_space_shower_ae021b3b4618f28fd06dff79137bf6e39}} 
+virtual vector$<$ string $>$ {\bfseries get\+Splitting\+Name} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, int, int, int)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a9b95429606b0f85ef1666950e4106c5e}\label{class_pythia8_1_1_space_shower_a9b95429606b0f85ef1666950e4106c5e}} 
+virtual double {\bfseries get\+Splitting\+Prob} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, int, int, int, string)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_ab8730904c8744ac54dc5a7d985392546}\label{class_pythia8_1_1_space_shower_ab8730904c8744ac54dc5a7d985392546}} 
+virtual bool {\bfseries allowed\+Splitting} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, int, int)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_aa134b7d394d5ff368cc122ea59837e2c}\label{class_pythia8_1_1_space_shower_aa134b7d394d5ff368cc122ea59837e2c}} 
+virtual vector$<$ int $>$ {\bfseries get\+Recoilers} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, int, int, string)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_af50464a8c531d0f0c31b08056e9e162e}\label{class_pythia8_1_1_space_shower_af50464a8c531d0f0c31b08056e9e162e}} 
+\mbox{\hyperlink{class_pythia8_1_1_merging_hooks}{Merging\+Hooks}} $\ast$ {\bfseries merging\+Hooks\+Ptr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_ae2a2aae60a8a0cac6e59a5847384d2d8}\label{class_pythia8_1_1_space_shower_ae2a2aae60a8a0cac6e59a5847384d2d8}} 
+\mbox{\hyperlink{class_pythia8_1_1_info}{Info}} $\ast$ {\bfseries info\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a7da3b5690fbc5f3924ca892a168c7f95}\label{class_pythia8_1_1_space_shower_a7da3b5690fbc5f3924ca892a168c7f95}} 
+\mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} $\ast$ {\bfseries settings\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a8b61c4da2c47fec619823a63077468e1}\label{class_pythia8_1_1_space_shower_a8b61c4da2c47fec619823a63077468e1}} 
+\mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$ {\bfseries particle\+Data\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_ac7912ade1e7afcf857950694d7cacafb}\label{class_pythia8_1_1_space_shower_ac7912ade1e7afcf857950694d7cacafb}} 
+\mbox{\hyperlink{class_pythia8_1_1_rndm}{Rndm}} $\ast$ {\bfseries rndm\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a7a4a80ee63f31723f555ae9de170427f}\label{class_pythia8_1_1_space_shower_a7a4a80ee63f31723f555ae9de170427f}} 
+\mbox{\hyperlink{class_pythia8_1_1_coup_s_m}{Coup\+SM}} $\ast$ {\bfseries coup\+S\+M\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_aeb6d32430d9d5e9edac8b77d0e9068f3}\label{class_pythia8_1_1_space_shower_aeb6d32430d9d5e9edac8b77d0e9068f3}} 
+\mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$ {\bfseries beam\+A\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a7a5c4212b42932db4bfc6585b71d3665}\label{class_pythia8_1_1_space_shower_a7a5c4212b42932db4bfc6585b71d3665}} 
+\mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$ {\bfseries beam\+B\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a1579e3096c4f2c5af874ca5d71ebafda}\label{class_pythia8_1_1_space_shower_a1579e3096c4f2c5af874ca5d71ebafda}} 
+int {\bfseries beam\+Offset}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_abf7dd4b1c62ee6c4fd22e36ba0bf0d19}\label{class_pythia8_1_1_space_shower_abf7dd4b1c62ee6c4fd22e36ba0bf0d19}} 
+\mbox{\hyperlink{class_pythia8_1_1_parton_systems}{Parton\+Systems}} $\ast$ {\bfseries parton\+Systems\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_acc20e344a2653ff1d33670561e849587}\label{class_pythia8_1_1_space_shower_acc20e344a2653ff1d33670561e849587}} 
+\mbox{\hyperlink{class_pythia8_1_1_user_hooks}{User\+Hooks}} $\ast$ {\bfseries user\+Hooks\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a7e35ab57ea5b8dfb39bf30f92c53a893}\label{class_pythia8_1_1_space_shower_a7e35ab57ea5b8dfb39bf30f92c53a893}} 
+\mbox{\hyperlink{class_pythia8_1_1_parton_vertex}{Parton\+Vertex}} $\ast$ {\bfseries parton\+Vertex\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a2589134f71d145ba6ca91cd7187d1d09}\label{class_pythia8_1_1_space_shower_a2589134f71d145ba6ca91cd7187d1d09}} 
+bool {\bfseries do\+Uncertainties}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a288d8d3a6d03d1618b9e1aab40d3d1ff}\label{class_pythia8_1_1_space_shower_a288d8d3a6d03d1618b9e1aab40d3d1ff}} 
+bool {\bfseries u\+Var\+Mu\+Soft\+Corr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_ad19af25750ba24912f049d1a6999def3}\label{class_pythia8_1_1_space_shower_ad19af25750ba24912f049d1a6999def3}} 
+bool {\bfseries u\+Var\+M\+P\+Ishowers}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_ad03f3b134e1be7c311ad703eeca90f47}\label{class_pythia8_1_1_space_shower_ad03f3b134e1be7c311ad703eeca90f47}} 
+int {\bfseries n\+Uncertainty\+Variations}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a8d6a3210da1291769cfe238062211c61}\label{class_pythia8_1_1_space_shower_a8d6a3210da1291769cfe238062211c61}} 
+int {\bfseries n\+Var\+Q\+CD}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a9171ec7d630f66f2ee16676f5b249abb}\label{class_pythia8_1_1_space_shower_a9171ec7d630f66f2ee16676f5b249abb}} 
+int {\bfseries u\+Var\+NflavQ}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a644a953102c7cdfdf983081d6232ca91}\label{class_pythia8_1_1_space_shower_a644a953102c7cdfdf983081d6232ca91}} 
+double {\bfseries d\+A\+Smax}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_aac59cb7ed8eb0e788b4a70d19be8e985}\label{class_pythia8_1_1_space_shower_aac59cb7ed8eb0e788b4a70d19be8e985}} 
+double {\bfseries c\+N\+Sp\+Tmin}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a3344dc5510d330e79128da4ddb57a2dd}\label{class_pythia8_1_1_space_shower_a3344dc5510d330e79128da4ddb57a2dd}} 
+double {\bfseries u\+Varp\+Tmin2}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a52d62fc320913caf8300cf1d324e6a27}\label{class_pythia8_1_1_space_shower_a52d62fc320913caf8300cf1d324e6a27}} 
+double {\bfseries over\+Factor}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a425d1bde1eb9eaeb81e8880ebe64f801}\label{class_pythia8_1_1_space_shower_a425d1bde1eb9eaeb81e8880ebe64f801}} 
+map$<$ int, double $>$ {\bfseries var\+G2\+G\+Gmu\+Rfac}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a08819abf015a9c028e0286d93e37448c}\label{class_pythia8_1_1_space_shower_a08819abf015a9c028e0286d93e37448c}} 
+map$<$ int, double $>$ {\bfseries var\+Q2\+Q\+Gmu\+Rfac}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a4ce4df1fb51c891031006cde8e6b8301}\label{class_pythia8_1_1_space_shower_a4ce4df1fb51c891031006cde8e6b8301}} 
+map$<$ int, double $>$ {\bfseries var\+Q2\+G\+Qmu\+Rfac}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a31a2df1f32fe527958e22233c2079b40}\label{class_pythia8_1_1_space_shower_a31a2df1f32fe527958e22233c2079b40}} 
+map$<$ int, double $>$ {\bfseries var\+G2\+Q\+Qmu\+Rfac}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a92067e82c89bc69c6de1c2ac5c4da602}\label{class_pythia8_1_1_space_shower_a92067e82c89bc69c6de1c2ac5c4da602}} 
+map$<$ int, double $>$ {\bfseries var\+X2\+X\+Gmu\+Rfac}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a9f9a3724ceb35b821c5c7bce732b296f}\label{class_pythia8_1_1_space_shower_a9f9a3724ceb35b821c5c7bce732b296f}} 
+map$<$ int, double $>$ {\bfseries var\+G2\+G\+Gc\+NS}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_ad11543879be331a0ce0b412c7d6d755b}\label{class_pythia8_1_1_space_shower_ad11543879be331a0ce0b412c7d6d755b}} 
+map$<$ int, double $>$ {\bfseries var\+Q2\+Q\+Gc\+NS}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a8a06e28e5975e8c8ce10ece2c4ae4415}\label{class_pythia8_1_1_space_shower_a8a06e28e5975e8c8ce10ece2c4ae4415}} 
+map$<$ int, double $>$ {\bfseries var\+Q2\+G\+Qc\+NS}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a5d8e9d9d00cb1a323a7ca8882b32013c}\label{class_pythia8_1_1_space_shower_a5d8e9d9d00cb1a323a7ca8882b32013c}} 
+map$<$ int, double $>$ {\bfseries var\+G2\+Q\+Qc\+NS}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a764cfa9ad797bc9c1e58c05df23469a8}\label{class_pythia8_1_1_space_shower_a764cfa9ad797bc9c1e58c05df23469a8}} 
+map$<$ int, double $>$ {\bfseries var\+X2\+X\+Gc\+NS}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_affce3f5d1510fe28b45e16779fd91998}\label{class_pythia8_1_1_space_shower_affce3f5d1510fe28b45e16779fd91998}} 
+map$<$ int, double $>$ $\ast$ {\bfseries var\+P\+D\+Fplus}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_a83d6968cb2276c29c350d397a65a9735}\label{class_pythia8_1_1_space_shower_a83d6968cb2276c29c350d397a65a9735}} 
+map$<$ int, double $>$ $\ast$ {\bfseries var\+P\+D\+Fminus}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_space_shower_ad089340642dece1be5bb71f4ff685125}\label{class_pythia8_1_1_space_shower_ad089340642dece1be5bb71f4ff685125}} 
+map$<$ int, double $>$ $\ast$ {\bfseries var\+P\+D\+Fmember}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/Space\+Shower.\+h\end{DoxyCompactItemize}

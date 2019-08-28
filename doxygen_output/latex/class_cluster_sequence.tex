@@ -1,0 +1,298 @@
+\hypertarget{class_cluster_sequence}{}\doxysection{Cluster\+Sequence Class Reference}
+\label{class_cluster_sequence}\index{ClusterSequence@{ClusterSequence}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_cluster_sequence_1_1___line}{\+\_\+\+Line}}
+\item 
+class \mbox{\hyperlink{class_cluster_sequence_1_1___parabola}{\+\_\+\+Parabola}}
+\item 
+class \mbox{\hyperlink{class_cluster_sequence_1_1_extras}{Extras}}
+\item 
+struct \mbox{\hyperlink{struct_cluster_sequence_1_1history__element}{history\+\_\+element}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a21d2e215158e2aa41efe54c7e86399fb}\label{class_cluster_sequence_a21d2e215158e2aa41efe54c7e86399fb}} 
+enum {\bfseries Jet\+Type} \{ {\bfseries Invalid} =-\/3, 
+{\bfseries Inexistent\+Parent} = -\/2, 
+{\bfseries Beam\+Jet} = -\/1
+ \}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a32780f02877a95def16c0e6b4a9639ca}\label{class_cluster_sequence_a32780f02877a95def16c0e6b4a9639ca}} 
+typedef \mbox{\hyperlink{class_cluster_sequence_structure}{Cluster\+Sequence\+Structure}} {\bfseries Structure\+Type}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a6c491ef18670dc87ab5cad9edbc563ba}\label{class_cluster_sequence_a6c491ef18670dc87ab5cad9edbc563ba}} 
+{\footnotesize template$<$class L $>$ }\\{\bfseries Cluster\+Sequence} (const std\+::vector$<$ L $>$ \&pseudojets, const \mbox{\hyperlink{class_jet_definition}{Jet\+Definition}} \&jet\+\_\+def, const bool \&writeout\+\_\+combinations=false)
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a85e0e47d8b1f48802e050fd6b9ba4b4a}\label{class_cluster_sequence_a85e0e47d8b1f48802e050fd6b9ba4b4a}} 
+{\bfseries Cluster\+Sequence} (const \mbox{\hyperlink{class_cluster_sequence}{Cluster\+Sequence}} \&cs)
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a3aa8f7e8a1155fe26bd10289d2477940}\label{class_cluster_sequence_a3aa8f7e8a1155fe26bd10289d2477940}} 
+\mbox{\hyperlink{class_cluster_sequence}{Cluster\+Sequence}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_cluster_sequence}{Cluster\+Sequence}} \&cs)
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a1a50b1705ccbf7a0b86124390775f37d}\label{class_cluster_sequence_a1a50b1705ccbf7a0b86124390775f37d}} 
+std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ {\bfseries inclusive\+\_\+jets} (const double ptmin=0.\+0) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_ab75daadf1f2bac85493f90c7e2e5708a}\label{class_cluster_sequence_ab75daadf1f2bac85493f90c7e2e5708a}} 
+int {\bfseries n\+\_\+exclusive\+\_\+jets} (const double dcut) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_aee4273660e89d794e160b45d3bde226f}\label{class_cluster_sequence_aee4273660e89d794e160b45d3bde226f}} 
+std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ {\bfseries exclusive\+\_\+jets} (const double dcut) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a4f0f0d1de242c52f98b5d87f1dfb5fd4}\label{class_cluster_sequence_a4f0f0d1de242c52f98b5d87f1dfb5fd4}} 
+std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ {\bfseries exclusive\+\_\+jets} (const int njets) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a730d61ce676dc2cb716bcc53e32702b6}\label{class_cluster_sequence_a730d61ce676dc2cb716bcc53e32702b6}} 
+std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ {\bfseries exclusive\+\_\+jets\+\_\+up\+\_\+to} (const int njets) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_adc34e1afc1a0e68e68803988433577b7}\label{class_cluster_sequence_adc34e1afc1a0e68e68803988433577b7}} 
+double {\bfseries exclusive\+\_\+dmerge} (const int njets) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_ac89742ded84d43050eb6b48106a1f3b4}\label{class_cluster_sequence_ac89742ded84d43050eb6b48106a1f3b4}} 
+double {\bfseries exclusive\+\_\+dmerge\+\_\+max} (const int njets) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a54a69f8fa11d1e1e5b5d0b1621d9c6e7}\label{class_cluster_sequence_a54a69f8fa11d1e1e5b5d0b1621d9c6e7}} 
+double {\bfseries exclusive\+\_\+ymerge} (int njets) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a50b3f284b5f8757cc356b9c083558048}\label{class_cluster_sequence_a50b3f284b5f8757cc356b9c083558048}} 
+double {\bfseries exclusive\+\_\+ymerge\+\_\+max} (int njets) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_aa3a2c235b0acad16598c73693ba92cbc}\label{class_cluster_sequence_aa3a2c235b0acad16598c73693ba92cbc}} 
+int {\bfseries n\+\_\+exclusive\+\_\+jets\+\_\+ycut} (double ycut) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a0a1cccfa67cad830bff603a1f63b19db}\label{class_cluster_sequence_a0a1cccfa67cad830bff603a1f63b19db}} 
+std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ {\bfseries exclusive\+\_\+jets\+\_\+ycut} (double ycut) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_ab77eb2fc4fd029a56ddbbb5015fa6802}\label{class_cluster_sequence_ab77eb2fc4fd029a56ddbbb5015fa6802}} 
+std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ {\bfseries exclusive\+\_\+subjets} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&jet, const double dcut) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_ac9f26dea3732abde7fed5a3b003e99f8}\label{class_cluster_sequence_ac9f26dea3732abde7fed5a3b003e99f8}} 
+int {\bfseries n\+\_\+exclusive\+\_\+subjets} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&jet, const double dcut) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a847a9ae5e2ca167199a270df44e64f88}\label{class_cluster_sequence_a847a9ae5e2ca167199a270df44e64f88}} 
+std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ {\bfseries exclusive\+\_\+subjets} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&jet, int nsub) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a3c1909f1e17c4e87c57687aab90b98be}\label{class_cluster_sequence_a3c1909f1e17c4e87c57687aab90b98be}} 
+std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ {\bfseries exclusive\+\_\+subjets\+\_\+up\+\_\+to} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&jet, int nsub) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a3e02325447239328486a281ff013dff3}\label{class_cluster_sequence_a3e02325447239328486a281ff013dff3}} 
+double {\bfseries exclusive\+\_\+subdmerge} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&jet, int nsub) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_aa67d1fd8fa882bee592903cbcdb46a19}\label{class_cluster_sequence_aa67d1fd8fa882bee592903cbcdb46a19}} 
+double {\bfseries exclusive\+\_\+subdmerge\+\_\+max} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&jet, int nsub) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_aefdc5d5830ddd98a23bd7b8bf84e3067}\label{class_cluster_sequence_aefdc5d5830ddd98a23bd7b8bf84e3067}} 
+double {\bfseries Q} () const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_aeaf451cbc628844ad0d3882004feaa82}\label{class_cluster_sequence_aeaf451cbc628844ad0d3882004feaa82}} 
+double {\bfseries Q2} () const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a063429bbb49d34b87663c085551b2b80}\label{class_cluster_sequence_a063429bbb49d34b87663c085551b2b80}} 
+bool {\bfseries object\+\_\+in\+\_\+jet} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&object, const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&jet) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a8d146565f1c9d22a0b9bb11458e20bd3}\label{class_cluster_sequence_a8d146565f1c9d22a0b9bb11458e20bd3}} 
+bool {\bfseries has\+\_\+parents} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&jet, \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&parent1, \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&parent2) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a22bd1374a97ec33e1d81edf368102d9a}\label{class_cluster_sequence_a22bd1374a97ec33e1d81edf368102d9a}} 
+bool {\bfseries has\+\_\+child} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&jet, \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&child) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a6fa68f0169e735fa3a0fd9b56158e569}\label{class_cluster_sequence_a6fa68f0169e735fa3a0fd9b56158e569}} 
+bool {\bfseries has\+\_\+child} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&jet, const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $\ast$\&childp) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a2acb6e2f4db692cb513938852a2e1742}\label{class_cluster_sequence_a2acb6e2f4db692cb513938852a2e1742}} 
+bool {\bfseries has\+\_\+partner} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&jet, \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&partner) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_aa2bacd0ad4f079f4f2c0edb9869034b7}\label{class_cluster_sequence_aa2bacd0ad4f079f4f2c0edb9869034b7}} 
+std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ {\bfseries constituents} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&jet) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a06fa6daf1063da04a327f49c70768c27}\label{class_cluster_sequence_a06fa6daf1063da04a327f49c70768c27}} 
+void {\bfseries print\+\_\+jets\+\_\+for\+\_\+root} (const std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ \&jets, std\+::ostream \&ostr=std\+::cout) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a12e4a3ca4b5096af5c2bf2bddaf4f2c9}\label{class_cluster_sequence_a12e4a3ca4b5096af5c2bf2bddaf4f2c9}} 
+void {\bfseries print\+\_\+jets\+\_\+for\+\_\+root} (const std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ \&jets, const std\+::string \&filename, const std\+::string \&comment=\char`\"{}\char`\"{}) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a3f8e39f6db8b1a2be2e78e8d1b239e5f}\label{class_cluster_sequence_a3f8e39f6db8b1a2be2e78e8d1b239e5f}} 
+void {\bfseries add\+\_\+constituents} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&jet, std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ \&subjet\+\_\+vector) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a6f967a5976ac7e228b818776e70ce2f3}\label{class_cluster_sequence_a6f967a5976ac7e228b818776e70ce2f3}} 
+Strategy {\bfseries strategy\+\_\+used} () const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_ae1240949ad628adaf36bd76687705670}\label{class_cluster_sequence_ae1240949ad628adaf36bd76687705670}} 
+std\+::string {\bfseries strategy\+\_\+string} () const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_af9fb14b8a57f7bc9e0d8364746560ce3}\label{class_cluster_sequence_af9fb14b8a57f7bc9e0d8364746560ce3}} 
+std\+::string {\bfseries strategy\+\_\+string} (Strategy strategy\+\_\+in) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a9cd00383bdb197b8b298eeef49e1a2f2}\label{class_cluster_sequence_a9cd00383bdb197b8b298eeef49e1a2f2}} 
+const \mbox{\hyperlink{class_jet_definition}{Jet\+Definition}} \& {\bfseries jet\+\_\+def} () const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a34ca8d43c523b21e9e012111a877b55d}\label{class_cluster_sequence_a34ca8d43c523b21e9e012111a877b55d}} 
+void {\bfseries delete\+\_\+self\+\_\+when\+\_\+unused} ()
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_ab6ccbf252849033fb1622be252ab9435}\label{class_cluster_sequence_ab6ccbf252849033fb1622be252ab9435}} 
+bool {\bfseries will\+\_\+delete\+\_\+self\+\_\+when\+\_\+unused} () const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a53b505cb483ae95f7224102c706a4636}\label{class_cluster_sequence_a53b505cb483ae95f7224102c706a4636}} 
+void {\bfseries signal\+\_\+imminent\+\_\+self\+\_\+deletion} () const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a3ebc33d9e61637fdff42e61f31e6e232}\label{class_cluster_sequence_a3ebc33d9e61637fdff42e61f31e6e232}} 
+double {\bfseries jet\+\_\+scale\+\_\+for\+\_\+algorithm} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&jet) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a9883a53cfb89b5ea5531a49629bdc714}\label{class_cluster_sequence_a9883a53cfb89b5ea5531a49629bdc714}} 
+void {\bfseries plugin\+\_\+record\+\_\+ij\+\_\+recombination} (int jet\+\_\+i, int jet\+\_\+j, double dij, int \&newjet\+\_\+k)
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_aedb3fa01a30ed8a3d565b02fe8d0df7d}\label{class_cluster_sequence_aedb3fa01a30ed8a3d565b02fe8d0df7d}} 
+void {\bfseries plugin\+\_\+record\+\_\+ij\+\_\+recombination} (int jet\+\_\+i, int jet\+\_\+j, double dij, const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&newjet, int \&newjet\+\_\+k)
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a5a7f4d58e66a6cda1eec97616905a984}\label{class_cluster_sequence_a5a7f4d58e66a6cda1eec97616905a984}} 
+void {\bfseries plugin\+\_\+record\+\_\+i\+B\+\_\+recombination} (int jet\+\_\+i, double diB)
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a575fd1a6fc69cee884abdbf63d30eaf4}\label{class_cluster_sequence_a575fd1a6fc69cee884abdbf63d30eaf4}} 
+void {\bfseries plugin\+\_\+associate\+\_\+extras} (\mbox{\hyperlink{class_cluster_sequence_1_1_extras}{Extras}} $\ast$extras\+\_\+in)
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a18972ffbd782575a2af4671429303ac9}\label{class_cluster_sequence_a18972ffbd782575a2af4671429303ac9}} 
+bool {\bfseries plugin\+\_\+activated} () const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a1cfc5e82b2877209644004bb67250d37}\label{class_cluster_sequence_a1cfc5e82b2877209644004bb67250d37}} 
+const \mbox{\hyperlink{class_cluster_sequence_1_1_extras}{Extras}} $\ast$ {\bfseries extras} () const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a9a433b77bd3e84ec21918bce79e57472}\label{class_cluster_sequence_a9a433b77bd3e84ec21918bce79e57472}} 
+{\footnotesize template$<$class G\+BJ $>$ }\\void {\bfseries plugin\+\_\+simple\+\_\+\+N2\+\_\+cluster} ()
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_aacc46bc765688b83a431e1fb32f227e5}\label{class_cluster_sequence_aacc46bc765688b83a431e1fb32f227e5}} 
+const std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ \& {\bfseries jets} () const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a3d2e4d3fed9fd351fcac671e10e4bbbf}\label{class_cluster_sequence_a3d2e4d3fed9fd351fcac671e10e4bbbf}} 
+const std\+::vector$<$ \mbox{\hyperlink{struct_cluster_sequence_1_1history__element}{history\+\_\+element}} $>$ \& {\bfseries history} () const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_aa82e7e8158024e2e77ec1000ec1dc624}\label{class_cluster_sequence_aa82e7e8158024e2e77ec1000ec1dc624}} 
+unsigned int {\bfseries n\+\_\+particles} () const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a19018ffe59a556a55961418784efaadf}\label{class_cluster_sequence_a19018ffe59a556a55961418784efaadf}} 
+std\+::vector$<$ int $>$ {\bfseries particle\+\_\+jet\+\_\+indices} (const std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ \&) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_af58897215e0f647bbe74569897f8fe7f}\label{class_cluster_sequence_af58897215e0f647bbe74569897f8fe7f}} 
+std\+::vector$<$ int $>$ {\bfseries unique\+\_\+history\+\_\+order} () const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a703b7d119ac2066e8ef6acf708a2d7ee}\label{class_cluster_sequence_a703b7d119ac2066e8ef6acf708a2d7ee}} 
+std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ {\bfseries unclustered\+\_\+particles} () const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_ad20aecdd1330befb74fc6a968e670e37}\label{class_cluster_sequence_ad20aecdd1330befb74fc6a968e670e37}} 
+std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ {\bfseries childless\+\_\+pseudojets} () const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a3cd4a4986553ab244cf93f0ce5c1b8c0}\label{class_cluster_sequence_a3cd4a4986553ab244cf93f0ce5c1b8c0}} 
+bool {\bfseries contains} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&object) const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a32288dcd6013942a168a205048ac8c7f}\label{class_cluster_sequence_a32288dcd6013942a168a205048ac8c7f}} 
+void {\bfseries transfer\+\_\+from\+\_\+sequence} (const \mbox{\hyperlink{class_cluster_sequence}{Cluster\+Sequence}} \&from\+\_\+seq, const \mbox{\hyperlink{class_function_of_pseudo_jet}{Function\+Of\+Pseudo\+Jet}}$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ $\ast$action\+\_\+on\+\_\+jets=0)
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a7556462c36cb94417451d738d289f67a}\label{class_cluster_sequence_a7556462c36cb94417451d738d289f67a}} 
+const \mbox{\hyperlink{class_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_pseudo_jet_structure_base}{Pseudo\+Jet\+Structure\+Base}} $>$ \& {\bfseries structure\+\_\+shared\+\_\+ptr} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a87c8f6c75d3c3887f8b73961be28a3bd}\label{class_cluster_sequence_a87c8f6c75d3c3887f8b73961be28a3bd}} 
+static void {\bfseries print\+\_\+banner} ()
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a4fc04dc79dabdcbb38ad6faf65a7ae8b}\label{class_cluster_sequence_a4fc04dc79dabdcbb38ad6faf65a7ae8b}} 
+static void {\bfseries set\+\_\+fastjet\+\_\+banner\+\_\+stream} (std\+::ostream $\ast$ostr)
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_ad1d941486d19fd65f3e2becb4f678ce2}\label{class_cluster_sequence_ad1d941486d19fd65f3e2becb4f678ce2}} 
+static std\+::ostream $\ast$ {\bfseries fastjet\+\_\+banner\+\_\+stream} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a1564ed1cc8b1d1a49f70d5f69b30fa37}\label{class_cluster_sequence_a1564ed1cc8b1d1a49f70d5f69b30fa37}} 
+{\footnotesize template$<$class L $>$ }\\void {\bfseries \+\_\+transfer\+\_\+input\+\_\+jets} (const std\+::vector$<$ L $>$ \&pseudojets)
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a9ae1f4ee315fc6a04e68c3fb046cb50d}\label{class_cluster_sequence_a9ae1f4ee315fc6a04e68c3fb046cb50d}} 
+void {\bfseries \+\_\+initialise\+\_\+and\+\_\+run} (const \mbox{\hyperlink{class_jet_definition}{Jet\+Definition}} \&jet\+\_\+def, const bool \&writeout\+\_\+combinations)
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a726ac1f0a78da15e75a953f6eeb4a4bd}\label{class_cluster_sequence_a726ac1f0a78da15e75a953f6eeb4a4bd}} 
+void {\bfseries \+\_\+initialise\+\_\+and\+\_\+run\+\_\+no\+\_\+decant} ()
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a34a674a39f9393d31360046b511b9c66}\label{class_cluster_sequence_a34a674a39f9393d31360046b511b9c66}} 
+void {\bfseries \+\_\+decant\+\_\+options} (const \mbox{\hyperlink{class_jet_definition}{Jet\+Definition}} \&jet\+\_\+def, const bool \&writeout\+\_\+combinations)
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a1d56e72740b276aedc0d407229132547}\label{class_cluster_sequence_a1d56e72740b276aedc0d407229132547}} 
+void {\bfseries \+\_\+decant\+\_\+options\+\_\+partial} ()
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_aabb2165b83a28d7488feb376827b5c34}\label{class_cluster_sequence_aabb2165b83a28d7488feb376827b5c34}} 
+void {\bfseries \+\_\+fill\+\_\+initial\+\_\+history} ()
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a8fe2b43437f6af897981439628774e77}\label{class_cluster_sequence_a8fe2b43437f6af897981439628774e77}} 
+void {\bfseries \+\_\+do\+\_\+ij\+\_\+recombination\+\_\+step} (const int jet\+\_\+i, const int jet\+\_\+j, const double dij, int \&newjet\+\_\+k)
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a3e1b0355253a22794ff0f7bd2115e1d6}\label{class_cluster_sequence_a3e1b0355253a22794ff0f7bd2115e1d6}} 
+void {\bfseries \+\_\+do\+\_\+i\+B\+\_\+recombination\+\_\+step} (const int jet\+\_\+i, const double diB)
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a607a5bc7cee76327db0111c9b56f4f3e}\label{class_cluster_sequence_a607a5bc7cee76327db0111c9b56f4f3e}} 
+void {\bfseries \+\_\+set\+\_\+structure\+\_\+shared\+\_\+ptr} (\mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&j)
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a1b0d85bda4e20e2a60136554fd4d6420}\label{class_cluster_sequence_a1b0d85bda4e20e2a60136554fd4d6420}} 
+void {\bfseries \+\_\+update\+\_\+structure\+\_\+use\+\_\+count} ()
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_aded5c2446ed076c89b61b10ba17451a8}\label{class_cluster_sequence_aded5c2446ed076c89b61b10ba17451a8}} 
+Strategy {\bfseries \+\_\+best\+\_\+strategy} () const
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a5f85f7b185b3015e245786b94b1077a8}\label{class_cluster_sequence_a5f85f7b185b3015e245786b94b1077a8}} 
+void {\bfseries get\+\_\+subhist\+\_\+set} (std\+::set$<$ const \mbox{\hyperlink{struct_cluster_sequence_1_1history__element}{history\+\_\+element}} $\ast$ $>$ \&subhist, const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&jet, double dcut, int maxjet) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_ad1c2fe64e596206c02e470aa9c9aa041}\label{class_cluster_sequence_ad1c2fe64e596206c02e470aa9c9aa041}} 
+\mbox{\hyperlink{class_jet_definition}{Jet\+Definition}} {\bfseries \+\_\+jet\+\_\+def}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a49f50c548a2ad0a8e120a89d87efe31c}\label{class_cluster_sequence_a49f50c548a2ad0a8e120a89d87efe31c}} 
+std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ {\bfseries \+\_\+jets}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a2c9c2d81451d963ddd1e1459ac1338d4}\label{class_cluster_sequence_a2c9c2d81451d963ddd1e1459ac1338d4}} 
+std\+::vector$<$ \mbox{\hyperlink{struct_cluster_sequence_1_1history__element}{history\+\_\+element}} $>$ {\bfseries \+\_\+history}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a0cfd868207c7cba8eb6e49671cd615df}\label{class_cluster_sequence_a0cfd868207c7cba8eb6e49671cd615df}} 
+bool {\bfseries \+\_\+writeout\+\_\+combinations}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_ac16139a7b3677f87ed344f313cfee75f}\label{class_cluster_sequence_ac16139a7b3677f87ed344f313cfee75f}} 
+int {\bfseries \+\_\+initial\+\_\+n}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a7a50be6095134b9553adb41aaed20433}\label{class_cluster_sequence_a7a50be6095134b9553adb41aaed20433}} 
+double {\bfseries \+\_\+\+Rparam}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a4cc95c529a7eed04a8ca0f581f9eb3c4}\label{class_cluster_sequence_a4cc95c529a7eed04a8ca0f581f9eb3c4}} 
+double {\bfseries \+\_\+\+R2}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a035bd86a4da0caa108f5733c439d33b6}\label{class_cluster_sequence_a035bd86a4da0caa108f5733c439d33b6}} 
+double {\bfseries \+\_\+inv\+R2}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a963ff1a962167ff5b7144d8da1d24988}\label{class_cluster_sequence_a963ff1a962167ff5b7144d8da1d24988}} 
+double {\bfseries \+\_\+\+Qtot}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a7e906ce7973867a2508c306035e2372f}\label{class_cluster_sequence_a7e906ce7973867a2508c306035e2372f}} 
+Strategy {\bfseries \+\_\+strategy}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a2757b7f1757d5dceb65129313860f79d}\label{class_cluster_sequence_a2757b7f1757d5dceb65129313860f79d}} 
+Jet\+Algorithm {\bfseries \+\_\+jet\+\_\+algorithm}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a91798801c1c4553dbb878f86e899894d}\label{class_cluster_sequence_a91798801c1c4553dbb878f86e899894d}} 
+\mbox{\hyperlink{class_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_pseudo_jet_structure_base}{Pseudo\+Jet\+Structure\+Base}} $>$ {\bfseries \+\_\+structure\+\_\+shared\+\_\+ptr}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_aac9c06b67e40ffa01ccfa2656bad0989}\label{class_cluster_sequence_aac9c06b67e40ffa01ccfa2656bad0989}} 
+int {\bfseries \+\_\+structure\+\_\+use\+\_\+count\+\_\+after\+\_\+construction}
+\item 
+\mbox{\Hypertarget{class_cluster_sequence_a2c563392ed90f9016c6cb51f93e11ad4}\label{class_cluster_sequence_a2c563392ed90f9016c6cb51f93e11ad4}} 
+bool {\bfseries \+\_\+deletes\+\_\+self\+\_\+when\+\_\+unused}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/F\+Jcore.\+h\item 
+src/F\+Jcore.\+cc\end{DoxyCompactItemize}

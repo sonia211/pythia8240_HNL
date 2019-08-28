@@ -1,0 +1,147 @@
+\hypertarget{class_pythia8_1_1_nucleon}{}\doxysection{Pythia8\+::Nucleon Class Reference}
+\label{class_pythia8_1_1_nucleon}\index{Pythia8::Nucleon@{Pythia8::Nucleon}}
+
+
+{\ttfamily \#include $<$H\+I\+User\+Hooks.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2}{Status}} \{ \mbox{\hyperlink{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2a2e3d8627a6e1875f83e0f03b32075e92}{U\+N\+W\+O\+U\+N\+D\+ED}} = 0, 
+\mbox{\hyperlink{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2a56348287fc7f05780ed03332764cc203}{E\+L\+A\+S\+T\+IC}} = 1, 
+\mbox{\hyperlink{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2abd8b26b8745d7cf09d20265ea6f73b73}{D\+I\+FF}} = 2, 
+\mbox{\hyperlink{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2a4b6a15142b77a5703a54b8fea5269ef3}{A\+BS}} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em Enum for specifying the status of a nucleon. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_a132cb2b791d6a3f3a86b30fa1ffbcd2c}\label{class_pythia8_1_1_nucleon_a132cb2b791d6a3f3a86b30fa1ffbcd2c}} 
+typedef vector$<$ double $>$ \mbox{\hyperlink{class_pythia8_1_1_nucleon_a132cb2b791d6a3f3a86b30fa1ffbcd2c}{State}}
+\begin{DoxyCompactList}\small\item\em The state of a nucleon is a general vector of doubles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pythia8_1_1_nucleon_aa9496775619a498ef27cab1a84bf5b0b}{Nucleon}} (int id\+In=0, int index\+In=0, const \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \&pos=\mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}}())
+\item 
+int \mbox{\hyperlink{class_pythia8_1_1_nucleon_a6a6e959d9b736577952ac5db7161eb03}{id}} () const
+\begin{DoxyCompactList}\small\item\em Accessor functions\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_a5d08839d3cf50e980840731d74b72d7e}\label{class_pythia8_1_1_nucleon_a5d08839d3cf50e980840731d74b72d7e}} 
+int \mbox{\hyperlink{class_pythia8_1_1_nucleon_a5d08839d3cf50e980840731d74b72d7e}{index}} () const
+\begin{DoxyCompactList}\small\item\em The nucleon type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_a2ebda68f48c6faab1869ded076bf094d}\label{class_pythia8_1_1_nucleon_a2ebda68f48c6faab1869ded076bf094d}} 
+const \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \& \mbox{\hyperlink{class_pythia8_1_1_nucleon_a2ebda68f48c6faab1869ded076bf094d}{n\+Pos}} () const
+\begin{DoxyCompactList}\small\item\em The position of this nucleon relative to the nucleus center. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_a1a05e325f4e1e0fe707b99b4fd728510}\label{class_pythia8_1_1_nucleon_a1a05e325f4e1e0fe707b99b4fd728510}} 
+const \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \& \mbox{\hyperlink{class_pythia8_1_1_nucleon_a1a05e325f4e1e0fe707b99b4fd728510}{b\+Pos}} () const
+\begin{DoxyCompactList}\small\item\em The absolute position in impact parameter space. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_a6344ae387e8d293c3b7816e88abb7a12}\label{class_pythia8_1_1_nucleon_a6344ae387e8d293c3b7816e88abb7a12}} 
+const \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \& \mbox{\hyperlink{class_pythia8_1_1_nucleon_a6344ae387e8d293c3b7816e88abb7a12}{b\+Shift}} (const \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \&bvec)
+\begin{DoxyCompactList}\small\item\em Shift the absolute position in impact parameter space. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_af5e5352bbca8d15e98619682ecff55df}\label{class_pythia8_1_1_nucleon_af5e5352bbca8d15e98619682ecff55df}} 
+\mbox{\hyperlink{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2}{Status}} \mbox{\hyperlink{class_pythia8_1_1_nucleon_af5e5352bbca8d15e98619682ecff55df}{status}} () const
+\begin{DoxyCompactList}\small\item\em The status. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_adead7e57a3eaf9953187de058e93065e}\label{class_pythia8_1_1_nucleon_adead7e57a3eaf9953187de058e93065e}} 
+bool \mbox{\hyperlink{class_pythia8_1_1_nucleon_adead7e57a3eaf9953187de058e93065e}{done}} () const
+\begin{DoxyCompactList}\small\item\em Check if nucleon has been assigned. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_ad5b7739624ce4d279bb3ff4e05389fc1}\label{class_pythia8_1_1_nucleon_ad5b7739624ce4d279bb3ff4e05389fc1}} 
+\mbox{\hyperlink{class_pythia8_1_1_event_info}{Event\+Info}} $\ast$ \mbox{\hyperlink{class_pythia8_1_1_nucleon_ad5b7739624ce4d279bb3ff4e05389fc1}{event}} () const
+\begin{DoxyCompactList}\small\item\em The event this nucleon is assigned to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_a7afb4e639b78ab2cb96c121befb6933f}\label{class_pythia8_1_1_nucleon_a7afb4e639b78ab2cb96c121befb6933f}} 
+const \mbox{\hyperlink{class_pythia8_1_1_nucleon_a132cb2b791d6a3f3a86b30fa1ffbcd2c}{State}} \& \mbox{\hyperlink{class_pythia8_1_1_nucleon_a7afb4e639b78ab2cb96c121befb6933f}{state}} () const
+\begin{DoxyCompactList}\small\item\em The physical state of the incoming nucleon. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_a9ae65ea8d893e54cd62df2e28fd3767b}\label{class_pythia8_1_1_nucleon_a9ae65ea8d893e54cd62df2e28fd3767b}} 
+const \mbox{\hyperlink{class_pythia8_1_1_nucleon_a132cb2b791d6a3f3a86b30fa1ffbcd2c}{State}} \& \mbox{\hyperlink{class_pythia8_1_1_nucleon_a9ae65ea8d893e54cd62df2e28fd3767b}{alt\+State}} (int i=0)
+\begin{DoxyCompactList}\small\item\em Return an alternative state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pythia8_1_1_nucleon_a69b96a047d1b6c65775e8203e68b5600}{status}} (\mbox{\hyperlink{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2}{Status}} s)
+\begin{DoxyCompactList}\small\item\em Manipulating functions\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_a6cf5d60a1d780c032bb6de31501b5b64}\label{class_pythia8_1_1_nucleon_a6cf5d60a1d780c032bb6de31501b5b64}} 
+void \mbox{\hyperlink{class_pythia8_1_1_nucleon_a6cf5d60a1d780c032bb6de31501b5b64}{state}} (\mbox{\hyperlink{class_pythia8_1_1_nucleon_a132cb2b791d6a3f3a86b30fa1ffbcd2c}{State}} s)
+\begin{DoxyCompactList}\small\item\em Set the physical state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_a19d298625291a5cfc51987c91ac8986a}\label{class_pythia8_1_1_nucleon_a19d298625291a5cfc51987c91ac8986a}} 
+void \mbox{\hyperlink{class_pythia8_1_1_nucleon_a19d298625291a5cfc51987c91ac8986a}{add\+Alt\+State}} (\mbox{\hyperlink{class_pythia8_1_1_nucleon_a132cb2b791d6a3f3a86b30fa1ffbcd2c}{State}} s)
+\begin{DoxyCompactList}\small\item\em Add an alternative state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_a468156d39c6ecf78a1c449be2b663edf}\label{class_pythia8_1_1_nucleon_a468156d39c6ecf78a1c449be2b663edf}} 
+void \mbox{\hyperlink{class_pythia8_1_1_nucleon_a468156d39c6ecf78a1c449be2b663edf}{select}} (\mbox{\hyperlink{class_pythia8_1_1_event_info}{Event\+Info}} \&evp, \mbox{\hyperlink{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2}{Status}} s)
+\begin{DoxyCompactList}\small\item\em Select an event for this nucleon. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_a3dd44e1ec6daa5ba533a6530e086da42}\label{class_pythia8_1_1_nucleon_a3dd44e1ec6daa5ba533a6530e086da42}} 
+void \mbox{\hyperlink{class_pythia8_1_1_nucleon_a3dd44e1ec6daa5ba533a6530e086da42}{select}} ()
+\begin{DoxyCompactList}\small\item\em Select this nucleon to be assigned to an event. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_af5d50971fd593a29877ecffc5e2a1dab}\label{class_pythia8_1_1_nucleon_af5d50971fd593a29877ecffc5e2a1dab}} 
+void \mbox{\hyperlink{class_pythia8_1_1_nucleon_af5d50971fd593a29877ecffc5e2a1dab}{debug}} ()
+\begin{DoxyCompactList}\small\item\em Print out debugging information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_a7692715b72e0cfae823a3717fd1f3876}\label{class_pythia8_1_1_nucleon_a7692715b72e0cfae823a3717fd1f3876}} 
+class {\bfseries Sub\+Collision\+Model}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} class represent a nucleon in a nucleus. It has an id number (proton or neutron) an impact parameter position (absolute and relative to the nucleus center), a status and a state to be defined and used by a \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model}{Sub\+Collision\+Model}}. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2}\label{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2}} 
+\index{Pythia8::Nucleon@{Pythia8::Nucleon}!Status@{Status}}
+\index{Status@{Status}!Pythia8::Nucleon@{Pythia8::Nucleon}}
+\doxysubsubsection{\texorpdfstring{Status}{Status}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2}{Pythia8\+::\+Nucleon\+::\+Status}}}
+
+
+
+Enum for specifying the status of a nucleon. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNWOUNDED@{UNWOUNDED}!Pythia8::Nucleon@{Pythia8::Nucleon}}\index{Pythia8::Nucleon@{Pythia8::Nucleon}!UNWOUNDED@{UNWOUNDED}}}\mbox{\Hypertarget{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2a2e3d8627a6e1875f83e0f03b32075e92}\label{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2a2e3d8627a6e1875f83e0f03b32075e92}} 
+U\+N\+W\+O\+U\+N\+D\+ED&The nucleon is not wounded. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ELASTIC@{ELASTIC}!Pythia8::Nucleon@{Pythia8::Nucleon}}\index{Pythia8::Nucleon@{Pythia8::Nucleon}!ELASTIC@{ELASTIC}}}\mbox{\Hypertarget{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2a56348287fc7f05780ed03332764cc203}\label{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2a56348287fc7f05780ed03332764cc203}} 
+E\+L\+A\+S\+T\+IC&The nucleon is elastically scattered. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIFF@{DIFF}!Pythia8::Nucleon@{Pythia8::Nucleon}}\index{Pythia8::Nucleon@{Pythia8::Nucleon}!DIFF@{DIFF}}}\mbox{\Hypertarget{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2abd8b26b8745d7cf09d20265ea6f73b73}\label{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2abd8b26b8745d7cf09d20265ea6f73b73}} 
+D\+I\+FF&The nucleon is diffractively wounded. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABS@{ABS}!Pythia8::Nucleon@{Pythia8::Nucleon}}\index{Pythia8::Nucleon@{Pythia8::Nucleon}!ABS@{ABS}}}\mbox{\Hypertarget{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2a4b6a15142b77a5703a54b8fea5269ef3}\label{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2a4b6a15142b77a5703a54b8fea5269ef3}} 
+A\+BS&The nucleon is absorptively wounded. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_aa9496775619a498ef27cab1a84bf5b0b}\label{class_pythia8_1_1_nucleon_aa9496775619a498ef27cab1a84bf5b0b}} 
+\index{Pythia8::Nucleon@{Pythia8::Nucleon}!Nucleon@{Nucleon}}
+\index{Nucleon@{Nucleon}!Pythia8::Nucleon@{Pythia8::Nucleon}}
+\doxysubsubsection{\texorpdfstring{Nucleon()}{Nucleon()}}
+{\footnotesize\ttfamily Pythia8\+::\+Nucleon\+::\+Nucleon (\begin{DoxyParamCaption}\item[{int}]{id\+In = {\ttfamily 0},  }\item[{int}]{index\+In = {\ttfamily 0},  }\item[{const \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \&}]{pos = {\ttfamily \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The constuctor takes a particle id and a position in impact parameter relative to the nucleus center as arguments. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_nucleon_a6a6e959d9b736577952ac5db7161eb03}\label{class_pythia8_1_1_nucleon_a6a6e959d9b736577952ac5db7161eb03}} 
+\index{Pythia8::Nucleon@{Pythia8::Nucleon}!id@{id}}
+\index{id@{id}!Pythia8::Nucleon@{Pythia8::Nucleon}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily int Pythia8\+::\+Nucleon\+::id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Accessor functions\+: 
+
+The nucleon type. \mbox{\Hypertarget{class_pythia8_1_1_nucleon_a69b96a047d1b6c65775e8203e68b5600}\label{class_pythia8_1_1_nucleon_a69b96a047d1b6c65775e8203e68b5600}} 
+\index{Pythia8::Nucleon@{Pythia8::Nucleon}!status@{status}}
+\index{status@{status}!Pythia8::Nucleon@{Pythia8::Nucleon}}
+\doxysubsubsection{\texorpdfstring{status()}{status()}}
+{\footnotesize\ttfamily void Pythia8\+::\+Nucleon\+::status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pythia8_1_1_nucleon_a11b313b428144037b8e1069364d5f0c2}{Status}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Manipulating functions\+: 
+
+Set the status. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/H\+I\+User\+Hooks.\+h\item 
+src/H\+I\+User\+Hooks.\+cc\end{DoxyCompactItemize}

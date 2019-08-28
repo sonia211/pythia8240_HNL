@@ -1,0 +1,37 @@
+\hypertarget{class_pythia8_1_1_h_n_l_decays}{}\doxysection{Pythia8\+::H\+N\+L\+Decays Class Reference}
+\label{class_pythia8_1_1_h_n_l_decays}\index{Pythia8::HNLDecays@{Pythia8::HNLDecays}}
+Inheritance diagram for Pythia8\+::H\+N\+L\+Decays\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pythia8_1_1_h_n_l_decays}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_pythia8_1_1_h_n_l_decays_ae501dda8388dd24ebd94cb7074030e51}{init}} (\mbox{\hyperlink{class_pythia8_1_1_info}{Info}} $\ast$info\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} $\ast$settings\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$particle\+Data\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_rndm}{Rndm}} $\ast$rndm\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_couplings}{Couplings}} $\ast$couplings\+Ptr\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_n_l_decays_a1e07013de70d2f24917e9ad72cd611b1}\label{class_pythia8_1_1_h_n_l_decays_a1e07013de70d2f24917e9ad72cd611b1}} 
+bool {\bfseries decay} (int i\+Dec, \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&event)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_n_l_decays_a927efe64d60dcefce4ef9754ff80a7b0}\label{class_pythia8_1_1_h_n_l_decays_a927efe64d60dcefce4ef9754ff80a7b0}} 
+bool {\bfseries internal\+Mechanism} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&event)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_n_l_decays_abe60fae1c75245a74ddebad7c15d2c1a}\label{class_pythia8_1_1_h_n_l_decays_abe60fae1c75245a74ddebad7c15d2c1a}} 
+bool {\bfseries external\+Mechanism} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&event)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_h_n_l_decays_ae501dda8388dd24ebd94cb7074030e51}\label{class_pythia8_1_1_h_n_l_decays_ae501dda8388dd24ebd94cb7074030e51}} 
+\index{Pythia8::HNLDecays@{Pythia8::HNLDecays}!init@{init}}
+\index{init@{init}!Pythia8::HNLDecays@{Pythia8::HNLDecays}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Pythia8\+::\+H\+N\+L\+Decays\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pythia8_1_1_info}{Info}} $\ast$}]{info\+Ptr\+In,  }\item[{\mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} $\ast$}]{settings\+Ptr\+In,  }\item[{\mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$}]{particle\+Data\+Ptr\+In,  }\item[{\mbox{\hyperlink{class_pythia8_1_1_rndm}{Rndm}} $\ast$}]{rndm\+Ptr\+In,  }\item[{\mbox{\hyperlink{class_pythia8_1_1_couplings}{Couplings}} $\ast$}]{couplings\+Ptr\+In }\end{DoxyParamCaption})}
+
+H\+N\+L\+Decays() \+: correlated(), tau\+Ext(), tau\+Mode(), tau\+Mother(), tau\+Pol(), hard\+M\+E(), decay\+M\+E(), info\+Ptr(), settings\+Ptr(), particle\+Data\+Ptr(), rndm\+Ptr(), couplings\+Ptr(), H\+N\+L0\+Max(), H\+N\+L\+Max(), r\+Max(), xy\+Max(), z\+Max(), limit\+Tau0(), limit\+Tau(), limit\+Radius(), limit\+Cylinder(), limit\+Decay() \{\}; $\sim$\+H\+N\+L\+Decays() \{\} limit\+Tau0 = settings\+Ptr-\/$>$flag(\char`\"{}\+Particle\+Decays\+:limit\+Tau0\char`\"{}); tau0\+Max = settings\+Ptr-\/$>$parm(\char`\"{}\+Particle\+Decays\+:tau0\+Max\char`\"{}); limit\+Tau = settings\+Ptr-\/$>$flag(\char`\"{}\+Particle\+Decays\+:limit\+Tau\char`\"{}); tau\+Max = settings\+Ptr-\/$>$parm(\char`\"{}\+Particle\+Decays\+:tau\+Max\char`\"{}); limit\+Radius = settings\+Ptr-\/$>$flag(\char`\"{}\+Particle\+Decays\+:limit\+Radius\char`\"{}); r\+Max = settings\+Ptr-\/$>$parm(\char`\"{}\+Particle\+Decays\+:r\+Max\char`\"{}); limit\+Cylinder = settings\+Ptr-\/$>$flag(\char`\"{}\+Particle\+Decays\+:limit\+Cylinder\char`\"{}); xy\+Max = settings\+Ptr-\/$>$parm(\char`\"{}\+Particle\+Decays\+:xy\+Max\char`\"{}); z\+Max = settings\+Ptr-\/$>$parm(\char`\"{}\+Particle\+Decays\+:z\+Max\char`\"{}); limit\+Decay = limit\+Tau0 $\vert$$\vert$ limit\+Tau $\vert$$\vert$ limit\+Radius $\vert$$\vert$ limit\+Cylinder;
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/H\+N\+L\+Decays.\+h\item 
+src/H\+N\+L\+Decays.\+cc\end{DoxyCompactItemize}

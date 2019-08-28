@@ -1,0 +1,95 @@
+\hypertarget{class_pythia8_1_1_multiparton_interactions}{}\doxysection{Pythia8\+::Multiparton\+Interactions Class Reference}
+\label{class_pythia8_1_1_multiparton_interactions}\index{Pythia8::MultipartonInteractions@{Pythia8::MultipartonInteractions}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_aa47fe624585db0290838153811a53599}\label{class_pythia8_1_1_multiparton_interactions_aa47fe624585db0290838153811a53599}} 
+bool {\bfseries init} (bool do\+M\+P\+Iinit, int i\+Diff\+Sys\+In, \mbox{\hyperlink{class_pythia8_1_1_info}{Info}} $\ast$info\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} \&settings, \mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$particle\+Data\+Ptr, \mbox{\hyperlink{class_pythia8_1_1_rndm}{Rndm}} $\ast$rndm\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$beam\+A\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_beam_particle}{Beam\+Particle}} $\ast$beam\+B\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_couplings}{Couplings}} $\ast$couplings\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_parton_systems}{Parton\+Systems}} $\ast$parton\+Systems\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_sigma_total}{Sigma\+Total}} $\ast$sigma\+Tot\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_user_hooks}{User\+Hooks}} $\ast$user\+Hooks\+Ptr\+In, \mbox{\hyperlink{class_pythia8_1_1_parton_vertex}{Parton\+Vertex}} $\ast$parton\+Vertex\+Ptr\+In, bool has\+Gamma\+In=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a0bf3f46a954ba3d62012cab729100b41}\label{class_pythia8_1_1_multiparton_interactions_a0bf3f46a954ba3d62012cab729100b41}} 
+void {\bfseries reset} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a29fbb47749646d3debc9dfeb2481e956}\label{class_pythia8_1_1_multiparton_interactions_a29fbb47749646d3debc9dfeb2481e956}} 
+void {\bfseries p\+Tfirst} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a111e05e389cae9a6e2efb2f4c3b5bb97}\label{class_pythia8_1_1_multiparton_interactions_a111e05e389cae9a6e2efb2f4c3b5bb97}} 
+void {\bfseries setup\+First\+Sys} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&process)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a54828da4242c76be7aa2867d326edb50}\label{class_pythia8_1_1_multiparton_interactions_a54828da4242c76be7aa2867d326edb50}} 
+bool {\bfseries limit\+P\+Tmax} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&event)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a3322989948dfcd80f8eb28dc5f420a21}\label{class_pythia8_1_1_multiparton_interactions_a3322989948dfcd80f8eb28dc5f420a21}} 
+double {\bfseries scale\+Limit\+PT} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_af829fe1a68427460bfad979acc95ecc1}\label{class_pythia8_1_1_multiparton_interactions_af829fe1a68427460bfad979acc95ecc1}} 
+void {\bfseries prepare} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&event, double p\+Tscale=1000., bool rehashB=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_adb79f31fab2a4883dd89602676ce6acd}\label{class_pythia8_1_1_multiparton_interactions_adb79f31fab2a4883dd89602676ce6acd}} 
+double {\bfseries p\+Tnext} (double p\+Tbeg\+All, double p\+Tend\+All, \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&event)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_ace830e162a229d390a06e1ca3fa053a5}\label{class_pythia8_1_1_multiparton_interactions_ace830e162a229d390a06e1ca3fa053a5}} 
+bool {\bfseries scatter} (\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&event)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_acc2fe5207b546229b2fc0a086a03099b}\label{class_pythia8_1_1_multiparton_interactions_acc2fe5207b546229b2fc0a086a03099b}} 
+void {\bfseries set\+Empty} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_accd3a10ca22194ca4a3eede586979af4}\label{class_pythia8_1_1_multiparton_interactions_accd3a10ca22194ca4a3eede586979af4}} 
+double {\bfseries Q2\+Ren} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a3e05da75ddc960f45fc136d3d14e0125}\label{class_pythia8_1_1_multiparton_interactions_a3e05da75ddc960f45fc136d3d14e0125}} 
+double {\bfseries alpha\+SH} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a1734169fbef32b69dbfbe1fbbc11e5e5}\label{class_pythia8_1_1_multiparton_interactions_a1734169fbef32b69dbfbe1fbbc11e5e5}} 
+double {\bfseries alpha\+E\+MH} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a3c5118ff9f6af072ff939f9024d5507c}\label{class_pythia8_1_1_multiparton_interactions_a3c5118ff9f6af072ff939f9024d5507c}} 
+double {\bfseries x1H} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a9c53aa7faabd14239c03348b2dfd5636}\label{class_pythia8_1_1_multiparton_interactions_a9c53aa7faabd14239c03348b2dfd5636}} 
+double {\bfseries x2H} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a99ef730e94702e8e00e3eaffd5a7050e}\label{class_pythia8_1_1_multiparton_interactions_a99ef730e94702e8e00e3eaffd5a7050e}} 
+double {\bfseries Q2\+Fac} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a614aed9b7dde784948320f6839ee817b}\label{class_pythia8_1_1_multiparton_interactions_a614aed9b7dde784948320f6839ee817b}} 
+double {\bfseries pdf1} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a44d85b963673c9ad64ca7eaeb07b1b4b}\label{class_pythia8_1_1_multiparton_interactions_a44d85b963673c9ad64ca7eaeb07b1b4b}} 
+double {\bfseries pdf2} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_adc5af2bc9256f3fa89bb02b8a877a066}\label{class_pythia8_1_1_multiparton_interactions_adc5af2bc9256f3fa89bb02b8a877a066}} 
+double {\bfseries b\+M\+PI} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a5ccaa5510d795612d5a9247ea41ec959}\label{class_pythia8_1_1_multiparton_interactions_a5ccaa5510d795612d5a9247ea41ec959}} 
+double {\bfseries enhance\+M\+PI} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a28568c753a1608eccc693ebe8bbd9314}\label{class_pythia8_1_1_multiparton_interactions_a28568c753a1608eccc693ebe8bbd9314}} 
+double {\bfseries enhance\+M\+P\+Iavg} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a58673d549ea8e67f8271b0f93527b445}\label{class_pythia8_1_1_multiparton_interactions_a58673d549ea8e67f8271b0f93527b445}} 
+int {\bfseries get\+V\+S\+C1} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a17325ad97567a56da4ae97ad4709c148}\label{class_pythia8_1_1_multiparton_interactions_a17325ad97567a56da4ae97ad4709c148}} 
+int {\bfseries get\+V\+S\+C2} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a84f6ef334d381e3d38714b09c8197647}\label{class_pythia8_1_1_multiparton_interactions_a84f6ef334d381e3d38714b09c8197647}} 
+int {\bfseries get\+Beam\+Offset} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a5b7a088e1007d85c81ddddf08f78f6c8}\label{class_pythia8_1_1_multiparton_interactions_a5b7a088e1007d85c81ddddf08f78f6c8}} 
+void {\bfseries set\+Beam\+Offset} (int offset\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_ac7b20c012eefd5a3b496f64b44c219c4}\label{class_pythia8_1_1_multiparton_interactions_ac7b20c012eefd5a3b496f64b44c219c4}} 
+void {\bfseries accumulate} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a3ec094647d6288d792963d5e73f90087}\label{class_pythia8_1_1_multiparton_interactions_a3ec094647d6288d792963d5e73f90087}} 
+void {\bfseries statistics} (bool reset\+Stat=false)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multiparton_interactions_a0997ece4ed166ff1ecf57bb159790a6e}\label{class_pythia8_1_1_multiparton_interactions_a0997ece4ed166ff1ecf57bb159790a6e}} 
+void {\bfseries reset\+Statistics} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/Multiparton\+Interactions.\+h\item 
+src/Multiparton\+Interactions.\+cc\end{DoxyCompactItemize}

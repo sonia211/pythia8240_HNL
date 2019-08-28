@@ -1,0 +1,126 @@
+\hypertarget{class_pythia8_1_1_h_i_user_hooks}{}\doxysection{Pythia8\+::H\+I\+User\+Hooks Class Reference}
+\label{class_pythia8_1_1_h_i_user_hooks}\index{Pythia8::HIUserHooks@{Pythia8::HIUserHooks}}
+
+
+{\ttfamily \#include $<$H\+I\+User\+Hooks.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_ad80c4fd392e508ab070623307fcbc4f3}\label{class_pythia8_1_1_h_i_user_hooks_ad80c4fd392e508ab070623307fcbc4f3}} 
+\mbox{\hyperlink{class_pythia8_1_1_h_i_user_hooks_ad80c4fd392e508ab070623307fcbc4f3}{H\+I\+User\+Hooks}} ()
+\begin{DoxyCompactList}\small\item\em The default constructor is empty. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_a00de959d26831bf35d5262f76a12e84c}\label{class_pythia8_1_1_h_i_user_hooks_a00de959d26831bf35d5262f76a12e84c}} 
+virtual \mbox{\hyperlink{class_pythia8_1_1_h_i_user_hooks_a00de959d26831bf35d5262f76a12e84c}{$\sim$\+H\+I\+User\+Hooks}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_ae1687009f646c84e63c4b51833246d9f}\label{class_pythia8_1_1_h_i_user_hooks_ae1687009f646c84e63c4b51833246d9f}} 
+virtual void \mbox{\hyperlink{class_pythia8_1_1_h_i_user_hooks_ae1687009f646c84e63c4b51833246d9f}{init}} (int id\+Proj\+In, int id\+Targ\+In)
+\begin{DoxyCompactList}\small\item\em Initialize this user hook. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_a703fd12a39d89074e1bc577cd7ac9760}\label{class_pythia8_1_1_h_i_user_hooks_a703fd12a39d89074e1bc577cd7ac9760}} 
+virtual bool \mbox{\hyperlink{class_pythia8_1_1_h_i_user_hooks_a703fd12a39d89074e1bc577cd7ac9760}{has\+Impact\+Parameter\+Generator}} () const
+\begin{DoxyCompactList}\small\item\em A user-\/supplied impact parameter generator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_ad85f010eec60d78830af811a278ae866}\label{class_pythia8_1_1_h_i_user_hooks_ad85f010eec60d78830af811a278ae866}} 
+virtual \mbox{\hyperlink{class_pythia8_1_1_impact_parameter_generator}{Impact\+Parameter\+Generator}} $\ast$ {\bfseries impact\+Parameter\+Generator} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_a834bee65433623ee2c4943b9fbd720a9}\label{class_pythia8_1_1_h_i_user_hooks_a834bee65433623ee2c4943b9fbd720a9}} 
+virtual bool \mbox{\hyperlink{class_pythia8_1_1_h_i_user_hooks_a834bee65433623ee2c4943b9fbd720a9}{has\+Projectile\+Model}} () const
+\begin{DoxyCompactList}\small\item\em A suser-\/supplied \mbox{\hyperlink{class_pythia8_1_1_nucleus_model}{Nucleus\+Model}} for the projectile and target. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_a50a7d546655eda32b72c81f4995f9b44}\label{class_pythia8_1_1_h_i_user_hooks_a50a7d546655eda32b72c81f4995f9b44}} 
+virtual \mbox{\hyperlink{class_pythia8_1_1_nucleus_model}{Nucleus\+Model}} $\ast$ {\bfseries projectile\+Model} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_a9c0b406353a96945058839f73768a80c}\label{class_pythia8_1_1_h_i_user_hooks_a9c0b406353a96945058839f73768a80c}} 
+virtual bool {\bfseries has\+Target\+Model} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_af4ddec1823d4671a030eb39b034d4e0b}\label{class_pythia8_1_1_h_i_user_hooks_af4ddec1823d4671a030eb39b034d4e0b}} 
+virtual \mbox{\hyperlink{class_pythia8_1_1_nucleus_model}{Nucleus\+Model}} $\ast$ {\bfseries target\+Model} () const
+\item 
+virtual bool \mbox{\hyperlink{class_pythia8_1_1_h_i_user_hooks_a39afe76a4034196e85e57da481a9e86b}{has\+Sub\+Collision\+Model}} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_a6fa0c3dfef06c541a6fbb89c189d9768}\label{class_pythia8_1_1_h_i_user_hooks_a6fa0c3dfef06c541a6fbb89c189d9768}} 
+virtual \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model}{Sub\+Collision\+Model}} $\ast$ {\bfseries sub\+Collision\+Model} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_a5989dd9923e758ec878cb57b82cbdcee}\label{class_pythia8_1_1_h_i_user_hooks_a5989dd9923e758ec878cb57b82cbdcee}} 
+virtual bool \mbox{\hyperlink{class_pythia8_1_1_h_i_user_hooks_a5989dd9923e758ec878cb57b82cbdcee}{has\+Event\+Ordering}} () const
+\begin{DoxyCompactList}\small\item\em A user-\/supplied ordering of events in (inverse) hardness. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_ae260a2905a18cd5d4f4a6b6704af2902}\label{class_pythia8_1_1_h_i_user_hooks_ae260a2905a18cd5d4f4a6b6704af2902}} 
+virtual double {\bfseries event\+Ordering} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, const \mbox{\hyperlink{class_pythia8_1_1_info}{Info}} \&)
+\item 
+virtual bool \mbox{\hyperlink{class_pythia8_1_1_h_i_user_hooks_a8c94c0d689c7d3ffc5c48289bed13b37}{can\+Fix\+Iso\+Spin}} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_a53e5157f8b8da5b03a6d15ab88614236}\label{class_pythia8_1_1_h_i_user_hooks_a53e5157f8b8da5b03a6d15ab88614236}} 
+virtual bool {\bfseries fix\+Iso\+Spin} (\mbox{\hyperlink{class_pythia8_1_1_event_info}{Event\+Info}} \&)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_ad8d7c2d927e1f7479dadef782bf3939d}\label{class_pythia8_1_1_h_i_user_hooks_ad8d7c2d927e1f7479dadef782bf3939d}} 
+virtual bool \mbox{\hyperlink{class_pythia8_1_1_h_i_user_hooks_ad8d7c2d927e1f7479dadef782bf3939d}{can\+Shift\+Event}} () const
+\begin{DoxyCompactList}\small\item\em A user-\/supplied method for shifting the event in impact parameter space. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_a3f50557259f2f99610961acb91406c1a}\label{class_pythia8_1_1_h_i_user_hooks_a3f50557259f2f99610961acb91406c1a}} 
+virtual \mbox{\hyperlink{class_pythia8_1_1_event_info}{Event\+Info}} \& {\bfseries shift\+Event} (\mbox{\hyperlink{class_pythia8_1_1_event_info}{Event\+Info}} \&ei) const
+\item 
+bool \mbox{\hyperlink{class_pythia8_1_1_h_i_user_hooks_a32be296ded92713e15f23acfb96b542b}{can\+Add\+Nucleon\+Excitation}} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_a11ae222e264be0a905b543aec9aec7ad}\label{class_pythia8_1_1_h_i_user_hooks_a11ae222e264be0a905b543aec9aec7ad}} 
+bool {\bfseries add\+Nucleon\+Excitation} (\mbox{\hyperlink{class_pythia8_1_1_event_info}{Event\+Info}} \&, \mbox{\hyperlink{class_pythia8_1_1_event_info}{Event\+Info}} \&, bool) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_acf5327bd3d7065f8ffc1fa470239491e}\label{class_pythia8_1_1_h_i_user_hooks_acf5327bd3d7065f8ffc1fa470239491e}} 
+virtual bool \mbox{\hyperlink{class_pythia8_1_1_h_i_user_hooks_acf5327bd3d7065f8ffc1fa470239491e}{can\+Force\+Hadron\+Level}} () const
+\begin{DoxyCompactList}\small\item\em A user supplied wrapper around the Pythia\+::force\+Hadron\+Level() \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_a5f01cf1c1e508f46471400fca77ac8ad}\label{class_pythia8_1_1_h_i_user_hooks_a5f01cf1c1e508f46471400fca77ac8ad}} 
+virtual bool {\bfseries force\+Hadron\+Level} (\mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} \&)
+\item 
+virtual bool \mbox{\hyperlink{class_pythia8_1_1_h_i_user_hooks_a775617ad95c710042df8e4b93a83ea05}{can\+Find\+Recoilers}} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_ad5ee74c4aaf4e24febe196cda45cdda8}\label{class_pythia8_1_1_h_i_user_hooks_ad5ee74c4aaf4e24febe196cda45cdda8}} 
+virtual vector$<$ int $>$ {\bfseries find\+Recoilers} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&, bool, int, int, const \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \&, const \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \&) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_pythia8_1_1_h_i_user_hooks_a701a17ac0dbafe4eedf6fea5ef267fc0}{id\+Proj\+Save}}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_ae287995faafe12cc19111714b8916e26}\label{class_pythia8_1_1_h_i_user_hooks_ae287995faafe12cc19111714b8916e26}} 
+int {\bfseries id\+Targ\+Save}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the heavy ion user hooks class which in the future may be used inside a \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} object to generate heavy ion collisons. For now it is used outside \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} and requires access to a number of \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} objects. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_a32be296ded92713e15f23acfb96b542b}\label{class_pythia8_1_1_h_i_user_hooks_a32be296ded92713e15f23acfb96b542b}} 
+\index{Pythia8::HIUserHooks@{Pythia8::HIUserHooks}!canAddNucleonExcitation@{canAddNucleonExcitation}}
+\index{canAddNucleonExcitation@{canAddNucleonExcitation}!Pythia8::HIUserHooks@{Pythia8::HIUserHooks}}
+\doxysubsubsection{\texorpdfstring{canAddNucleonExcitation()}{canAddNucleonExcitation()}}
+{\footnotesize\ttfamily bool Pythia8\+::\+H\+I\+User\+Hooks\+::can\+Add\+Nucleon\+Excitation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+A user-\/supplied method of adding a diffractive excitation event to another event, optionally connecting their colours. \mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_a775617ad95c710042df8e4b93a83ea05}\label{class_pythia8_1_1_h_i_user_hooks_a775617ad95c710042df8e4b93a83ea05}} 
+\index{Pythia8::HIUserHooks@{Pythia8::HIUserHooks}!canFindRecoilers@{canFindRecoilers}}
+\index{canFindRecoilers@{canFindRecoilers}!Pythia8::HIUserHooks@{Pythia8::HIUserHooks}}
+\doxysubsubsection{\texorpdfstring{canFindRecoilers()}{canFindRecoilers()}}
+{\footnotesize\ttfamily virtual bool Pythia8\+::\+H\+I\+User\+Hooks\+::can\+Find\+Recoilers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+A user-\/supplied way of finding the remnants of an non-\/diffrcative pp collision (on the target side if tside is true) to be used to give momentum when adding. \mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_a8c94c0d689c7d3ffc5c48289bed13b37}\label{class_pythia8_1_1_h_i_user_hooks_a8c94c0d689c7d3ffc5c48289bed13b37}} 
+\index{Pythia8::HIUserHooks@{Pythia8::HIUserHooks}!canFixIsoSpin@{canFixIsoSpin}}
+\index{canFixIsoSpin@{canFixIsoSpin}!Pythia8::HIUserHooks@{Pythia8::HIUserHooks}}
+\doxysubsubsection{\texorpdfstring{canFixIsoSpin()}{canFixIsoSpin()}}
+{\footnotesize\ttfamily virtual bool Pythia8\+::\+H\+I\+User\+Hooks\+::can\+Fix\+Iso\+Spin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+A user-\/supplied method for fixing up proton-\/neutron mismatch in generated beams. \mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_a39afe76a4034196e85e57da481a9e86b}\label{class_pythia8_1_1_h_i_user_hooks_a39afe76a4034196e85e57da481a9e86b}} 
+\index{Pythia8::HIUserHooks@{Pythia8::HIUserHooks}!hasSubCollisionModel@{hasSubCollisionModel}}
+\index{hasSubCollisionModel@{hasSubCollisionModel}!Pythia8::HIUserHooks@{Pythia8::HIUserHooks}}
+\doxysubsubsection{\texorpdfstring{hasSubCollisionModel()}{hasSubCollisionModel()}}
+{\footnotesize\ttfamily virtual bool Pythia8\+::\+H\+I\+User\+Hooks\+::has\+Sub\+Collision\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+A user-\/supplied \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model}{Sub\+Collision\+Model}} for generating nucleon-\/nucleon subcollisions. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_h_i_user_hooks_a701a17ac0dbafe4eedf6fea5ef267fc0}\label{class_pythia8_1_1_h_i_user_hooks_a701a17ac0dbafe4eedf6fea5ef267fc0}} 
+\index{Pythia8::HIUserHooks@{Pythia8::HIUserHooks}!idProjSave@{idProjSave}}
+\index{idProjSave@{idProjSave}!Pythia8::HIUserHooks@{Pythia8::HIUserHooks}}
+\doxysubsubsection{\texorpdfstring{idProjSave}{idProjSave}}
+{\footnotesize\ttfamily int Pythia8\+::\+H\+I\+User\+Hooks\+::id\+Proj\+Save\hspace{0.3cm}{\ttfamily [protected]}}
+
+Information set in the \mbox{\hyperlink{class_pythia8_1_1_h_i_user_hooks_ae1687009f646c84e63c4b51833246d9f}{init()}} function. The P\+DG id of the projectile and target nuclei. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/H\+I\+User\+Hooks.\+h\end{DoxyCompactItemize}

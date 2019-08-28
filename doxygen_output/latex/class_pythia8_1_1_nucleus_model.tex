@@ -1,0 +1,110 @@
+\hypertarget{class_pythia8_1_1_nucleus_model}{}\doxysection{Pythia8\+::Nucleus\+Model Class Reference}
+\label{class_pythia8_1_1_nucleus_model}\index{Pythia8::NucleusModel@{Pythia8::NucleusModel}}
+
+
+{\ttfamily \#include $<$H\+I\+User\+Hooks.\+h$>$}
+
+Inheritance diagram for Pythia8\+::Nucleus\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pythia8_1_1_nucleus_model}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pythia8_1_1_nucleus_model_aa6182d5f15443c7cf134d1edd72ec807}{Nucleus\+Model}} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_a2142e58ceddc03ed535c8c50ce8829dd}\label{class_pythia8_1_1_nucleus_model_a2142e58ceddc03ed535c8c50ce8829dd}} 
+virtual \mbox{\hyperlink{class_pythia8_1_1_nucleus_model_a2142e58ceddc03ed535c8c50ce8829dd}{$\sim$\+Nucleus\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_a7222a9b62690336bd19768f5e9c87906}\label{class_pythia8_1_1_nucleus_model_a7222a9b62690336bd19768f5e9c87906}} 
+void \mbox{\hyperlink{class_pythia8_1_1_nucleus_model_a7222a9b62690336bd19768f5e9c87906}{init\+Ptr}} (int id\+In, \mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} \&settings\+In, \mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} \&particle\+Data\+In, \mbox{\hyperlink{class_pythia8_1_1_rndm}{Rndm}} \&rnd\+In)
+\begin{DoxyCompactList}\small\item\em Init method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_a33a7fc5e09f94e67c28eb70aeb5e814f}\label{class_pythia8_1_1_nucleus_model_a33a7fc5e09f94e67c28eb70aeb5e814f}} 
+virtual bool {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_a1b56ff8d17d9a8269157058530c9446e}\label{class_pythia8_1_1_nucleus_model_a1b56ff8d17d9a8269157058530c9446e}} 
+virtual \mbox{\hyperlink{class_pythia8_1_1_particle}{Particle}} {\bfseries produce\+Ion} (bool istarg)
+\item 
+virtual vector$<$ \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $>$ \mbox{\hyperlink{class_pythia8_1_1_nucleus_model_ae834ee6212cd0f1e7a3616a571e46401}{generate}} () const =0
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_a2c790c3d5bfa586ace9038ef48b8d6ff}\label{class_pythia8_1_1_nucleus_model_a2c790c3d5bfa586ace9038ef48b8d6ff}} 
+int \mbox{\hyperlink{class_pythia8_1_1_nucleus_model_a2c790c3d5bfa586ace9038ef48b8d6ff}{id}} () const
+\begin{DoxyCompactList}\small\item\em Accessor functions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_aa046c13f8ab74e9ada80d355ee93c732}\label{class_pythia8_1_1_nucleus_model_aa046c13f8ab74e9ada80d355ee93c732}} 
+int {\bfseries I} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_a8950e32944e03bc92c0772955894ca03}\label{class_pythia8_1_1_nucleus_model_a8950e32944e03bc92c0772955894ca03}} 
+int {\bfseries A} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_ae15e1a6e0e5585097a32023d8e9280ab}\label{class_pythia8_1_1_nucleus_model_ae15e1a6e0e5585097a32023d8e9280ab}} 
+int {\bfseries Z} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_a62ac548539c673f3730280fc8616a2f5}\label{class_pythia8_1_1_nucleus_model_a62ac548539c673f3730280fc8616a2f5}} 
+int {\bfseries L} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_a1f9e08c2e17f8f1c14e184f203c37d42}\label{class_pythia8_1_1_nucleus_model_a1f9e08c2e17f8f1c14e184f203c37d42}} 
+double {\bfseries R} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_acd86047d176415a85d63af8c861592a1}\label{class_pythia8_1_1_nucleus_model_acd86047d176415a85d63af8c861592a1}} 
+int \mbox{\hyperlink{class_pythia8_1_1_nucleus_model_acd86047d176415a85d63af8c861592a1}{id\+Save}}
+\begin{DoxyCompactList}\small\item\em The nucleus. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_a482db45cc6027409c090763387620419}\label{class_pythia8_1_1_nucleus_model_a482db45cc6027409c090763387620419}} 
+int \mbox{\hyperlink{class_pythia8_1_1_nucleus_model_a482db45cc6027409c090763387620419}{I\+Save}}
+\begin{DoxyCompactList}\small\item\em Cache information about the nucleus. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_a7763964010e80f334573aa3fc726922a}\label{class_pythia8_1_1_nucleus_model_a7763964010e80f334573aa3fc726922a}} 
+int {\bfseries A\+Save}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_a652882ed3067e1ab55e71b5b1b9b4a73}\label{class_pythia8_1_1_nucleus_model_a652882ed3067e1ab55e71b5b1b9b4a73}} 
+int {\bfseries Z\+Save}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_a176ecdc7f01d2548c6a124c15a938072}\label{class_pythia8_1_1_nucleus_model_a176ecdc7f01d2548c6a124c15a938072}} 
+int {\bfseries L\+Save}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_a9e5187f82cb056d719ab47d9b8e33617}\label{class_pythia8_1_1_nucleus_model_a9e5187f82cb056d719ab47d9b8e33617}} 
+double \mbox{\hyperlink{class_pythia8_1_1_nucleus_model_a9e5187f82cb056d719ab47d9b8e33617}{R\+Save}}
+\begin{DoxyCompactList}\small\item\em The estimate of the nucleus radius. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_a3fe14ef0de1ccf8dda11ce3649eff5a1}\label{class_pythia8_1_1_nucleus_model_a3fe14ef0de1ccf8dda11ce3649eff5a1}} 
+\mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} $\ast$ \mbox{\hyperlink{class_pythia8_1_1_nucleus_model_a3fe14ef0de1ccf8dda11ce3649eff5a1}{settings\+Ptr}}
+\begin{DoxyCompactList}\small\item\em Pointers to useful objects. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_ab8605040c97c558c3aa4fc53703cdb2e}\label{class_pythia8_1_1_nucleus_model_ab8605040c97c558c3aa4fc53703cdb2e}} 
+\mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$ {\bfseries particle\+Data\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_a2aa98b4f4ca0780120f2023a410c3738}\label{class_pythia8_1_1_nucleus_model_a2aa98b4f4ca0780120f2023a410c3738}} 
+\mbox{\hyperlink{class_pythia8_1_1_rndm}{Rndm}} $\ast$ {\bfseries rnd\+Ptr}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class generates the impact parameter distribution of nucleons in a nucleus. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_aa6182d5f15443c7cf134d1edd72ec807}\label{class_pythia8_1_1_nucleus_model_aa6182d5f15443c7cf134d1edd72ec807}} 
+\index{Pythia8::NucleusModel@{Pythia8::NucleusModel}!NucleusModel@{NucleusModel}}
+\index{NucleusModel@{NucleusModel}!Pythia8::NucleusModel@{Pythia8::NucleusModel}}
+\doxysubsubsection{\texorpdfstring{NucleusModel()}{NucleusModel()}}
+{\footnotesize\ttfamily Pythia8\+::\+Nucleus\+Model\+::\+Nucleus\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor giving the nucleis id and an optional raduis (in femtometer). 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_nucleus_model_ae834ee6212cd0f1e7a3616a571e46401}\label{class_pythia8_1_1_nucleus_model_ae834ee6212cd0f1e7a3616a571e46401}} 
+\index{Pythia8::NucleusModel@{Pythia8::NucleusModel}!generate@{generate}}
+\index{generate@{generate}!Pythia8::NucleusModel@{Pythia8::NucleusModel}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily virtual vector$<$\mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}}$>$ Pythia8\+::\+Nucleus\+Model\+::generate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Generate a vector of nucleons according to the implemented model for a nucleus given by the P\+DG number. 
+
+Implemented in \mbox{\hyperlink{class_pythia8_1_1_g_l_i_s_s_a_n_d_o_model_a4f884d13ac72d19f8d63aaca57b9716c}{Pythia8\+::\+G\+L\+I\+S\+S\+A\+N\+D\+O\+Model}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/H\+I\+User\+Hooks.\+h\item 
+src/H\+I\+User\+Hooks.\+cc\end{DoxyCompactItemize}

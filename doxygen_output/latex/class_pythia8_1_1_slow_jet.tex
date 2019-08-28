@@ -1,0 +1,197 @@
+\hypertarget{class_pythia8_1_1_slow_jet}{}\doxysection{Pythia8\+::Slow\+Jet Class Reference}
+\label{class_pythia8_1_1_slow_jet}\index{Pythia8::SlowJet@{Pythia8::SlowJet}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a08703f8bbc616591f7c8a19dd351be08}\label{class_pythia8_1_1_slow_jet_a08703f8bbc616591f7c8a19dd351be08}} 
+{\bfseries Slow\+Jet} (int power\+In, double Rin, double p\+Tjet\+Min\+In=0., double eta\+Max\+In=25., int select\+In=2, int mass\+Set\+In=2, \mbox{\hyperlink{class_pythia8_1_1_slow_jet_hook}{Slow\+Jet\+Hook}} $\ast$sj\+Hook\+Ptr\+In=0, bool use\+F\+Jcore\+In=true, bool use\+Standard\+Rin=true)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a79c1e9cb3659956f7e345301f9c55ff4}\label{class_pythia8_1_1_slow_jet_a79c1e9cb3659956f7e345301f9c55ff4}} 
+bool {\bfseries analyze} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&event)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a090ae155bf37e18c783ba383febfce65}\label{class_pythia8_1_1_slow_jet_a090ae155bf37e18c783ba383febfce65}} 
+bool {\bfseries setup} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&event)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_ac8dde9b87a8865508ef4b4b9f1dee734}\label{class_pythia8_1_1_slow_jet_ac8dde9b87a8865508ef4b4b9f1dee734}} 
+virtual bool {\bfseries do\+Step} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a39aed57f85351456437a4c58953f48d6}\label{class_pythia8_1_1_slow_jet_a39aed57f85351456437a4c58953f48d6}} 
+bool {\bfseries do\+N\+Steps} (int n\+Step)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a6d5c08751cc82aa3d034f30ee9a2f0e4}\label{class_pythia8_1_1_slow_jet_a6d5c08751cc82aa3d034f30ee9a2f0e4}} 
+bool {\bfseries stop\+AtN} (int n\+Stop)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a3febfffeaa4ccd33586e1aa33a0f7c8e}\label{class_pythia8_1_1_slow_jet_a3febfffeaa4ccd33586e1aa33a0f7c8e}} 
+int {\bfseries size\+Orig} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a0499f7fa307cc126ab6dc0312443d8f4}\label{class_pythia8_1_1_slow_jet_a0499f7fa307cc126ab6dc0312443d8f4}} 
+int {\bfseries size\+Jet} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_aad8796d214121566dd567a632809844d}\label{class_pythia8_1_1_slow_jet_aad8796d214121566dd567a632809844d}} 
+int {\bfseries size\+All} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_ad9f4575a6c44175710628e91004333ef}\label{class_pythia8_1_1_slow_jet_ad9f4575a6c44175710628e91004333ef}} 
+double {\bfseries pT} (int i) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a2a640d2d9841ab45112d6a043719236e}\label{class_pythia8_1_1_slow_jet_a2a640d2d9841ab45112d6a043719236e}} 
+double {\bfseries y} (int i) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a8160b7201f1976bfcd9a8800ded7f2e2}\label{class_pythia8_1_1_slow_jet_a8160b7201f1976bfcd9a8800ded7f2e2}} 
+double {\bfseries phi} (int i) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a6e74199d5e6082b011affc7576c7002a}\label{class_pythia8_1_1_slow_jet_a6e74199d5e6082b011affc7576c7002a}} 
+\mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} {\bfseries p} (int i) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a12568b3dc12b5873bff74550eee5ec3f}\label{class_pythia8_1_1_slow_jet_a12568b3dc12b5873bff74550eee5ec3f}} 
+double {\bfseries m} (int i) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_af6bb5f7f7f5344d046b1ebb917680d85}\label{class_pythia8_1_1_slow_jet_af6bb5f7f7f5344d046b1ebb917680d85}} 
+int {\bfseries multiplicity} (int i) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a29d64f009309de0c64cbc839af5a96c1}\label{class_pythia8_1_1_slow_jet_a29d64f009309de0c64cbc839af5a96c1}} 
+int {\bfseries i\+Next} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_aab34ae938b3944d5d9e1c128d21c82cf}\label{class_pythia8_1_1_slow_jet_aab34ae938b3944d5d9e1c128d21c82cf}} 
+int {\bfseries j\+Next} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a73ded6885d6ae017d46dabdf88250c97}\label{class_pythia8_1_1_slow_jet_a73ded6885d6ae017d46dabdf88250c97}} 
+double {\bfseries d\+Next} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a9d7bdc2c3b8888cabc7595c80c6b8e08}\label{class_pythia8_1_1_slow_jet_a9d7bdc2c3b8888cabc7595c80c6b8e08}} 
+void {\bfseries list} (bool list\+All=false) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_aafc51483dbd12acce69436bbcc0cdc34}\label{class_pythia8_1_1_slow_jet_aafc51483dbd12acce69436bbcc0cdc34}} 
+vector$<$ int $>$ {\bfseries constituents} (int j)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a3936b26b7f54b89162e10d4bc726a7a6}\label{class_pythia8_1_1_slow_jet_a3936b26b7f54b89162e10d4bc726a7a6}} 
+vector$<$ int $>$ {\bfseries clus\+Constituents} (int j)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_add9556596abeab45ee67ba06fbb2317b}\label{class_pythia8_1_1_slow_jet_add9556596abeab45ee67ba06fbb2317b}} 
+int {\bfseries jet\+Assignment} (int i)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a4ab95131ba666362dd57196743798a6b}\label{class_pythia8_1_1_slow_jet_a4ab95131ba666362dd57196743798a6b}} 
+void {\bfseries remove\+Jet} (int i)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_affcd41684e6cee85c8df6560d8b238ed}\label{class_pythia8_1_1_slow_jet_affcd41684e6cee85c8df6560d8b238ed}} 
+virtual void {\bfseries find\+Next} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a20aebf6b914a2c28fc42589c698bf24e}\label{class_pythia8_1_1_slow_jet_a20aebf6b914a2c28fc42589c698bf24e}} 
+bool {\bfseries cluster\+FJ} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a1113ea06e31b444cc075a15d6a8d4aaa}\label{class_pythia8_1_1_slow_jet_a1113ea06e31b444cc075a15d6a8d4aaa}} 
+int {\bfseries power}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a4d32ebd6eddff041aee7f1281a7a3e40}\label{class_pythia8_1_1_slow_jet_a4d32ebd6eddff041aee7f1281a7a3e40}} 
+double {\bfseries R}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a3c1009641bb034225508427aef23b3e0}\label{class_pythia8_1_1_slow_jet_a3c1009641bb034225508427aef23b3e0}} 
+double {\bfseries p\+Tjet\+Min}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_ab37305793ee89e75ca90fed4414fa73d}\label{class_pythia8_1_1_slow_jet_ab37305793ee89e75ca90fed4414fa73d}} 
+double {\bfseries eta\+Max}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_aeff640dbe821354940b5eedd8d6f7e8a}\label{class_pythia8_1_1_slow_jet_aeff640dbe821354940b5eedd8d6f7e8a}} 
+double {\bfseries R2}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a38ab81dd78396ac0fcb83b2b0a854c1b}\label{class_pythia8_1_1_slow_jet_a38ab81dd78396ac0fcb83b2b0a854c1b}} 
+double {\bfseries p\+T2jet\+Min}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a7a0c0c5b482df2563eee4cdb09f1d325}\label{class_pythia8_1_1_slow_jet_a7a0c0c5b482df2563eee4cdb09f1d325}} 
+int {\bfseries select}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a867e0dffca82940469b9c958deee214c}\label{class_pythia8_1_1_slow_jet_a867e0dffca82940469b9c958deee214c}} 
+int {\bfseries mass\+Set}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_ad3c130adcc63128c35afd087d1fd5866}\label{class_pythia8_1_1_slow_jet_ad3c130adcc63128c35afd087d1fd5866}} 
+\mbox{\hyperlink{class_pythia8_1_1_slow_jet_hook}{Slow\+Jet\+Hook}} $\ast$ {\bfseries sj\+Hook\+Ptr}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a393a944b3a889516cf6b0b1f6057b78c}\label{class_pythia8_1_1_slow_jet_a393a944b3a889516cf6b0b1f6057b78c}} 
+bool {\bfseries use\+F\+Jcore}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_ab0c942422a058b2efcca62f3d28714bf}\label{class_pythia8_1_1_slow_jet_ab0c942422a058b2efcca62f3d28714bf}} 
+bool {\bfseries use\+StandardR}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a7a000472404f1fb4854a4988c0720628}\label{class_pythia8_1_1_slow_jet_a7a000472404f1fb4854a4988c0720628}} 
+bool {\bfseries is\+Anti}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a70ec63916e13e698a7a1787a30d65d99}\label{class_pythia8_1_1_slow_jet_a70ec63916e13e698a7a1787a30d65d99}} 
+bool {\bfseries is\+KT}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a05d163817e832893d2047876bbad2a82}\label{class_pythia8_1_1_slow_jet_a05d163817e832893d2047876bbad2a82}} 
+bool {\bfseries cut\+In\+Eta}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a41c2f69d793040782ee70f43aa37522c}\label{class_pythia8_1_1_slow_jet_a41c2f69d793040782ee70f43aa37522c}} 
+bool {\bfseries charged\+Only}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_aa08f3c411629fd57d56b6cd2dd775916}\label{class_pythia8_1_1_slow_jet_aa08f3c411629fd57d56b6cd2dd775916}} 
+bool {\bfseries visible\+Only}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a0e7a1877f5c238b986228043ab6b75ca}\label{class_pythia8_1_1_slow_jet_a0e7a1877f5c238b986228043ab6b75ca}} 
+bool {\bfseries modify\+Mass}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a4c51d96f7d3b7e679782565ccf99f79d}\label{class_pythia8_1_1_slow_jet_a4c51d96f7d3b7e679782565ccf99f79d}} 
+bool {\bfseries no\+Hook}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a8a18751a8f602765cf34cd39004ce33f}\label{class_pythia8_1_1_slow_jet_a8a18751a8f602765cf34cd39004ce33f}} 
+vector$<$ \mbox{\hyperlink{class_pythia8_1_1_single_slow_jet}{Single\+Slow\+Jet}} $>$ {\bfseries clusters}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a932887d0ca37073957c7a0b06c20069a}\label{class_pythia8_1_1_slow_jet_a932887d0ca37073957c7a0b06c20069a}} 
+vector$<$ \mbox{\hyperlink{class_pythia8_1_1_single_slow_jet}{Single\+Slow\+Jet}} $>$ {\bfseries jets}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a3a9f11604ed59188a1706e00debf2eab}\label{class_pythia8_1_1_slow_jet_a3a9f11604ed59188a1706e00debf2eab}} 
+vector$<$ double $>$ {\bfseries diB}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a40b4f431a239c58610a49b01b801cf8f}\label{class_pythia8_1_1_slow_jet_a40b4f431a239c58610a49b01b801cf8f}} 
+vector$<$ double $>$ {\bfseries dij}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_aae25ee3ad8828eec050d77754e85927e}\label{class_pythia8_1_1_slow_jet_aae25ee3ad8828eec050d77754e85927e}} 
+int {\bfseries orig\+Size}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_adcd2c992cc1862317d25fecc735bcd4f}\label{class_pythia8_1_1_slow_jet_adcd2c992cc1862317d25fecc735bcd4f}} 
+int {\bfseries cl\+Size}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_ad5a0eba8527a14a21a9b8217bc29761f}\label{class_pythia8_1_1_slow_jet_ad5a0eba8527a14a21a9b8217bc29761f}} 
+int {\bfseries cl\+Last}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a3eb00e3d80b39a85e4926a1cac5e7cd0}\label{class_pythia8_1_1_slow_jet_a3eb00e3d80b39a85e4926a1cac5e7cd0}} 
+int {\bfseries jt\+Size}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a65e7379c69be7b9c01588f3ddd8184a9}\label{class_pythia8_1_1_slow_jet_a65e7379c69be7b9c01588f3ddd8184a9}} 
+int {\bfseries i\+Min}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a210f3e0f4e5aa2ae48540f022120e1e7}\label{class_pythia8_1_1_slow_jet_a210f3e0f4e5aa2ae48540f022120e1e7}} 
+int {\bfseries j\+Min}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_ad0186092e734400ad75b96bee403a39d}\label{class_pythia8_1_1_slow_jet_ad0186092e734400ad75b96bee403a39d}} 
+double {\bfseries d\+Phi}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a36fced3da977aea2a4aab5e7d90b9723}\label{class_pythia8_1_1_slow_jet_a36fced3da977aea2a4aab5e7d90b9723}} 
+double {\bfseries dij\+Temp}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a232adb409bbc920f25d27da4b0525322}\label{class_pythia8_1_1_slow_jet_a232adb409bbc920f25d27da4b0525322}} 
+double {\bfseries d\+Min}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_a831e3b27c8f0490f3279865d3ac71d7b}\label{class_pythia8_1_1_slow_jet_a831e3b27c8f0490f3279865d3ac71d7b}} 
+static const int {\bfseries T\+I\+M\+E\+S\+T\+O\+P\+R\+I\+NT} = 1
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_ae4ce522f3257a73918b9fc4b5e334ed1}\label{class_pythia8_1_1_slow_jet_ae4ce522f3257a73918b9fc4b5e334ed1}} 
+static const double {\bfseries P\+I\+M\+A\+SS} = 0.\+13957
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_slow_jet_aad19d34c395531de3daa744dca0cd458}\label{class_pythia8_1_1_slow_jet_aad19d34c395531de3daa744dca0cd458}} 
+static const double {\bfseries T\+I\+NY} = 1e-\/20
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/Analysis.\+h\item 
+src/Analysis.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,109 @@
+\hypertarget{class_pythia8_1_1_sub_collision}{}\doxysection{Pythia8\+::Sub\+Collision Class Reference}
+\label{class_pythia8_1_1_sub_collision}\index{Pythia8::SubCollision@{Pythia8::SubCollision}}
+
+
+{\ttfamily \#include $<$H\+I\+User\+Hooks.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8}{Type}} \{ \newline
+\mbox{\hyperlink{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8af6911f8f3c8521540a4a26922360bb0c}{N\+O\+NE}}, 
+\mbox{\hyperlink{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8a1655a9abfebcd815de22c3a931def642}{E\+L\+A\+S\+T\+IC}}, 
+\mbox{\hyperlink{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8a5cdcb64b2382eb60f030d9e8d856e985}{S\+D\+EP}}, 
+\mbox{\hyperlink{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8aa02e3cff23dd19e24ac8848e835a9d33}{S\+D\+ET}}, 
+\newline
+\mbox{\hyperlink{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8a18a49187a84e2724ff91b170dce5564e}{D\+DE}}, 
+\mbox{\hyperlink{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8a2b7edecffda369527a8bddcc19500f57}{C\+DE}}, 
+\mbox{\hyperlink{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8a497696632bb95c8224536eceee2d590e}{A\+BS}}
+ \}
+\begin{DoxyCompactList}\small\item\em This defines the type of a bunary nucleon collison. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_a3745f25be9e8e3cb61a875ba776c719c}\label{class_pythia8_1_1_sub_collision_a3745f25be9e8e3cb61a875ba776c719c}} 
+{\bfseries Sub\+Collision} (\mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} \&proj\+In, \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} \&targ\+In, double b\+In, double bp\+In, \mbox{\hyperlink{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8}{Type}} type\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_af310deea62533fe3886f7b87f6edc924}\label{class_pythia8_1_1_sub_collision_af310deea62533fe3886f7b87f6edc924}} 
+bool {\bfseries operator$<$} (const \mbox{\hyperlink{class_pythia8_1_1_sub_collision}{Sub\+Collision}} \&s) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_a0e6e04fc7f843b242486c3c172f38c83}\label{class_pythia8_1_1_sub_collision_a0e6e04fc7f843b242486c3c172f38c83}} 
+int {\bfseries nucleons} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_adfa4e39fa0120d376263aaa724f72053}\label{class_pythia8_1_1_sub_collision_adfa4e39fa0120d376263aaa724f72053}} 
+\mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $\ast$ {\bfseries proj}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_a90fc6cf95b8dd61b9c2cbfe7f7b1e73b}\label{class_pythia8_1_1_sub_collision_a90fc6cf95b8dd61b9c2cbfe7f7b1e73b}} 
+\mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $\ast$ \mbox{\hyperlink{class_pythia8_1_1_sub_collision_a90fc6cf95b8dd61b9c2cbfe7f7b1e73b}{targ}}
+\begin{DoxyCompactList}\small\item\em The target nucleon. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_a897bed369aa66ff9156731a49bc08cb0}\label{class_pythia8_1_1_sub_collision_a897bed369aa66ff9156731a49bc08cb0}} 
+double \mbox{\hyperlink{class_pythia8_1_1_sub_collision_a897bed369aa66ff9156731a49bc08cb0}{b}}
+\begin{DoxyCompactList}\small\item\em The impact parameter distance between the nucleons in femtometer. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_pythia8_1_1_sub_collision_a4cf32042925b8f3199b6fa4015aeb963}{bp}}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_a53234bbcd7c7d351aa39ab8655cabd1b}\label{class_pythia8_1_1_sub_collision_a53234bbcd7c7d351aa39ab8655cabd1b}} 
+\mbox{\hyperlink{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8}{Type}} \mbox{\hyperlink{class_pythia8_1_1_sub_collision_a53234bbcd7c7d351aa39ab8655cabd1b}{type}}
+\begin{DoxyCompactList}\small\item\em The type of collison. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_pythia8_1_1_sub_collision}{Sub\+Collision}} represents a possible collision between a projectile and a target \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}}. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8}\label{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8}} 
+\index{Pythia8::SubCollision@{Pythia8::SubCollision}!Type@{Type}}
+\index{Type@{Type}!Pythia8::SubCollision@{Pythia8::SubCollision}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8}{Pythia8\+::\+Sub\+Collision\+::\+Type}}}
+
+
+
+This defines the type of a bunary nucleon collison. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NONE@{NONE}!Pythia8::SubCollision@{Pythia8::SubCollision}}\index{Pythia8::SubCollision@{Pythia8::SubCollision}!NONE@{NONE}}}\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8af6911f8f3c8521540a4a26922360bb0c}\label{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8af6911f8f3c8521540a4a26922360bb0c}} 
+N\+O\+NE&This is not a collision. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ELASTIC@{ELASTIC}!Pythia8::SubCollision@{Pythia8::SubCollision}}\index{Pythia8::SubCollision@{Pythia8::SubCollision}!ELASTIC@{ELASTIC}}}\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8a1655a9abfebcd815de22c3a931def642}\label{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8a1655a9abfebcd815de22c3a931def642}} 
+E\+L\+A\+S\+T\+IC&This is an elastic scattering. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SDEP@{SDEP}!Pythia8::SubCollision@{Pythia8::SubCollision}}\index{Pythia8::SubCollision@{Pythia8::SubCollision}!SDEP@{SDEP}}}\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8a5cdcb64b2382eb60f030d9e8d856e985}\label{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8a5cdcb64b2382eb60f030d9e8d856e985}} 
+S\+D\+EP&The projectile is diffractively excited. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SDET@{SDET}!Pythia8::SubCollision@{Pythia8::SubCollision}}\index{Pythia8::SubCollision@{Pythia8::SubCollision}!SDET@{SDET}}}\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8aa02e3cff23dd19e24ac8848e835a9d33}\label{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8aa02e3cff23dd19e24ac8848e835a9d33}} 
+S\+D\+ET&The target is diffractively excited. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DDE@{DDE}!Pythia8::SubCollision@{Pythia8::SubCollision}}\index{Pythia8::SubCollision@{Pythia8::SubCollision}!DDE@{DDE}}}\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8a18a49187a84e2724ff91b170dce5564e}\label{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8a18a49187a84e2724ff91b170dce5564e}} 
+D\+DE&Both projectile and target are diffractively excited. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CDE@{CDE}!Pythia8::SubCollision@{Pythia8::SubCollision}}\index{Pythia8::SubCollision@{Pythia8::SubCollision}!CDE@{CDE}}}\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8a2b7edecffda369527a8bddcc19500f57}\label{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8a2b7edecffda369527a8bddcc19500f57}} 
+C\+DE&Both excited but with central diffraction. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABS@{ABS}!Pythia8::SubCollision@{Pythia8::SubCollision}}\index{Pythia8::SubCollision@{Pythia8::SubCollision}!ABS@{ABS}}}\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8a497696632bb95c8224536eceee2d590e}\label{class_pythia8_1_1_sub_collision_abe8fe858f81a228dd1e2808407fcd6d8a497696632bb95c8224536eceee2d590e}} 
+A\+BS&This is an absorptive (non-\/diffractive) collision. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_sub_collision_a4cf32042925b8f3199b6fa4015aeb963}\label{class_pythia8_1_1_sub_collision_a4cf32042925b8f3199b6fa4015aeb963}} 
+\index{Pythia8::SubCollision@{Pythia8::SubCollision}!bp@{bp}}
+\index{bp@{bp}!Pythia8::SubCollision@{Pythia8::SubCollision}}
+\doxysubsubsection{\texorpdfstring{bp}{bp}}
+{\footnotesize\ttfamily double Pythia8\+::\+Sub\+Collision\+::bp}
+
+The impact parameter distance between the nucleons scaled like in \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} to have unit average for non-\/diffractive collisions. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/H\+I\+User\+Hooks.\+h\end{DoxyCompactItemize}

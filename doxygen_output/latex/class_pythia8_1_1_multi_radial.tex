@@ -1,0 +1,112 @@
+\hypertarget{class_pythia8_1_1_multi_radial}{}\doxysection{Pythia8\+::Multi\+Radial Class Reference}
+\label{class_pythia8_1_1_multi_radial}\index{Pythia8::MultiRadial@{Pythia8::MultiRadial}}
+
+
+{\ttfamily \#include $<$H\+I\+User\+Hooks.\+h$>$}
+
+Inheritance diagram for Pythia8\+::Multi\+Radial\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pythia8_1_1_multi_radial}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pythia8_1_1_multi_radial_a60e43d290a95380dfa7ed80ce667365d}{Multi\+Radial}} (int Nr\+In=0)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multi_radial_aeba408b33ecd67d07f8403dec5af3b20}\label{class_pythia8_1_1_multi_radial_aeba408b33ecd67d07f8403dec5af3b20}} 
+virtual \mbox{\hyperlink{class_pythia8_1_1_multi_radial_aeba408b33ecd67d07f8403dec5af3b20}{$\sim$\+Multi\+Radial}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor,. \end{DoxyCompactList}\item 
+virtual multiset$<$ \mbox{\hyperlink{class_pythia8_1_1_sub_collision}{Sub\+Collision}} $>$ \mbox{\hyperlink{class_pythia8_1_1_multi_radial_a9c6398e87b7cec2beb0b3d89f0c14fa4}{get\+Collisions}} (vector$<$ \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $>$ \&proj, vector$<$ \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $>$ \&targ, const \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \&bvec, double \&T)
+\item 
+double \mbox{\hyperlink{class_pythia8_1_1_multi_radial_ac7a853234e5bb4f38a4c912cd6236a9a}{Tpt}} (const \mbox{\hyperlink{class_pythia8_1_1_nucleon_a132cb2b791d6a3f3a86b30fa1ffbcd2c}{Nucleon\+::\+State}} \&p, const \mbox{\hyperlink{class_pythia8_1_1_nucleon_a132cb2b791d6a3f3a86b30fa1ffbcd2c}{Nucleon\+::\+State}} \&t, double b) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multi_radial_a5bba55dc6d5f7dc830cc97ca477c4364}\label{class_pythia8_1_1_multi_radial_a5bba55dc6d5f7dc830cc97ca477c4364}} 
+\mbox{\hyperlink{struct_pythia8_1_1_sub_collision_model_1_1_sig_est}{Sig\+Est}} \mbox{\hyperlink{class_pythia8_1_1_multi_radial_a5bba55dc6d5f7dc830cc97ca477c4364}{get\+Sig}} () const
+\begin{DoxyCompactList}\small\item\em Calculate the cross sections for the given set of parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multi_radial_aea41ee607946852a9174d72c474928b2}\label{class_pythia8_1_1_multi_radial_aea41ee607946852a9174d72c474928b2}} 
+virtual void \mbox{\hyperlink{class_pythia8_1_1_multi_radial_aea41ee607946852a9174d72c474928b2}{set\+Parm}} (const vector$<$ double $>$ \&)
+\begin{DoxyCompactList}\small\item\em Set the parameters of this model. \end{DoxyCompactList}\item 
+virtual vector$<$ double $>$ \mbox{\hyperlink{class_pythia8_1_1_multi_radial_a87d17affed609dac93e1574cf18822e9}{get\+Parm}} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multi_radial_a37edb488544698c37586e8067f9db64d}\label{class_pythia8_1_1_multi_radial_a37edb488544698c37586e8067f9db64d}} 
+virtual vector$<$ double $>$ {\bfseries min\+Parm} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multi_radial_a11a6446d43d80e937c7894a9d781e347}\label{class_pythia8_1_1_multi_radial_a11a6446d43d80e937c7894a9d781e347}} 
+virtual vector$<$ double $>$ {\bfseries max\+Parm} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multi_radial_a844ed08ce39fa7c0348d98c7ad671347}\label{class_pythia8_1_1_multi_radial_a844ed08ce39fa7c0348d98c7ad671347}} 
+void {\bfseries set\+Probs} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multi_radial_acc3a502b8f9b1f1f1b5ef6225db9551e}\label{class_pythia8_1_1_multi_radial_acc3a502b8f9b1f1f1b5ef6225db9551e}} 
+int \mbox{\hyperlink{class_pythia8_1_1_multi_radial_acc3a502b8f9b1f1f1b5ef6225db9551e}{choose}} () const
+\begin{DoxyCompactList}\small\item\em Choose a radius. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multi_radial_a81c3b1cac850a64858dd2091c850f3c6}\label{class_pythia8_1_1_multi_radial_a81c3b1cac850a64858dd2091c850f3c6}} 
+int \mbox{\hyperlink{class_pythia8_1_1_multi_radial_a81c3b1cac850a64858dd2091c850f3c6}{Nr}}
+\begin{DoxyCompactList}\small\item\em The number of radii. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multi_radial_abd1c32b758ed1ad85b79dab3ca673365}\label{class_pythia8_1_1_multi_radial_abd1c32b758ed1ad85b79dab3ca673365}} 
+vector$<$ double $>$ \mbox{\hyperlink{class_pythia8_1_1_multi_radial_abd1c32b758ed1ad85b79dab3ca673365}{c}}
+\begin{DoxyCompactList}\small\item\em The probability distribution. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multi_radial_abcb14624d7f1bbd3d854e93193c51217}\label{class_pythia8_1_1_multi_radial_abcb14624d7f1bbd3d854e93193c51217}} 
+vector$<$ double $>$ \mbox{\hyperlink{class_pythia8_1_1_multi_radial_abcb14624d7f1bbd3d854e93193c51217}{dR}}
+\begin{DoxyCompactList}\small\item\em The difference between radii. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multi_radial_a687764c50f9c79bed968e0399f9a847f}\label{class_pythia8_1_1_multi_radial_a687764c50f9c79bed968e0399f9a847f}} 
+vector$<$ double $>$ \mbox{\hyperlink{class_pythia8_1_1_multi_radial_a687764c50f9c79bed968e0399f9a847f}{T0}}
+\begin{DoxyCompactList}\small\item\em The opacity for different radii. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_multi_radial_aaa6ef3b68c831d2eff92249f40801589}\label{class_pythia8_1_1_multi_radial_aaa6ef3b68c831d2eff92249f40801589}} 
+vector$<$ double $>$ \mbox{\hyperlink{class_pythia8_1_1_multi_radial_aaa6ef3b68c831d2eff92249f40801589}{phi}}
+\begin{DoxyCompactList}\small\item\em The angles defining the probability distribution for the radii. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A more complicated model where each nucleon has a fluctuating \char`\"{}radius\char`\"{} according to a Strikman-\/inspired distribution. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_multi_radial_a60e43d290a95380dfa7ed80ce667365d}\label{class_pythia8_1_1_multi_radial_a60e43d290a95380dfa7ed80ce667365d}} 
+\index{Pythia8::MultiRadial@{Pythia8::MultiRadial}!MultiRadial@{MultiRadial}}
+\index{MultiRadial@{MultiRadial}!Pythia8::MultiRadial@{Pythia8::MultiRadial}}
+\doxysubsubsection{\texorpdfstring{MultiRadial()}{MultiRadial()}}
+{\footnotesize\ttfamily Pythia8\+::\+Multi\+Radial\+::\+Multi\+Radial (\begin{DoxyParamCaption}\item[{int}]{Nr\+In = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The default constructor simply lists the nucleon-\/nucleon cross sections. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_multi_radial_a9c6398e87b7cec2beb0b3d89f0c14fa4}\label{class_pythia8_1_1_multi_radial_a9c6398e87b7cec2beb0b3d89f0c14fa4}} 
+\index{Pythia8::MultiRadial@{Pythia8::MultiRadial}!getCollisions@{getCollisions}}
+\index{getCollisions@{getCollisions}!Pythia8::MultiRadial@{Pythia8::MultiRadial}}
+\doxysubsubsection{\texorpdfstring{getCollisions()}{getCollisions()}}
+{\footnotesize\ttfamily multiset$<$ \mbox{\hyperlink{class_pythia8_1_1_sub_collision}{Sub\+Collision}} $>$ Pythia8\+::\+Multi\+Radial\+::get\+Collisions (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $>$ \&}]{proj,  }\item[{vector$<$ \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $>$ \&}]{targ,  }\item[{const \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \&}]{bvec,  }\item[{double \&}]{T }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Take two vectors of Nucleons and an impact parameter vector and produce the corrsponding sub-\/collisions. Note that states of the nucleons may be changed. 
+
+Implements \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_aa6d9fe4e55b2b686654257cec2ab75fb}{Pythia8\+::\+Sub\+Collision\+Model}}.
+
+\mbox{\Hypertarget{class_pythia8_1_1_multi_radial_a87d17affed609dac93e1574cf18822e9}\label{class_pythia8_1_1_multi_radial_a87d17affed609dac93e1574cf18822e9}} 
+\index{Pythia8::MultiRadial@{Pythia8::MultiRadial}!getParm@{getParm}}
+\index{getParm@{getParm}!Pythia8::MultiRadial@{Pythia8::MultiRadial}}
+\doxysubsubsection{\texorpdfstring{getParm()}{getParm()}}
+{\footnotesize\ttfamily vector$<$ double $>$ Pythia8\+::\+Multi\+Radial\+::get\+Parm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the current parameters and the minimum and maximum allowed values for the parameters of this model. 
+
+Reimplemented from \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_a23ebd7d75a7d05e0a244c2425dd1b308}{Pythia8\+::\+Sub\+Collision\+Model}}.
+
+\mbox{\Hypertarget{class_pythia8_1_1_multi_radial_ac7a853234e5bb4f38a4c912cd6236a9a}\label{class_pythia8_1_1_multi_radial_ac7a853234e5bb4f38a4c912cd6236a9a}} 
+\index{Pythia8::MultiRadial@{Pythia8::MultiRadial}!Tpt@{Tpt}}
+\index{Tpt@{Tpt}!Pythia8::MultiRadial@{Pythia8::MultiRadial}}
+\doxysubsubsection{\texorpdfstring{Tpt()}{Tpt()}}
+{\footnotesize\ttfamily double Pythia8\+::\+Multi\+Radial\+::\+Tpt (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pythia8_1_1_nucleon_a132cb2b791d6a3f3a86b30fa1ffbcd2c}{Nucleon\+::\+State}} \&}]{p,  }\item[{const \mbox{\hyperlink{class_pythia8_1_1_nucleon_a132cb2b791d6a3f3a86b30fa1ffbcd2c}{Nucleon\+::\+State}} \&}]{t,  }\item[{double}]{b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the elastic amplitude for a projectile and target state and the impact parameter between the corresponding nucleons. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/H\+I\+User\+Hooks.\+h\item 
+src/H\+I\+User\+Hooks.\+cc\end{DoxyCompactItemize}

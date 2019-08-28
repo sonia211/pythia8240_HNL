@@ -1,3 +1,4 @@
+
 <chapter name="Particle Data"> 
  
 <h2>Particle Data</h2> 
@@ -9635,6 +9636,11 @@ The meaning of the various properties and the format used are explained
  
 <particle id="1000822080" name="208Pb" antiName="208Pbbar" 
           spinType="1" chargeType="246" colType="0" m0="193.72902"> 
+</particle> 
+ 
+ <particle id="9013" name="HNL" spinType="3" chargeType="1" colType="0" 
+          m0="1.00000" tau0="4e-12"> 
+ <channel onMode="1" meMode="1521" bRatio="0.5200000" products="1 1. 1521 13 211"/> 
 </particle> 
  
  

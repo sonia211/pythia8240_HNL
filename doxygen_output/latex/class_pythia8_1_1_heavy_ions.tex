@@ -1,0 +1,183 @@
+\hypertarget{class_pythia8_1_1_heavy_ions}{}\doxysection{Pythia8\+::Heavy\+Ions Class Reference}
+\label{class_pythia8_1_1_heavy_ions}\index{Pythia8::HeavyIons@{Pythia8::HeavyIons}}
+
+
+{\ttfamily \#include $<$Heavy\+Ions.\+h$>$}
+
+Inheritance diagram for Pythia8\+::Heavy\+Ions\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pythia8_1_1_heavy_ions}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pythia8_1_1_heavy_ions_a1112e804f5d5c5270b299a08f388ec97}{Heavy\+Ions}} (\mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} \&main\+Pythia\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_a3d7e15a9f8663648f2f9119688707f1a}\label{class_pythia8_1_1_heavy_ions_a3d7e15a9f8663648f2f9119688707f1a}} 
+virtual \mbox{\hyperlink{class_pythia8_1_1_heavy_ions_a3d7e15a9f8663648f2f9119688707f1a}{$\sim$\+Heavy\+Ions}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_pythia8_1_1_heavy_ions_a68b4a2b032793a0ad6e59416c9be1cff}{init}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{class_pythia8_1_1_heavy_ions_ae00de173e7462dd6f812defce5a0ffab}{next}} ()=0
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_a777e87cb35c26956cce5e9cd2e4fc3fb}\label{class_pythia8_1_1_heavy_ions_a777e87cb35c26956cce5e9cd2e4fc3fb}} 
+bool \mbox{\hyperlink{class_pythia8_1_1_heavy_ions_a777e87cb35c26956cce5e9cd2e4fc3fb}{set\+H\+I\+User\+Hooks\+Ptr}} (\mbox{\hyperlink{class_pythia8_1_1_h_i_user_hooks}{H\+I\+User\+Hooks}} $\ast$user\+Hooks\+Ptr\+In)
+\begin{DoxyCompactList}\small\item\em Possibility to pass in pointer for special heavy ion user hooks. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_a1b38235fbd4f398d5aaf1015864b4600}\label{class_pythia8_1_1_heavy_ions_a1b38235fbd4f398d5aaf1015864b4600}} 
+virtual void {\bfseries stat} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_pythia8_1_1_heavy_ions_a4d210b53379c745aad086ab790846ff5}{add\+Special\+Settings}} (\mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} \&settings)
+\item 
+static bool \mbox{\hyperlink{class_pythia8_1_1_heavy_ions_acaad5b7ed9a85c558598bdd64e49f4ef}{is\+Heavy\+Ion}} (\mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} \&settings)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pythia8_1_1_h_i_info}{H\+I\+Info}} \mbox{\hyperlink{class_pythia8_1_1_heavy_ions_af0c908cb1a37ef7d3ef5cb19451311d3}{hiinfo}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_pythia8_1_1_heavy_ions_a7d6a06f36b8bc38f3853e95456a0447c}{sum\+Up\+Messages}} (\mbox{\hyperlink{class_pythia8_1_1_info}{Info}} \&in, string tag, const \mbox{\hyperlink{class_pythia8_1_1_info}{Info}} \&other)
+\item 
+void \mbox{\hyperlink{class_pythia8_1_1_heavy_ions_abd52b402b1741423a18cc3ab4dae5e4f}{update\+Info}} ()
+\item 
+void \mbox{\hyperlink{class_pythia8_1_1_heavy_ions_a4bfeef2cc6acf6d7f51d70e20fce53f2}{clear\+Process\+Level}} (\mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} \&pyt)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_ac3135effe07573e9dbdb3254aacd8b57}\label{class_pythia8_1_1_heavy_ions_ac3135effe07573e9dbdb3254aacd8b57}} 
+static void \mbox{\hyperlink{class_pythia8_1_1_heavy_ions_ac3135effe07573e9dbdb3254aacd8b57}{setup\+Specials}} (\mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} \&settings, string match)
+\begin{DoxyCompactList}\small\item\em Duplicate setting on the form match\+: to settings on the form H\+Imatch\+: \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_pythia8_1_1_heavy_ions_a9871697374fa03793aa58f128694f8db}{setup\+Specials}} (\mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} \&p, string match)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} $\ast$ \mbox{\hyperlink{class_pythia8_1_1_heavy_ions_a10c0dd0fb7bed985514a9184a8574b70}{main\+Pythia\+Ptr}}
+\item 
+\mbox{\hyperlink{class_pythia8_1_1_sigma_total}{Sigma\+Total}} \mbox{\hyperlink{class_pythia8_1_1_heavy_ions_ac4e07a08de4c20893d20e9a025e8918e}{sigtot}}
+\item 
+\mbox{\hyperlink{class_pythia8_1_1_h_i_user_hooks}{H\+I\+User\+Hooks}} $\ast$ \mbox{\hyperlink{class_pythia8_1_1_heavy_ions_adf32d3c7f4e14d382c1213c8647a0e12}{H\+I\+Hooks\+Ptr}}
+\item 
+vector$<$ \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} $\ast$ $>$ \mbox{\hyperlink{class_pythia8_1_1_heavy_ions_a2241f415e9ccaf35f6be9f3538ad5f91}{pythia}}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_a6c1ec96b09edb159cdfbcf7e6d0f6f25}\label{class_pythia8_1_1_heavy_ions_a6c1ec96b09edb159cdfbcf7e6d0f6f25}} 
+vector$<$ string $>$ \mbox{\hyperlink{class_pythia8_1_1_heavy_ions_a6c1ec96b09edb159cdfbcf7e6d0f6f25}{pythia\+Names}}
+\begin{DoxyCompactList}\small\item\em The names associated with the secondary pythia objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_pythia8_1_1_heavy_ions}{Heavy\+Ions}} contains several standard \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} objects to allow for the combination of different kinds of nucleon-\/nucleon events into a heavy ion collision event. The actual model for doing this must be implemented in a subclass overriding the the virtual\textquotesingle{}\mbox{\hyperlink{class_pythia8_1_1_heavy_ions_a68b4a2b032793a0ad6e59416c9be1cff}{init()}}\textquotesingle{} and \textquotesingle{}\mbox{\hyperlink{class_pythia8_1_1_heavy_ions_ae00de173e7462dd6f812defce5a0ffab}{next()}}\textquotesingle{} functions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_a1112e804f5d5c5270b299a08f388ec97}\label{class_pythia8_1_1_heavy_ions_a1112e804f5d5c5270b299a08f388ec97}} 
+\index{Pythia8::HeavyIons@{Pythia8::HeavyIons}!HeavyIons@{HeavyIons}}
+\index{HeavyIons@{HeavyIons}!Pythia8::HeavyIons@{Pythia8::HeavyIons}}
+\doxysubsubsection{\texorpdfstring{HeavyIons()}{HeavyIons()}}
+{\footnotesize\ttfamily Pythia8\+::\+Heavy\+Ions\+::\+Heavy\+Ions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} \&}]{main\+Pythia\+In }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The constructor needs a reference to the main \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} object to which it will belong. A \mbox{\hyperlink{class_pythia8_1_1_heavy_ions}{Heavy\+Ions}} object cannot belong to more than one main \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} object. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_a4d210b53379c745aad086ab790846ff5}\label{class_pythia8_1_1_heavy_ions_a4d210b53379c745aad086ab790846ff5}} 
+\index{Pythia8::HeavyIons@{Pythia8::HeavyIons}!addSpecialSettings@{addSpecialSettings}}
+\index{addSpecialSettings@{addSpecialSettings}!Pythia8::HeavyIons@{Pythia8::HeavyIons}}
+\doxysubsubsection{\texorpdfstring{addSpecialSettings()}{addSpecialSettings()}}
+{\footnotesize\ttfamily void Pythia8\+::\+Heavy\+Ions\+::add\+Special\+Settings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} \&}]{settings }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Static function to alow \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} to duplicate some setting names to be used for secondary \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} objects. \mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_a4bfeef2cc6acf6d7f51d70e20fce53f2}\label{class_pythia8_1_1_heavy_ions_a4bfeef2cc6acf6d7f51d70e20fce53f2}} 
+\index{Pythia8::HeavyIons@{Pythia8::HeavyIons}!clearProcessLevel@{clearProcessLevel}}
+\index{clearProcessLevel@{clearProcessLevel}!Pythia8::HeavyIons@{Pythia8::HeavyIons}}
+\doxysubsubsection{\texorpdfstring{clearProcessLevel()}{clearProcessLevel()}}
+{\footnotesize\ttfamily void Pythia8\+::\+Heavy\+Ions\+::clear\+Process\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} \&}]{pyt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+If subclasses has additional \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} objects for generating minimum bias nucleon collisions and the main \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} object is set up to generated a hard signal process, this function can be used to clear all selected processes in a clone of the main \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} object. \mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_a68b4a2b032793a0ad6e59416c9be1cff}\label{class_pythia8_1_1_heavy_ions_a68b4a2b032793a0ad6e59416c9be1cff}} 
+\index{Pythia8::HeavyIons@{Pythia8::HeavyIons}!init@{init}}
+\index{init@{init}!Pythia8::HeavyIons@{Pythia8::HeavyIons}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual bool Pythia8\+::\+Heavy\+Ions\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Virtual function to be implemented in a subclass. This will be called in the beginning of the Pythia\+::init function if the mode Heavy\+Ion\+:mode is set non zero. The return value should be true if this object is able to handle the requested collision type. If false Pythia\+::init will set Heavy\+Ion\+:mode to zero but will try to cope anyway. 
+
+Implemented in \mbox{\hyperlink{class_pythia8_1_1_angantyr_a2378dba35a3b3c44a1579372512efe29}{Pythia8\+::\+Angantyr}}.
+
+\mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_acaad5b7ed9a85c558598bdd64e49f4ef}\label{class_pythia8_1_1_heavy_ions_acaad5b7ed9a85c558598bdd64e49f4ef}} 
+\index{Pythia8::HeavyIons@{Pythia8::HeavyIons}!isHeavyIon@{isHeavyIon}}
+\index{isHeavyIon@{isHeavyIon}!Pythia8::HeavyIons@{Pythia8::HeavyIons}}
+\doxysubsubsection{\texorpdfstring{isHeavyIon()}{isHeavyIon()}}
+{\footnotesize\ttfamily bool Pythia8\+::\+Heavy\+Ions\+::is\+Heavy\+Ion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pythia8_1_1_settings}{Settings}} \&}]{settings }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return true if the beams in the Primary \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} object contains heavy ions. \mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_ae00de173e7462dd6f812defce5a0ffab}\label{class_pythia8_1_1_heavy_ions_ae00de173e7462dd6f812defce5a0ffab}} 
+\index{Pythia8::HeavyIons@{Pythia8::HeavyIons}!next@{next}}
+\index{next@{next}!Pythia8::HeavyIons@{Pythia8::HeavyIons}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily virtual bool Pythia8\+::\+Heavy\+Ions\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Virtual function to be implemented in a subclass. This will be called in the beginning of the Pythia\+::next function if Heavy\+Ion\+:mode is set non zero. After the call, Pythia\+::next will return immediately with the return value of this function. 
+
+Implemented in \mbox{\hyperlink{class_pythia8_1_1_angantyr_aabf1468c5e97ba783940bb0fa4369d62}{Pythia8\+::\+Angantyr}}.
+
+\mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_a9871697374fa03793aa58f128694f8db}\label{class_pythia8_1_1_heavy_ions_a9871697374fa03793aa58f128694f8db}} 
+\index{Pythia8::HeavyIons@{Pythia8::HeavyIons}!setupSpecials@{setupSpecials}}
+\index{setupSpecials@{setupSpecials}!Pythia8::HeavyIons@{Pythia8::HeavyIons}}
+\doxysubsubsection{\texorpdfstring{setupSpecials()}{setupSpecials()}}
+{\footnotesize\ttfamily void Pythia8\+::\+Heavy\+Ions\+::setup\+Specials (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} \&}]{p,  }\item[{string}]{match }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Copy settings on the form H\+Imatch\+: to the corresponding match\+: in the given \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} object. \mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_a7d6a06f36b8bc38f3853e95456a0447c}\label{class_pythia8_1_1_heavy_ions_a7d6a06f36b8bc38f3853e95456a0447c}} 
+\index{Pythia8::HeavyIons@{Pythia8::HeavyIons}!sumUpMessages@{sumUpMessages}}
+\index{sumUpMessages@{sumUpMessages}!Pythia8::HeavyIons@{Pythia8::HeavyIons}}
+\doxysubsubsection{\texorpdfstring{sumUpMessages()}{sumUpMessages()}}
+{\footnotesize\ttfamily void Pythia8\+::\+Heavy\+Ions\+::sum\+Up\+Messages (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pythia8_1_1_info}{Info}} \&}]{in,  }\item[{string}]{tag,  }\item[{const \mbox{\hyperlink{class_pythia8_1_1_info}{Info}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Subclasses will probably use several \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} object and this helper function will sum up all warnings and errors of these and add them to the main \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} object, prefixing them with a tag. \mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_abd52b402b1741423a18cc3ab4dae5e4f}\label{class_pythia8_1_1_heavy_ions_abd52b402b1741423a18cc3ab4dae5e4f}} 
+\index{Pythia8::HeavyIons@{Pythia8::HeavyIons}!updateInfo@{updateInfo}}
+\index{updateInfo@{updateInfo}!Pythia8::HeavyIons@{Pythia8::HeavyIons}}
+\doxysubsubsection{\texorpdfstring{updateInfo()}{updateInfo()}}
+{\footnotesize\ttfamily void Pythia8\+::\+Heavy\+Ions\+::update\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Update the cross section in the main \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} \mbox{\hyperlink{class_pythia8_1_1_info}{Info}} object using information in the hiinfo object. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_adf32d3c7f4e14d382c1213c8647a0e12}\label{class_pythia8_1_1_heavy_ions_adf32d3c7f4e14d382c1213c8647a0e12}} 
+\index{Pythia8::HeavyIons@{Pythia8::HeavyIons}!HIHooksPtr@{HIHooksPtr}}
+\index{HIHooksPtr@{HIHooksPtr}!Pythia8::HeavyIons@{Pythia8::HeavyIons}}
+\doxysubsubsection{\texorpdfstring{HIHooksPtr}{HIHooksPtr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pythia8_1_1_h_i_user_hooks}{H\+I\+User\+Hooks}}$\ast$ Pythia8\+::\+Heavy\+Ions\+::\+H\+I\+Hooks\+Ptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+Optional \mbox{\hyperlink{class_pythia8_1_1_h_i_user_hooks}{H\+I\+User\+Hooks}} object able to modify the behavior of the Heavy\+Ion model. \mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_af0c908cb1a37ef7d3ef5cb19451311d3}\label{class_pythia8_1_1_heavy_ions_af0c908cb1a37ef7d3ef5cb19451311d3}} 
+\index{Pythia8::HeavyIons@{Pythia8::HeavyIons}!hiinfo@{hiinfo}}
+\index{hiinfo@{hiinfo}!Pythia8::HeavyIons@{Pythia8::HeavyIons}}
+\doxysubsubsection{\texorpdfstring{hiinfo}{hiinfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pythia8_1_1_h_i_info}{H\+I\+Info}} Pythia8\+::\+Heavy\+Ions\+::hiinfo}
+
+This is the \mbox{\hyperlink{class_pythia8_1_1_h_i_info}{H\+I\+Info}} object containing information about the last generated heavy ion event and som statistics of all such events generated since the last call to \mbox{\hyperlink{class_pythia8_1_1_heavy_ions_a68b4a2b032793a0ad6e59416c9be1cff}{init()}}; \mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_a10c0dd0fb7bed985514a9184a8574b70}\label{class_pythia8_1_1_heavy_ions_a10c0dd0fb7bed985514a9184a8574b70}} 
+\index{Pythia8::HeavyIons@{Pythia8::HeavyIons}!mainPythiaPtr@{mainPythiaPtr}}
+\index{mainPythiaPtr@{mainPythiaPtr}!Pythia8::HeavyIons@{Pythia8::HeavyIons}}
+\doxysubsubsection{\texorpdfstring{mainPythiaPtr}{mainPythiaPtr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}}$\ast$ Pythia8\+::\+Heavy\+Ions\+::main\+Pythia\+Ptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+This is the pointer to the main \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} object to which this object is assigned. \mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_a2241f415e9ccaf35f6be9f3538ad5f91}\label{class_pythia8_1_1_heavy_ions_a2241f415e9ccaf35f6be9f3538ad5f91}} 
+\index{Pythia8::HeavyIons@{Pythia8::HeavyIons}!pythia@{pythia}}
+\index{pythia@{pythia}!Pythia8::HeavyIons@{Pythia8::HeavyIons}}
+\doxysubsubsection{\texorpdfstring{pythia}{pythia}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} $\ast$$>$ Pythia8\+::\+Heavy\+Ions\+::pythia\hspace{0.3cm}{\ttfamily [protected]}}
+
+The internal \mbox{\hyperlink{class_pythia8_1_1_pythia}{Pythia}} objects. Index zero will always correspond to the main\+Pythia\+Ptr. \mbox{\Hypertarget{class_pythia8_1_1_heavy_ions_ac4e07a08de4c20893d20e9a025e8918e}\label{class_pythia8_1_1_heavy_ions_ac4e07a08de4c20893d20e9a025e8918e}} 
+\index{Pythia8::HeavyIons@{Pythia8::HeavyIons}!sigtot@{sigtot}}
+\index{sigtot@{sigtot}!Pythia8::HeavyIons@{Pythia8::HeavyIons}}
+\doxysubsubsection{\texorpdfstring{sigtot}{sigtot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pythia8_1_1_sigma_total}{Sigma\+Total}} Pythia8\+::\+Heavy\+Ions\+::sigtot\hspace{0.3cm}{\ttfamily [protected]}}
+
+Object containing information on inclusive pp cross sections to be used in Glauber calculations in subclasses. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/Heavy\+Ions.\+h\item 
+src/Heavy\+Ions.\+cc\end{DoxyCompactItemize}

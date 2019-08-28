@@ -1,0 +1,197 @@
+\hypertarget{class_pythia8_1_1_event}{}\doxysection{Pythia8\+::Event Class Reference}
+\label{class_pythia8_1_1_event}\index{Pythia8::Event@{Pythia8::Event}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a6cee918e86f398a6cb8fefa7ac8aa9a2}\label{class_pythia8_1_1_event_a6cee918e86f398a6cb8fefa7ac8aa9a2}} 
+{\bfseries Event} (int capacity=100)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a7a435f576796035b3e28114949fbcdf7}\label{class_pythia8_1_1_event_a7a435f576796035b3e28114949fbcdf7}} 
+\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&old\+Event)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_aeafd266e2a3b4208f8b03a6a43e2c3e6}\label{class_pythia8_1_1_event_aeafd266e2a3b4208f8b03a6a43e2c3e6}} 
+{\bfseries Event} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&old\+Event)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_ad74cc7b1a87384d3b21aba13d5050b75}\label{class_pythia8_1_1_event_ad74cc7b1a87384d3b21aba13d5050b75}} 
+void {\bfseries init} (string header\+In=\char`\"{}\char`\"{}, \mbox{\hyperlink{class_pythia8_1_1_particle_data}{Particle\+Data}} $\ast$particle\+Data\+Ptr\+In=0, int start\+Col\+Tag\+In=100)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a50373b320428b45e548ee3d2ce6e620a}\label{class_pythia8_1_1_event_a50373b320428b45e548ee3d2ce6e620a}} 
+void {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a6ae945ecd8a1557aa5b86180e2a4fbfd}\label{class_pythia8_1_1_event_a6ae945ecd8a1557aa5b86180e2a4fbfd}} 
+void {\bfseries reset} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a3e1e12954fe50377140da1a05233434a}\label{class_pythia8_1_1_event_a3e1e12954fe50377140da1a05233434a}} 
+\mbox{\hyperlink{class_pythia8_1_1_particle}{Particle}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int i)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a4e5704413327851d974f6ac06d4e03d9}\label{class_pythia8_1_1_event_a4e5704413327851d974f6ac06d4e03d9}} 
+const \mbox{\hyperlink{class_pythia8_1_1_particle}{Particle}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int i) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_abc9f799571a4d88b1f2a00ab79d1a2e5}\label{class_pythia8_1_1_event_abc9f799571a4d88b1f2a00ab79d1a2e5}} 
+\mbox{\hyperlink{class_pythia8_1_1_particle}{Particle}} \& {\bfseries front} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a53532e75fc3ce683e3bf76e5e6c0598e}\label{class_pythia8_1_1_event_a53532e75fc3ce683e3bf76e5e6c0598e}} 
+\mbox{\hyperlink{class_pythia8_1_1_particle}{Particle}} \& {\bfseries at} (int i)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_ad0999146f884d4b14c86f74d1b9b47cf}\label{class_pythia8_1_1_event_ad0999146f884d4b14c86f74d1b9b47cf}} 
+\mbox{\hyperlink{class_pythia8_1_1_particle}{Particle}} \& {\bfseries back} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a5b3487bb0e500445c31cfb4347e91ec2}\label{class_pythia8_1_1_event_a5b3487bb0e500445c31cfb4347e91ec2}} 
+int {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_adc63bb2c83fe0d93a841e2b09e0893fc}\label{class_pythia8_1_1_event_adc63bb2c83fe0d93a841e2b09e0893fc}} 
+int {\bfseries append} (\mbox{\hyperlink{class_pythia8_1_1_particle}{Particle}} entry\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a94b01fa20d8d249869678659dd223355}\label{class_pythia8_1_1_event_a94b01fa20d8d249869678659dd223355}} 
+int {\bfseries append} (int id, int status, int mother1, int mother2, int daughter1, int daughter2, int col, int acol, double px, double py, double pz, double e, double m=0., double scale\+In=0., double pol\+In=9.)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a3ad5f09d86b0fdc83fab4c532b8757fa}\label{class_pythia8_1_1_event_a3ad5f09d86b0fdc83fab4c532b8757fa}} 
+int {\bfseries append} (int id, int status, int mother1, int mother2, int daughter1, int daughter2, int col, int acol, \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} p, double m=0., double scale\+In=0., double pol\+In=9.)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a6e2c2db0e17a00505482a316701ed2f2}\label{class_pythia8_1_1_event_a6e2c2db0e17a00505482a316701ed2f2}} 
+int {\bfseries append} (int id, int status, int col, int acol, double px, double py, double pz, double e, double m=0., double scale\+In=0., double pol\+In=9.)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_ab567da7dfe208ea3154b3ae0bef62520}\label{class_pythia8_1_1_event_ab567da7dfe208ea3154b3ae0bef62520}} 
+int {\bfseries append} (int id, int status, int col, int acol, \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} p, double m=0., double scale\+In=0., double pol\+In=9.)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_ac4c42bded257a1cbc498462250a91696}\label{class_pythia8_1_1_event_ac4c42bded257a1cbc498462250a91696}} 
+void {\bfseries set\+Evt\+Ptr} (int i\+Set=-\/1)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a2be05dd500e081b0026d694f4349e60d}\label{class_pythia8_1_1_event_a2be05dd500e081b0026d694f4349e60d}} 
+int {\bfseries copy} (int i\+Copy, int new\+Status=0)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_ac53bb5dcf948629cdba6ab2971652e26}\label{class_pythia8_1_1_event_ac53bb5dcf948629cdba6ab2971652e26}} 
+void {\bfseries list} (bool show\+Scale\+And\+Vertex=false, bool show\+Mothers\+And\+Daughters=false, int precision=3) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a9063c1f23b79b6ee4956deb5bca730e9}\label{class_pythia8_1_1_event_a9063c1f23b79b6ee4956deb5bca730e9}} 
+void {\bfseries pop\+Back} (int n\+Remove=1)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_acacc12b490bd592b64a21d027854e943}\label{class_pythia8_1_1_event_acacc12b490bd592b64a21d027854e943}} 
+void {\bfseries remove} (int i\+First, int i\+Last, bool shift\+History=true)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a32c47cc754c8a661c2e23164f83cf64a}\label{class_pythia8_1_1_event_a32c47cc754c8a661c2e23164f83cf64a}} 
+void {\bfseries restore\+Ptrs} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a0a22a801fdc17e03a9ac0521644eefd1}\label{class_pythia8_1_1_event_a0a22a801fdc17e03a9ac0521644eefd1}} 
+void {\bfseries save\+Size} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a1242ff6213616966deafca2c89dfb6da}\label{class_pythia8_1_1_event_a1242ff6213616966deafca2c89dfb6da}} 
+void {\bfseries restore\+Size} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a6860166de7b9521dee2186e8f3f46b93}\label{class_pythia8_1_1_event_a6860166de7b9521dee2186e8f3f46b93}} 
+int {\bfseries saved\+Size\+Value} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a94d9ef962fb5aa3f09bcd1e2be2c4bf1}\label{class_pythia8_1_1_event_a94d9ef962fb5aa3f09bcd1e2be2c4bf1}} 
+void {\bfseries init\+Col\+Tag} (int col\+Tag=0)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a19d9efd3a052f2c467698762aeb9da77}\label{class_pythia8_1_1_event_a19d9efd3a052f2c467698762aeb9da77}} 
+int {\bfseries last\+Col\+Tag} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a8e509642403c1d1ea38169912e5ba536}\label{class_pythia8_1_1_event_a8e509642403c1d1ea38169912e5ba536}} 
+int {\bfseries next\+Col\+Tag} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a2638e08b79a0f4fad05d5a2ec998171f}\label{class_pythia8_1_1_event_a2638e08b79a0f4fad05d5a2ec998171f}} 
+void {\bfseries scale} (double scale\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a12a3ebe65d857bbf07460708cbc71c25}\label{class_pythia8_1_1_event_a12a3ebe65d857bbf07460708cbc71c25}} 
+double {\bfseries scale} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a762ba4bcae9484cde966ae61c60db63c}\label{class_pythia8_1_1_event_a762ba4bcae9484cde966ae61c60db63c}} 
+void {\bfseries scale\+Second} (double scale\+Second\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a74aa8d0a3803ec9d69c6981f15c7a42a}\label{class_pythia8_1_1_event_a74aa8d0a3803ec9d69c6981f15c7a42a}} 
+double {\bfseries scale\+Second} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_ad0aca20de90828541bab77533cf40ab0}\label{class_pythia8_1_1_event_ad0aca20de90828541bab77533cf40ab0}} 
+vector$<$ int $>$ {\bfseries daughter\+List} (int i) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a1a6707e0391c6c98a4577e45f38d1f82}\label{class_pythia8_1_1_event_a1a6707e0391c6c98a4577e45f38d1f82}} 
+void {\bfseries rot} (double theta, double phi)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_aff0558edb52bc328ddcb44887298a949}\label{class_pythia8_1_1_event_aff0558edb52bc328ddcb44887298a949}} 
+void {\bfseries bst} (double betaX, double betaY, double betaZ)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_ae753e4ae62960d8747f870eb9e146a64}\label{class_pythia8_1_1_event_ae753e4ae62960d8747f870eb9e146a64}} 
+void {\bfseries bst} (double betaX, double betaY, double betaZ, double gamma)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a89f896e46dea2b86e750ef81eb8e1c86}\label{class_pythia8_1_1_event_a89f896e46dea2b86e750ef81eb8e1c86}} 
+void {\bfseries bst} (const \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \&vec)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a748f18f06c8a30eb4e4377a5283be7f1}\label{class_pythia8_1_1_event_a748f18f06c8a30eb4e4377a5283be7f1}} 
+void {\bfseries rotbst} (const \mbox{\hyperlink{class_pythia8_1_1_rot_bst_matrix}{Rot\+Bst\+Matrix}} \&M)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a3958294fd9c56fea6733806a402d7668}\label{class_pythia8_1_1_event_a3958294fd9c56fea6733806a402d7668}} 
+void {\bfseries clear\+Junctions} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a1cb1335e1416a56b7584a3e5da84c870}\label{class_pythia8_1_1_event_a1cb1335e1416a56b7584a3e5da84c870}} 
+int {\bfseries append\+Junction} (int kind, int col0, int col1, int col2)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_aee90f95116904cf5e3c365c47c7616b4}\label{class_pythia8_1_1_event_aee90f95116904cf5e3c365c47c7616b4}} 
+int {\bfseries append\+Junction} (\mbox{\hyperlink{class_pythia8_1_1_junction}{Junction}} junction\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_ab0fdd43fa1a6f23d7d5c6b77bcfad8e6}\label{class_pythia8_1_1_event_ab0fdd43fa1a6f23d7d5c6b77bcfad8e6}} 
+int {\bfseries size\+Junction} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a594be0d9a2ea10b3d219a97b57ae5b85}\label{class_pythia8_1_1_event_a594be0d9a2ea10b3d219a97b57ae5b85}} 
+bool {\bfseries remains\+Junction} (int i) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a5b33a088cc803391ccbf525c4fa7df20}\label{class_pythia8_1_1_event_a5b33a088cc803391ccbf525c4fa7df20}} 
+void {\bfseries remains\+Junction} (int i, bool remains\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_acdf1a92922e86e34e6369a533d859229}\label{class_pythia8_1_1_event_acdf1a92922e86e34e6369a533d859229}} 
+int {\bfseries kind\+Junction} (int i) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_af8b45a1ed9b7bcae8bb08931eedb905d}\label{class_pythia8_1_1_event_af8b45a1ed9b7bcae8bb08931eedb905d}} 
+int {\bfseries col\+Junction} (int i, int j) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_ab0a87952ec626139f3b347ef8e0e3536}\label{class_pythia8_1_1_event_ab0a87952ec626139f3b347ef8e0e3536}} 
+void {\bfseries col\+Junction} (int i, int j, int col\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a9dce5a9b71df354dc96c539cb3807cdc}\label{class_pythia8_1_1_event_a9dce5a9b71df354dc96c539cb3807cdc}} 
+int {\bfseries end\+Col\+Junction} (int i, int j) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a21661c413781c42ca71ba0ab69cbd8d9}\label{class_pythia8_1_1_event_a21661c413781c42ca71ba0ab69cbd8d9}} 
+void {\bfseries end\+Col\+Junction} (int i, int j, int end\+Col\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a004dd6195c349e4868c572478730990f}\label{class_pythia8_1_1_event_a004dd6195c349e4868c572478730990f}} 
+int {\bfseries status\+Junction} (int i, int j) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a996195fa6f4bf946779eaa8846e5e194}\label{class_pythia8_1_1_event_a996195fa6f4bf946779eaa8846e5e194}} 
+void {\bfseries status\+Junction} (int i, int j, int status\+In)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a38077a6a12634fac11a5eef1f374d35f}\label{class_pythia8_1_1_event_a38077a6a12634fac11a5eef1f374d35f}} 
+\mbox{\hyperlink{class_pythia8_1_1_junction}{Junction}} \& {\bfseries get\+Junction} (int i)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_aa574ea78fa5efcee77cfd282a1554bb5}\label{class_pythia8_1_1_event_aa574ea78fa5efcee77cfd282a1554bb5}} 
+const \mbox{\hyperlink{class_pythia8_1_1_junction}{Junction}} \& {\bfseries get\+Junction} (int i) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a315ce6eeea2faffe09952e0c19aacf6b}\label{class_pythia8_1_1_event_a315ce6eeea2faffe09952e0c19aacf6b}} 
+void {\bfseries erase\+Junction} (int i)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a537a5aa1a5bd4fc130599bc1fa15e892}\label{class_pythia8_1_1_event_a537a5aa1a5bd4fc130599bc1fa15e892}} 
+void {\bfseries save\+Junction\+Size} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a6a82503d92853695760653fc2d7172dc}\label{class_pythia8_1_1_event_a6a82503d92853695760653fc2d7172dc}} 
+void {\bfseries restore\+Junction\+Size} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_ab66b40256812c920d5d6b5983df7d58f}\label{class_pythia8_1_1_event_ab66b40256812c920d5d6b5983df7d58f}} 
+void {\bfseries list\+Junctions} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_aba811e4d9830b589f12dce89ea919784}\label{class_pythia8_1_1_event_aba811e4d9830b589f12dce89ea919784}} 
+void {\bfseries save\+Parton\+Level\+Size} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a0084a1aa2fe5ae60b8624ef22a7c3e34}\label{class_pythia8_1_1_event_a0084a1aa2fe5ae60b8624ef22a7c3e34}} 
+\mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \& {\bfseries operator+=} (const \mbox{\hyperlink{class_pythia8_1_1_event}{Event}} \&add\+Event)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_event_a0f6381b33b90b7e4ab72eeaeec4cc9ff}\label{class_pythia8_1_1_event_a0f6381b33b90b7e4ab72eeaeec4cc9ff}} 
+class {\bfseries Particle}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/Event.\+h\item 
+src/Event.\+cc\end{DoxyCompactItemize}

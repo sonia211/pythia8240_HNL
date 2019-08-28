@@ -1,0 +1,121 @@
+\hypertarget{class_pythia8_1_1_double_strikman}{}\doxysection{Pythia8\+::Double\+Strikman Class Reference}
+\label{class_pythia8_1_1_double_strikman}\index{Pythia8::DoubleStrikman@{Pythia8::DoubleStrikman}}
+
+
+{\ttfamily \#include $<$H\+I\+User\+Hooks.\+h$>$}
+
+Inheritance diagram for Pythia8\+::Double\+Strikman\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pythia8_1_1_double_strikman}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pythia8_1_1_double_strikman_aa0fa88525b44bb020c66f916697a673f}{Double\+Strikman}} (int modein=0)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_af137ba6fb4a391214cb94be47a2447e8}\label{class_pythia8_1_1_double_strikman_af137ba6fb4a391214cb94be47a2447e8}} 
+virtual \mbox{\hyperlink{class_pythia8_1_1_double_strikman_af137ba6fb4a391214cb94be47a2447e8}{$\sim$\+Double\+Strikman}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor,. \end{DoxyCompactList}\item 
+virtual multiset$<$ \mbox{\hyperlink{class_pythia8_1_1_sub_collision}{Sub\+Collision}} $>$ \mbox{\hyperlink{class_pythia8_1_1_double_strikman_a0c72338232acf5d028744c0e35d805b6}{get\+Collisions}} (vector$<$ \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $>$ \&proj, vector$<$ \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $>$ \&targ, const \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \&bvec, double \&T)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_a41d49fb845164afed9ee36dff7d5c2f0}\label{class_pythia8_1_1_double_strikman_a41d49fb845164afed9ee36dff7d5c2f0}} 
+double \mbox{\hyperlink{class_pythia8_1_1_double_strikman_a41d49fb845164afed9ee36dff7d5c2f0}{gamma}} () const
+\begin{DoxyCompactList}\small\item\em Generate a random number according to a Gamma-\/distribution. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_aa2012d45f885d21398931f690882dca1}\label{class_pythia8_1_1_double_strikman_aa2012d45f885d21398931f690882dca1}} 
+double \mbox{\hyperlink{class_pythia8_1_1_double_strikman_aa2012d45f885d21398931f690882dca1}{opacity}} (double sig) const
+\begin{DoxyCompactList}\small\item\em The opacity of the collision at a given sigma. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_pythia8_1_1_double_strikman_a53d28364a62ae6183b8af743dcb80efb}{Tpt}} (const \mbox{\hyperlink{class_pythia8_1_1_nucleon_a132cb2b791d6a3f3a86b30fa1ffbcd2c}{Nucleon\+::\+State}} \&p, const \mbox{\hyperlink{class_pythia8_1_1_nucleon_a132cb2b791d6a3f3a86b30fa1ffbcd2c}{Nucleon\+::\+State}} \&t, double b) const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_a9f34c3fa6668aee7066ca30278dd4931}\label{class_pythia8_1_1_double_strikman_a9f34c3fa6668aee7066ca30278dd4931}} 
+\mbox{\hyperlink{struct_pythia8_1_1_sub_collision_model_1_1_sig_est}{Sig\+Est}} \mbox{\hyperlink{class_pythia8_1_1_double_strikman_a9f34c3fa6668aee7066ca30278dd4931}{get\+Sig}} () const
+\begin{DoxyCompactList}\small\item\em Calculate the cross sections for the given set of parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_a07d28ae7361a16cf6b6b734f003e213c}\label{class_pythia8_1_1_double_strikman_a07d28ae7361a16cf6b6b734f003e213c}} 
+virtual void \mbox{\hyperlink{class_pythia8_1_1_double_strikman_a07d28ae7361a16cf6b6b734f003e213c}{set\+Parm}} (const vector$<$ double $>$ \&)
+\begin{DoxyCompactList}\small\item\em Set the parameters of this model. \end{DoxyCompactList}\item 
+virtual vector$<$ double $>$ \mbox{\hyperlink{class_pythia8_1_1_double_strikman_aef3a634dfdbb1aae0f243f52594fa6e5}{get\+Parm}} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_a07b321e29f6c489bc6de44b6e44afa0a}\label{class_pythia8_1_1_double_strikman_a07b321e29f6c489bc6de44b6e44afa0a}} 
+virtual vector$<$ double $>$ {\bfseries min\+Parm} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_a7a2dcb683dd530794aebf9c49c650162}\label{class_pythia8_1_1_double_strikman_a7a2dcb683dd530794aebf9c49c650162}} 
+virtual vector$<$ double $>$ {\bfseries max\+Parm} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_a0b89fb36f9600d57b3f724f18accdd81}\label{class_pythia8_1_1_double_strikman_a0b89fb36f9600d57b3f724f18accdd81}} 
+static void {\bfseries shuffle} (double P\+N\+D1, double P\+N\+D2, double \&P\+W1, double \&P\+W2)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_add7caffa98e2a3cf347091616df95b2b}\label{class_pythia8_1_1_double_strikman_add7caffa98e2a3cf347091616df95b2b}} 
+static void {\bfseries shuffel} (double \&P\+E\+L11, double P11, double P12, double P21, double P22)
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_ab2776275e361d780624e9dc5464c7b76}\label{class_pythia8_1_1_double_strikman_ab2776275e361d780624e9dc5464c7b76}} 
+static double {\bfseries P\+NW} (double P\+Wp, double P\+Wt, double P\+ND)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_a846380e81dc100fccd201dc2f1dd3274}\label{class_pythia8_1_1_double_strikman_a846380e81dc100fccd201dc2f1dd3274}} 
+double \mbox{\hyperlink{class_pythia8_1_1_double_strikman_a846380e81dc100fccd201dc2f1dd3274}{r0}}
+\begin{DoxyCompactList}\small\item\em The average radius of the nucleon. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_a7440bac3ef90144cea4ba59324cde587}\label{class_pythia8_1_1_double_strikman_a7440bac3ef90144cea4ba59324cde587}} 
+double \mbox{\hyperlink{class_pythia8_1_1_double_strikman_a7440bac3ef90144cea4ba59324cde587}{k0}}
+\begin{DoxyCompactList}\small\item\em The power in the Gamma distribution. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_ac1461e3c3cfce61911a6d35c676449d1}\label{class_pythia8_1_1_double_strikman_ac1461e3c3cfce61911a6d35c676449d1}} 
+double \mbox{\hyperlink{class_pythia8_1_1_double_strikman_ac1461e3c3cfce61911a6d35c676449d1}{sigd}}
+\begin{DoxyCompactList}\small\item\em Saturation scale of the nucleus. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_aba41dc6ed9baf83eed1ce181d4ce8db7}\label{class_pythia8_1_1_double_strikman_aba41dc6ed9baf83eed1ce181d4ce8db7}} 
+double \mbox{\hyperlink{class_pythia8_1_1_double_strikman_aba41dc6ed9baf83eed1ce181d4ce8db7}{alpha}}
+\begin{DoxyCompactList}\small\item\em Power of the saturation scale. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_ae8b6dccb3fe7cc145cb61ce2ec9a34d0}\label{class_pythia8_1_1_double_strikman_ae8b6dccb3fe7cc145cb61ce2ec9a34d0}} 
+int \mbox{\hyperlink{class_pythia8_1_1_double_strikman_ae8b6dccb3fe7cc145cb61ce2ec9a34d0}{opacity\+Mode}}
+\begin{DoxyCompactList}\small\item\em Optional mode for opacity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A more complicated model where each nucleon has a fluctuating \char`\"{}radius\char`\"{} according to a Strikman-\/inspired distribution. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_aa0fa88525b44bb020c66f916697a673f}\label{class_pythia8_1_1_double_strikman_aa0fa88525b44bb020c66f916697a673f}} 
+\index{Pythia8::DoubleStrikman@{Pythia8::DoubleStrikman}!DoubleStrikman@{DoubleStrikman}}
+\index{DoubleStrikman@{DoubleStrikman}!Pythia8::DoubleStrikman@{Pythia8::DoubleStrikman}}
+\doxysubsubsection{\texorpdfstring{DoubleStrikman()}{DoubleStrikman()}}
+{\footnotesize\ttfamily Pythia8\+::\+Double\+Strikman\+::\+Double\+Strikman (\begin{DoxyParamCaption}\item[{int}]{modein = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The default constructor simply lists the nucleon-\/nucleon cross sections. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_a0c72338232acf5d028744c0e35d805b6}\label{class_pythia8_1_1_double_strikman_a0c72338232acf5d028744c0e35d805b6}} 
+\index{Pythia8::DoubleStrikman@{Pythia8::DoubleStrikman}!getCollisions@{getCollisions}}
+\index{getCollisions@{getCollisions}!Pythia8::DoubleStrikman@{Pythia8::DoubleStrikman}}
+\doxysubsubsection{\texorpdfstring{getCollisions()}{getCollisions()}}
+{\footnotesize\ttfamily multiset$<$ \mbox{\hyperlink{class_pythia8_1_1_sub_collision}{Sub\+Collision}} $>$ Pythia8\+::\+Double\+Strikman\+::get\+Collisions (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $>$ \&}]{proj,  }\item[{vector$<$ \mbox{\hyperlink{class_pythia8_1_1_nucleon}{Nucleon}} $>$ \&}]{targ,  }\item[{const \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \&}]{bvec,  }\item[{double \&}]{T }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Take two vectors of Nucleons and an impact parameter vector and produce the corrsponding sub-\/collisions. Note that states of the nucleons may be changed. Assign two states to each nucleon
+
+Implements \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_aa6d9fe4e55b2b686654257cec2ab75fb}{Pythia8\+::\+Sub\+Collision\+Model}}.
+
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_aef3a634dfdbb1aae0f243f52594fa6e5}\label{class_pythia8_1_1_double_strikman_aef3a634dfdbb1aae0f243f52594fa6e5}} 
+\index{Pythia8::DoubleStrikman@{Pythia8::DoubleStrikman}!getParm@{getParm}}
+\index{getParm@{getParm}!Pythia8::DoubleStrikman@{Pythia8::DoubleStrikman}}
+\doxysubsubsection{\texorpdfstring{getParm()}{getParm()}}
+{\footnotesize\ttfamily vector$<$ double $>$ Pythia8\+::\+Double\+Strikman\+::get\+Parm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the current parameters and the minimum and maximum allowed values for the parameters of this model. 
+
+Reimplemented from \mbox{\hyperlink{class_pythia8_1_1_sub_collision_model_a23ebd7d75a7d05e0a244c2425dd1b308}{Pythia8\+::\+Sub\+Collision\+Model}}.
+
+\mbox{\Hypertarget{class_pythia8_1_1_double_strikman_a53d28364a62ae6183b8af743dcb80efb}\label{class_pythia8_1_1_double_strikman_a53d28364a62ae6183b8af743dcb80efb}} 
+\index{Pythia8::DoubleStrikman@{Pythia8::DoubleStrikman}!Tpt@{Tpt}}
+\index{Tpt@{Tpt}!Pythia8::DoubleStrikman@{Pythia8::DoubleStrikman}}
+\doxysubsubsection{\texorpdfstring{Tpt()}{Tpt()}}
+{\footnotesize\ttfamily double Pythia8\+::\+Double\+Strikman\+::\+Tpt (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pythia8_1_1_nucleon_a132cb2b791d6a3f3a86b30fa1ffbcd2c}{Nucleon\+::\+State}} \&}]{p,  }\item[{const \mbox{\hyperlink{class_pythia8_1_1_nucleon_a132cb2b791d6a3f3a86b30fa1ffbcd2c}{Nucleon\+::\+State}} \&}]{t,  }\item[{double}]{b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the elastic amplitude for a projectile and target state and the impact parameter between the corresponding nucleons. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/H\+I\+User\+Hooks.\+h\item 
+src/H\+I\+User\+Hooks.\+cc\end{DoxyCompactItemize}

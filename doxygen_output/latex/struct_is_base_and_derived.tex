@@ -1,0 +1,34 @@
+\hypertarget{struct_is_base_and_derived}{}\doxysection{Is\+Base\+And\+Derived$<$ B, D $>$ Struct Template Reference}
+\label{struct_is_base_and_derived}\index{IsBaseAndDerived$<$ B, D $>$@{IsBaseAndDerived$<$ B, D $>$}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_is_base_and_derived_1_1_host}{Host}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const bool {\bfseries value}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_is_base_and_derived_ab0121bd6049f18cfe9c987378fd3c979}\label{struct_is_base_and_derived_ab0121bd6049f18cfe9c987378fd3c979}} 
+\index{IsBaseAndDerived$<$ B, D $>$@{IsBaseAndDerived$<$ B, D $>$}!value@{value}}
+\index{value@{value}!IsBaseAndDerived$<$ B, D $>$@{IsBaseAndDerived$<$ B, D $>$}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily template$<$typename B , typename D $>$ \\
+const bool \mbox{\hyperlink{struct_is_base_and_derived}{Is\+Base\+And\+Derived}}$<$ B, D $>$\+::value\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= ((\textcolor{keyword}{sizeof}(B)!=0) \&\& }
+\DoxyCodeLine{                 (\textcolor{keyword}{sizeof}(D)!=0) \&\& }
+\DoxyCodeLine{                 (\textcolor{keyword}{sizeof}(\mbox{\hyperlink{struct____inheritance__helper}{\_\_inheritance\_helper<B,D>::check\_sig}}(Host(), 0)) == \textcolor{keyword}{sizeof}(\_\_yes\_type)))}
+
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/F\+Jcore.\+h\end{DoxyCompactItemize}

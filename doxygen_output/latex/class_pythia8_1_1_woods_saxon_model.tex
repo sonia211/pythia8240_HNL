@@ -1,0 +1,91 @@
+\hypertarget{class_pythia8_1_1_woods_saxon_model}{}\doxysection{Pythia8\+::Woods\+Saxon\+Model Class Reference}
+\label{class_pythia8_1_1_woods_saxon_model}\index{Pythia8::WoodsSaxonModel@{Pythia8::WoodsSaxonModel}}
+
+
+A general Woods-\/\+Saxon distributed nucleus.  
+
+
+
+
+{\ttfamily \#include $<$H\+I\+User\+Hooks.\+h$>$}
+
+Inheritance diagram for Pythia8\+::Woods\+Saxon\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pythia8_1_1_woods_saxon_model}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pythia8_1_1_woods_saxon_model_a6d6535b7e9c904fb19de6c9d153a755c}{Woods\+Saxon\+Model}} ()
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_woods_saxon_model_abebe3c2bc521bb9e17be90dbe158ef69}\label{class_pythia8_1_1_woods_saxon_model_abebe3c2bc521bb9e17be90dbe158ef69}} 
+double \mbox{\hyperlink{class_pythia8_1_1_woods_saxon_model_abebe3c2bc521bb9e17be90dbe158ef69}{a}} () const
+\begin{DoxyCompactList}\small\item\em Accessor functions\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} \mbox{\hyperlink{class_pythia8_1_1_woods_saxon_model_a667774aa2ce94b42096bddb6b69ce54f}{generate\+Nucleon}} () const
+\item 
+\mbox{\Hypertarget{class_pythia8_1_1_woods_saxon_model_a6071b2201deb470e036ab818ca34e60e}\label{class_pythia8_1_1_woods_saxon_model_a6071b2201deb470e036ab818ca34e60e}} 
+virtual \mbox{\hyperlink{class_pythia8_1_1_woods_saxon_model_a6071b2201deb470e036ab818ca34e60e}{$\sim$\+Woods\+Saxon\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_pythia8_1_1_woods_saxon_model_a896a71f1a2c3054d05bd6147cd9ceb8a}{init}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_pythia8_1_1_woods_saxon_model_a874f370c3e734bc6ab2f3a6957b0ca27}{a\+Save}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A general Woods-\/\+Saxon distributed nucleus. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_woods_saxon_model_a6d6535b7e9c904fb19de6c9d153a755c}\label{class_pythia8_1_1_woods_saxon_model_a6d6535b7e9c904fb19de6c9d153a755c}} 
+\index{Pythia8::WoodsSaxonModel@{Pythia8::WoodsSaxonModel}!WoodsSaxonModel@{WoodsSaxonModel}}
+\index{WoodsSaxonModel@{WoodsSaxonModel}!Pythia8::WoodsSaxonModel@{Pythia8::WoodsSaxonModel}}
+\doxysubsubsection{\texorpdfstring{WoodsSaxonModel()}{WoodsSaxonModel()}}
+{\footnotesize\ttfamily Pythia8\+::\+Woods\+Saxon\+Model\+::\+Woods\+Saxon\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The default constructor needs a nucleus id, a radius, R, and a \char`\"{}skin width\char`\"{}, a (both length in femtometers). 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_woods_saxon_model_a667774aa2ce94b42096bddb6b69ce54f}\label{class_pythia8_1_1_woods_saxon_model_a667774aa2ce94b42096bddb6b69ce54f}} 
+\index{Pythia8::WoodsSaxonModel@{Pythia8::WoodsSaxonModel}!generateNucleon@{generateNucleon}}
+\index{generateNucleon@{generateNucleon}!Pythia8::WoodsSaxonModel@{Pythia8::WoodsSaxonModel}}
+\doxysubsubsection{\texorpdfstring{generateNucleon()}{generateNucleon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pythia8_1_1_vec4}{Vec4}} Pythia8\+::\+Woods\+Saxon\+Model\+::generate\+Nucleon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generate the position of a single nucleon. (The time component is always zero). \mbox{\Hypertarget{class_pythia8_1_1_woods_saxon_model_a896a71f1a2c3054d05bd6147cd9ceb8a}\label{class_pythia8_1_1_woods_saxon_model_a896a71f1a2c3054d05bd6147cd9ceb8a}} 
+\index{Pythia8::WoodsSaxonModel@{Pythia8::WoodsSaxonModel}!init@{init}}
+\index{init@{init}!Pythia8::WoodsSaxonModel@{Pythia8::WoodsSaxonModel}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual bool Pythia8\+::\+Woods\+Saxon\+Model\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Setup the generation with a given nucleus radius, R, and a \char`\"{}skin
+width\char`\"{}, a (both length in femtometers). 
+
+Reimplemented from \mbox{\hyperlink{class_pythia8_1_1_nucleus_model}{Pythia8\+::\+Nucleus\+Model}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_pythia8_1_1_g_l_i_s_s_a_n_d_o_model_a452e2f52245cdefa7b2739e98f211eeb}{Pythia8\+::\+G\+L\+I\+S\+S\+A\+N\+D\+O\+Model}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_pythia8_1_1_woods_saxon_model_a874f370c3e734bc6ab2f3a6957b0ca27}\label{class_pythia8_1_1_woods_saxon_model_a874f370c3e734bc6ab2f3a6957b0ca27}} 
+\index{Pythia8::WoodsSaxonModel@{Pythia8::WoodsSaxonModel}!aSave@{aSave}}
+\index{aSave@{aSave}!Pythia8::WoodsSaxonModel@{Pythia8::WoodsSaxonModel}}
+\doxysubsubsection{\texorpdfstring{aSave}{aSave}}
+{\footnotesize\ttfamily double Pythia8\+::\+Woods\+Saxon\+Model\+::a\+Save\hspace{0.3cm}{\ttfamily [protected]}}
+
+The nucleus radius, skin depth parameter, and hard core nucleon radius.. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/H\+I\+User\+Hooks.\+h\item 
+src/H\+I\+User\+Hooks.\+cc\end{DoxyCompactItemize}

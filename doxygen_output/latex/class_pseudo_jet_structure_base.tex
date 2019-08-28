@@ -1,0 +1,74 @@
+\hypertarget{class_pseudo_jet_structure_base}{}\doxysection{Pseudo\+Jet\+Structure\+Base Class Reference}
+\label{class_pseudo_jet_structure_base}\index{PseudoJetStructureBase@{PseudoJetStructureBase}}
+Inheritance diagram for Pseudo\+Jet\+Structure\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pseudo_jet_structure_base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_a8e1fec22146555a2d119af607bde4e53}\label{class_pseudo_jet_structure_base_a8e1fec22146555a2d119af607bde4e53}} 
+virtual std\+::string {\bfseries description} () const
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_aa34acb3871c76c01a29106b0fe5957ae}\label{class_pseudo_jet_structure_base_aa34acb3871c76c01a29106b0fe5957ae}} 
+virtual bool {\bfseries has\+\_\+associated\+\_\+cluster\+\_\+sequence} () const
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_a2d6d0c5e55013e8512f715e84edfcb40}\label{class_pseudo_jet_structure_base_a2d6d0c5e55013e8512f715e84edfcb40}} 
+virtual const \mbox{\hyperlink{class_cluster_sequence}{Cluster\+Sequence}} $\ast$ {\bfseries associated\+\_\+cluster\+\_\+sequence} () const
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_a5c5cd94078e38a6955a99c5912b11877}\label{class_pseudo_jet_structure_base_a5c5cd94078e38a6955a99c5912b11877}} 
+virtual bool {\bfseries has\+\_\+valid\+\_\+cluster\+\_\+sequence} () const
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_ad16c9ad64d68dfb4dc9749b1d983f70f}\label{class_pseudo_jet_structure_base_ad16c9ad64d68dfb4dc9749b1d983f70f}} 
+virtual const \mbox{\hyperlink{class_cluster_sequence}{Cluster\+Sequence}} $\ast$ {\bfseries validated\+\_\+cs} () const
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_a521bf0ebc110680c3a23d3c28ccf8b5b}\label{class_pseudo_jet_structure_base_a521bf0ebc110680c3a23d3c28ccf8b5b}} 
+virtual bool {\bfseries has\+\_\+partner} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&reference, \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&partner) const
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_a0c89002b7ef9e8e1a971693c13f9711d}\label{class_pseudo_jet_structure_base_a0c89002b7ef9e8e1a971693c13f9711d}} 
+virtual bool {\bfseries has\+\_\+child} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&reference, \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&child) const
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_a452182c0055dc11ae1f8bb94a40c9064}\label{class_pseudo_jet_structure_base_a452182c0055dc11ae1f8bb94a40c9064}} 
+virtual bool {\bfseries has\+\_\+parents} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&reference, \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&parent1, \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&parent2) const
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_aaba822958b42d98106bb63a043dc4209}\label{class_pseudo_jet_structure_base_aaba822958b42d98106bb63a043dc4209}} 
+virtual bool {\bfseries object\+\_\+in\+\_\+jet} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&reference, const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&jet) const
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_ad21310ed677516f3f69799e98c317689}\label{class_pseudo_jet_structure_base_ad21310ed677516f3f69799e98c317689}} 
+virtual bool {\bfseries has\+\_\+constituents} () const
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_a3d103b28c8ed0385d632e73ff0de7f5c}\label{class_pseudo_jet_structure_base_a3d103b28c8ed0385d632e73ff0de7f5c}} 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ {\bfseries constituents} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&reference) const
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_a14340a2c27b29f98aad4e6b304606720}\label{class_pseudo_jet_structure_base_a14340a2c27b29f98aad4e6b304606720}} 
+virtual bool {\bfseries has\+\_\+exclusive\+\_\+subjets} () const
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_a0f7f7e9461b2c9e045c26e1537bc5718}\label{class_pseudo_jet_structure_base_a0f7f7e9461b2c9e045c26e1537bc5718}} 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ {\bfseries exclusive\+\_\+subjets} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&reference, const double \&dcut) const
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_ad359aea070825005185985631832b99f}\label{class_pseudo_jet_structure_base_ad359aea070825005185985631832b99f}} 
+virtual int {\bfseries n\+\_\+exclusive\+\_\+subjets} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&reference, const double \&dcut) const
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_a5ef01dd56599cce415e3bc1eef28349f}\label{class_pseudo_jet_structure_base_a5ef01dd56599cce415e3bc1eef28349f}} 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ {\bfseries exclusive\+\_\+subjets\+\_\+up\+\_\+to} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&reference, int nsub) const
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_a04f98c3ef4b430807e550b955b8e48dd}\label{class_pseudo_jet_structure_base_a04f98c3ef4b430807e550b955b8e48dd}} 
+virtual double {\bfseries exclusive\+\_\+subdmerge} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&reference, int nsub) const
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_a936a133f2f70741dea15faf0c875bbef}\label{class_pseudo_jet_structure_base_a936a133f2f70741dea15faf0c875bbef}} 
+virtual double {\bfseries exclusive\+\_\+subdmerge\+\_\+max} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&reference, int nsub) const
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_aa48a0f7e21cd781c3b88532bf0a3fd86}\label{class_pseudo_jet_structure_base_aa48a0f7e21cd781c3b88532bf0a3fd86}} 
+virtual bool {\bfseries has\+\_\+pieces} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&) const
+\item 
+\mbox{\Hypertarget{class_pseudo_jet_structure_base_af2bae257f81041a8b5769218cf5dcf59}\label{class_pseudo_jet_structure_base_af2bae257f81041a8b5769218cf5dcf59}} 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} $>$ {\bfseries pieces} (const \mbox{\hyperlink{class_pseudo_jet}{Pseudo\+Jet}} \&) const
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Pythia8/F\+Jcore.\+h\item 
+src/F\+Jcore.\+cc\end{DoxyCompactItemize}
