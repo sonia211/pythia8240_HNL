@@ -49,7 +49,7 @@ for (int iEvent = 0; iEvent < 10000; ++iEvent) {
 	pythia.event.reset();
     pythia.event.append(521, 1, 0, 0, 0, 0, 0, 0, 0., 0., 0., 5.279, 5.279, 0, 9);
 	if (!pythia.next()) continue;
-	std::cout<<"pythia.event.size()"<<pythia.event.size()<<std::endl;
+	//std::cout<<"pythia.event.size()"<<pythia.event.size()<<std::endl;
     for (int i = 0; i < pythia.event.size(); ++i){
 		if (pythia.event[i].idAbs() == 521){
 			//std::cout << "there is a B" << std::endl;
@@ -63,9 +63,9 @@ for (int iEvent = 0; iEvent < 10000; ++iEvent) {
              Particle muon = pythia.event[4];
              Particle pion = pythia.event[5];
 
-             std::cout<<"hnl.id(): "<<hnl.id()<<std::endl;
-             std::cout<<"muon.id(): "<<muon.id()<<std::endl;
-             std::cout<<"pion.id(): "<<pion.id()<<std::endl;
+             //std::cout<<"hnl.id(): "<<hnl.id()<<std::endl;
+             //std::cout<<"muon.id(): "<<muon.id()<<std::endl;
+             //std::cout<<"pion.id(): "<<pion.id()<<std::endl;
 
              //std::cout<<"muon.theta(): "<<muon.theta()<<std::endl;
 
