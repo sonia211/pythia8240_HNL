@@ -1,13 +1,13 @@
 # PYTHIA configuration file.
-# Generated on Tue Aug 20 10:00:53 CEST 2019 with the user supplied options:
-# --with-root=/usr/local/Cellar/root/6.18.00/
+# Generated on Thu Nov 28 14:41:36 CET 2019 with the user supplied options:
 # --enable-shared
+# --with-root=/usr/local/Cellar/root/6.16.00_2/
 
 # Install directory prefixes.
-PREFIX_BIN=/Users/bouchiba/Documents/PDM/pythia8240_HNL/bin
-PREFIX_INCLUDE=/Users/bouchiba/Documents/PDM/pythia8240_HNL/include
-PREFIX_LIB=/Users/bouchiba/Documents/PDM/pythia8240_HNL/lib
-PREFIX_SHARE=/Users/bouchiba/Documents/PDM/pythia8240_HNL/share/Pythia8
+PREFIX_BIN=/Users/epfl/Documents/SBOUCHIB/pythia8240_HNL/bin
+PREFIX_INCLUDE=/Users/epfl/Documents/SBOUCHIB/pythia8240_HNL/include
+PREFIX_LIB=/Users/epfl/Documents/SBOUCHIB/pythia8240_HNL/lib
+PREFIX_SHARE=/Users/epfl/Documents/SBOUCHIB/pythia8240_HNL/share/Pythia8
 
 # Compilation flags (see ./configure --help for further documentation).
 ENABLE_SHARED=true
@@ -67,9 +67,9 @@ PROMC_LIB=
 
 # ROOT configuration.
 ROOT_USE=true
-ROOT_BIN=/usr/local/Cellar/root/6.18.00//bin
-ROOT_LIBS=-L/usr/local/Cellar/root/6.18.00/lib/root -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -lpthread -stdlib=libc++ -lm -ldl
-CXX_ROOT=-O2  -W -Wall -Wshadow -fPIC -pthread -stdlib=libc++ -std=c++1z -m64 -I/usr/local/Cellar/root/6.18.00/include/root
+ROOT_BIN=/usr/local/Cellar/root/6.16.00_2//bin
+ROOT_LIBS=-L/usr/local/Cellar/root/6.16.00_2/lib/root -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -lpthread -stdlib=libc++ -lm -ldl
+CXX_ROOT=-O2  -W -Wall -Wshadow -fPIC -pthread -stdlib=libc++ -std=c++17 -m64 -I/usr/local/Cellar/root/6.16.00_2/include/root
 
 # GZIP configuration.
 GZIP_USE=false

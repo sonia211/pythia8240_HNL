@@ -191,10 +191,7 @@ endif
 
 # User-written examples for tutorials, without external dependencies.
 mymain% : mymain%.cc $(PREFIX_LIB)/libpythia8.a
-	$(CXX) $< -o $@ -w -I$(ROOT_INCLUDE) $(CXX_SHARED) $(CXX_COMMON)\
-	`$(ROOTSYS)/bin/root-config --cflags` -Wl,-rpath,./\
-	 -Wl,-rpath,$(ROOT_LIB) `$(ROOTSYS)/bin/root-config --glibs`\
-	 $(GZIP_INC) $(GZIP_FLAGS)
+	$(CXX) $< -o $@ $(CXX_COMMON) $(GZIP_INC) $(GZIP_FLAGS)
 
 # Internally used tests, without external dependencies.
 test% : test%.cc $(PREFIX_LIB)/libpythia8.a

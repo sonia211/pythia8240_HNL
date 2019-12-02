@@ -197,7 +197,7 @@ bool ParticleDecays::decay( int iDec, Event& event) {
   }
   
   // Check if the particle is tau and let the special tau decayer handle it.
-  if (decayer.idAbs() == 9013 && !doneExternally && HNLMode) {
+  if (decayer.idAbs() == 9900015 && !doneExternally && HNLMode) {
     doneExternally = HNLDecayer.decay(iDec, event);
     if (doneExternally) return true;
   }

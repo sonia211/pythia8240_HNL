@@ -29,12 +29,12 @@ class HNLDecays : public TauDecays {
 public:
 
   // Constructor and destructor.
-  /**HNLDecays() : correlated(), tauExt(), tauMode(), tauMother(), tauPol(),
+  HNLDecays() : correlated(), HNLExt(), HNLMode(), HNLMother(), HNLPol(),
     hardME(), decayME(), infoPtr(), settingsPtr(), particleDataPtr(),
-    rndmPtr(), couplingsPtr(), HNL0Max(), HNLMax(), rMax(), xyMax(), zMax(),
+    rndmPtr(), couplingsPtr(), tau0Max(), tauMax(), rMax(), xyMax(), zMax(),
     limitTau0(), limitTau(), limitRadius(), limitCylinder(), limitDecay() {};
   ~HNLDecays() {}
-  * **/
+  
 
   // Initializer.
   void init(Info* infoPtrIn, Settings* settingsPtrIn,
@@ -43,6 +43,13 @@ public:
    
   // Decay a HNL or correlated HNL pair.
   bool decay(int iDec, Event& event);
+
+  // Choose a decay channel for a particle.
+  vector<HelicityParticle> createChildren(HelicityParticle parent);
+  // Perform an N-body isotropic decay.
+  void isotropicDecay(vector<HelicityParticle>& p);
+  // Write the decay to event record.
+  void writeDecay(Event& event, vector<HelicityParticle>& p);
 
   // Determine internal or external polarization and correlation mechanism.
   bool internalMechanism(Event &event);

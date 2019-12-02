@@ -107,6 +107,8 @@ void HNLDecays::init(Info* infoPtrIn, Settings* settingsPtrIn,
 
 bool HNLDecays::decay(int idxOut1, Event& event) {
 
+  std::cout<<"[Inside HNLDecays 1]"<<std::endl;
+
   // Set the outgoing particles of the hard process.
   out1                    = HelicityParticle(event[idxOut1]);
   int         idxOut1Top  = out1.iTopCopyId();
@@ -115,8 +117,9 @@ bool HNLDecays::decay(int idxOut1, Event& event) {
   if (sistersOut1.size() == 1) idxOut2Top = sistersOut1[0];
   // Rewrite it.. sister really important?
   else {
-    // If more then one sister, select by preference HNL, nu_tau, lep, nu_lep.
+    // If more then one sister, select by preference 
     int tau(-1), tnu(-1), lep(-1), lnu(-1);
+    /**
     for (int i = 0; i < int(sistersOut1.size()); ++i) {
       int sn = out1.id() == 15 ? -1 : 1;
       int id = event[sistersOut1[i]].id();
@@ -127,17 +130,21 @@ bool HNLDecays::decay(int idxOut1, Event& event) {
       else if ((id == sn * 12 || (id == sn * 14)) && lnu == -1)
         lnu = sistersOut1[i];
     }
+    **/
+
     if      (tau > 0) idxOut2Top = tau;
     else if (tnu > 0) idxOut2Top = tnu;
     else if (lep > 0) idxOut2Top = lep;
     else if (lnu > 0) idxOut2Top = lnu;
   }
   int idxOut2 = event[idxOut2Top].iBotCopyId();
+  std::cout<<"[Inside HNLDecays 2]"<<std::endl;
   out2        = HelicityParticle(event[idxOut2]);
-
+  std::cout<<"[Inside HNLDecays 3]"<<std::endl;
   // Set the mediator of the hard process.
   int idxMediator    = event[idxOut1Top].mother1();
   mediator           = HelicityParticle(event[idxMediator]);
+  std::cout<<"[Inside HNLDecays 4]"<<std::endl;
   mediator.direction = -1;
   if (mediator.m() < out1.m() + out2.m()) {
     Vec4 p = out1.p() + out2.p();
@@ -160,11 +167,12 @@ bool HNLDecays::decay(int idxOut1, Event& event) {
   particles.push_back(in2);
   particles.push_back(out1);
   particles.push_back(out2);
-
+  std::cout<<"[Inside HNLDecays 5]"<<std::endl;
   // Determine if correlated (allow lepton flavor violating partner).
   correlated = false;
   if (idxOut1 != idxOut2 &&
       (abs(out2.id()) == 11 || abs(out2.id()) == 13 || abs(out2.id()) == 15)) {
+    std::cout<<"[Inside HNLDecays 5.if]"<<std::endl;
     correlated = true;
     // Check partner vertex is within limits.
     if (limitTau0 && out2.tau0() > tau0Max) correlated = false;
@@ -178,7 +186,7 @@ bool HNLDecays::decay(int idxOut1, Event& event) {
     else if (!out2.canDecay()) correlated = false;
     else if (!out2.mayDecay()) correlated = false;
   }
-
+  std::cout<<"[Inside HNLDecays 6]"<<std::endl;
   // Set the production mechanism.
   bool known = false;
   hardME = 0;
@@ -186,6 +194,7 @@ bool HNLDecays::decay(int idxOut1, Event& event) {
   else if (HNLMode == 5) known = externalMechanism(event);
   else {
     if ((HNLMode == 2 && abs(mediator.id()) == HNLMother) || HNLMode == 3) {
+      std::cout<<"[Inside HNLDecays 6.if]"<<std::endl;
       known       = true;
       correlated  = false;
       double sign = out1.id() == -15 ? -1 : 1;
@@ -196,7 +205,7 @@ bool HNLDecays::decay(int idxOut1, Event& event) {
       else known = true;
     }
   }
-
+  std::cout<<"[Inside HNLDecays 7]"<<std::endl;
   // Catch unknown production mechanims.
   if (!known) {
     particles[1] = mediator;
@@ -218,20 +227,34 @@ bool HNLDecays::decay(int idxOut1, Event& event) {
                         "tau production, assuming unpolarized");
     }
   }
-
+  std::cout<<"[Inside HNLDecays 8]"<<std::endl;
   // Undecay correlated partner if already decayed.
   if (correlated && !out2.isFinal()) event[out2.index()].undoDecay();
 
   // Pick the first tau to decay.
   HelicityParticle* tau;
   int idx = 2;
-  if (correlated) idx = (rndmPtr->flat() < 0.5) ? 2 : 3;
+  if (correlated){
+    idx = (rndmPtr->flat() < 0.5) ? 2 : 3;
+    std::cout<<"inside if"<<std::endl;
+  }
+  std::cout<<"[Inside HNLDecays 8a]"<<std::endl;
+  std::cout<<"idx: "<<idx<<std::endl;
+  std::cout<<"particles: "<<particles.size()<<std::endl;
   tau = &particles[idx];
+  std::cout<<"tau.id()"<<tau->id()<<std::endl;
+  std::cout<<"[Inside HNLDecays 8b]"<<std::endl;
 
   // Calculate the density matrix (if needed) and select channel.
-  if (hardME) hardME->calculateRho(idx, particles);
+  if (hardME){ hardME->calculateRho(idx, particles);
+  std::cout<<"[Inside HNLDecays 8cif]"<<std::endl;
+  }
+  std::cout<<"[Inside HNLDecays 8c]"<<std::endl;
   vector<HelicityParticle> children = createChildren(*tau);
+  std::cout<<"[Inside HNLDecays 8d]"<<std::endl;
   if (children.size() == 0) return false;
+  
+  std::cout<<"[Inside HNLDecays 9]"<<std::endl;
 
   // Decay the first tau.
   bool accepted = false;
@@ -250,6 +273,8 @@ bool HNLDecays::decay(int idxOut1, Event& event) {
       break;
     }
     ++tries;
+
+    std::cout<<"[Inside HNLDecays end]"<<std::endl;
   }
   writeDecay(event,children);
 
@@ -421,7 +446,7 @@ bool HNLDecays::externalMechanism(Event &event) {
 // a vector of HelicityParticles containing the children, with the parent
 // particle duplicated in the first entry of the vector.
 
-/**
+
 vector<HelicityParticle> HNLDecays::createChildren(HelicityParticle parent) {
 
   // Initial values.
@@ -553,7 +578,7 @@ vector<HelicityParticle> HNLDecays::createChildren(HelicityParticle parent) {
   return children;
 }
 
-**/
+
 //--------------------------------------------------------------------------
 
 // N-body decay using the M-generator algorithm described in
@@ -562,7 +587,7 @@ vector<HelicityParticle> HNLDecays::createChildren(HelicityParticle parent) {
 // Given a vector of HelicityParticles where the first particle is
 // the mother, the remaining particles are decayed isotropically.
 
-/**
+
 void HNLDecays::isotropicDecay(vector<HelicityParticle>& children) {
 
   // Mother and sum daughter masses.
@@ -656,13 +681,13 @@ void HNLDecays::isotropicDecay(vector<HelicityParticle>& children) {
   // Done.
   return;
 }
-**/
+
 //--------------------------------------------------------------------------
 
 // Write the vector of HelicityParticles to the event record, excluding the
 // first particle. Set the lifetime and production vertex of the particles
 // and mark the first particle of the vector as decayed.
-/**
+
 void HNLDecays::writeDecay(Event& event, vector<HelicityParticle>& children) {
 
   // Set additional information and append children to event.
@@ -683,7 +708,7 @@ void HNLDecays::writeDecay(Event& event, vector<HelicityParticle>& children) {
     children[decayMult].index());
 
 }
-**/
+
 //==========================================================================
 
 } // end namespace Pythia8
