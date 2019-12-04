@@ -199,12 +199,15 @@ bool ParticleDecays::decay( int iDec, Event& event) {
   // Check if the particle is tau and let the special tau decayer handle it.
   if (decayer.idAbs() == 9900015 && !doneExternally && HNLMode) {
     doneExternally = HNLDecayer.decay(iDec, event);
+    //std::cout<<"HNLDecayer"<<std::endl;
+    //std::cout<<"doneExternally:"<<doneExternally<<std::endl;
     if (doneExternally) return true;
   }
+  //std::cout<<"[Inside ParticleDecays.cc]: doneExternally = "<<doneExternally<<std::endl;
 
   // Now begin normal internal decay treatment.
   if (!doneExternally) {
-
+    //std::cout<<"[Inside !doneExternally]"<<std::endl;
     // Allow up to ten tries to pick a channel.
     if (!decDataPtr->preparePick(idDec, decayer.m())) return false;
     bool foundChannel = false;

@@ -74,14 +74,17 @@ private:
   HelicityMatrixElement* decayME;
 
   // Hard process helicity matrix elements.
+  
   HMETwoFermions2W2TwoFermions      hmeTwoFermions2W2TwoFermions;
   HMETwoFermions2GammaZ2TwoFermions hmeTwoFermions2GammaZ2TwoFermions;
   HMEW2TwoFermions                  hmeW2TwoFermions;
   HMEZ2TwoFermions                  hmeZ2TwoFermions;
   HMEGamma2TwoFermions              hmeGamma2TwoFermions;
   HMEHiggs2TwoFermions              hmeHiggs2TwoFermions;
+  
 
   // Tau decay helicity matrix elements.
+  
   HMETau2Meson                    hmeTau2Meson;
   HMETau2TwoLeptons               hmeTau2TwoLeptons;
   HMETau2TwoMesonsViaVector       hmeTau2TwoMesonsViaVector;
@@ -93,6 +96,7 @@ private:
   HMETau2FourPions                hmeTau2FourPions;
   HMETau2FivePions                hmeTau2FivePions;
   HMETau2PhaseSpace               hmeTau2PhaseSpace;
+  
 
   // Particles of the hard process.
   HelicityParticle in1, in2, mediator, out1, out2;
