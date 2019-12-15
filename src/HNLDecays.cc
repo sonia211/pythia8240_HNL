@@ -1,4 +1,5 @@
-// HNLDecays.cc is a part of the PYTHIA event generator.
+// HNLDecays.cc is a part of the PYTHIA event generator, added by Sonia Bouchiba, 2020
+// Application of TauDecays (Phil Ilten) structure to a Heavy Neutral Lepton (HNL) 
 // Copyright (C) 2018 Philip Ilten, Torbjorn Sjostrand.
 // PYTHIA is licenced under the GNU GPL v2 or later, see COPYING for details.
 // Please respect the MCnet Guidelines, see GUIDELINES for details.
@@ -63,7 +64,7 @@ void HNLDecays::init(Info* infoPtrIn, Settings* settingsPtrIn,
   hmeHiggs2TwoFermions
     .initPointers(particleDataPtr, couplingsPtr, settingsPtr);
 
-  // Initialize the tau decay matrix elements.
+  // Initialize the HNL decay matrix elements (same as tau)
   hmeTau2Meson                   .initPointers(particleDataPtr, couplingsPtr);
   hmeTau2TwoLeptons              .initPointers(particleDataPtr, couplingsPtr);
   hmeTau2TwoMesonsViaVector      .initPointers(particleDataPtr, couplingsPtr);
@@ -76,14 +77,13 @@ void HNLDecays::init(Info* infoPtrIn, Settings* settingsPtrIn,
   hmeTau2FivePions               .initPointers(particleDataPtr, couplingsPtr);
   hmeTau2PhaseSpace              .initPointers(particleDataPtr, couplingsPtr);
 
-  // User selected tau settings.
+  // User selected HNL settings.
   HNLExt    = settingsPtr->mode("HNLDecays:externalMode");
   HNLMode   = settingsPtr->mode("HNLDecays:mode");
   HNLMother = settingsPtr->mode("HNLDecays:HNLMother");
   HNLPol    = settingsPtr->parm("HNLDecays:HNLPolarization");
 
   // Parameters to determine if correlated partner should decay.
-  /**
   limitTau0     = settingsPtr->flag("ParticleDecays:limitTau0");
   tau0Max       = settingsPtr->parm("ParticleDecays:tau0Max");
   limitTau      = settingsPtr->flag("ParticleDecays:limitTau");
@@ -94,7 +94,6 @@ void HNLDecays::init(Info* infoPtrIn, Settings* settingsPtrIn,
   xyMax         = settingsPtr->parm("ParticleDecays:xyMax");
   zMax          = settingsPtr->parm("ParticleDecays:zMax");
   limitDecay    = limitTau0 || limitTau || limitRadius || limitCylinder;
-  **/
 }
 
 //--------------------------------------------------------------------------
@@ -107,32 +106,29 @@ void HNLDecays::init(Info* infoPtrIn, Settings* settingsPtrIn,
 
 bool HNLDecays::decay(int idxOut1, Event& event) {
 
-//  std::cout<<"[Inside HNLDecays 1]"<<std::endl;
-  std::cout<<"HNLMode"<<HNLMode<<std::endl;
   // Set the outgoing particles of the hard process.
   out1                    = HelicityParticle(event[idxOut1]);
   int         idxOut1Top  = out1.iTopCopyId();
   vector<int> sistersOut1 = event[idxOut1Top].sisterList();
   int         idxOut2Top  = idxOut1Top;
   if (sistersOut1.size() == 1) idxOut2Top = sistersOut1[0];
-  // Rewrite it.. sister really important?
   else {
-    // If more then one sister, select by preference 
-    int tau(-1), tnu(-1), lep(-1), lnu(-1);
+    // If more then one sister, the correlation process is applied on the other lepton (e.g. semileptonic decay of B+)
+    int mu(-1), HNL2(-1), lep(-1), lnu(-1);
     
-    for (int i = 0; i < int(sistersOut1.size()); ++i) {
+    for (int i = 0; i < int(sistersOut1.size()); ++i) { 
       int sn = out1.id() == 9900015 ? -1 : 1;
       int id = event[sistersOut1[i]].id();
-      if      (id == sn * 13 && tau == -1) tau = sistersOut1[i];
-      else if (id == sn * 16 && tnu == -1) tnu = sistersOut1[i];
-      else if ((id == sn * 11 || (id == sn * 13)) && lep == -1)
+      if      (id == sn * 13 && mu == -1) mu = sistersOut1[i];                       // primary muon
+      else if (id == sn * 9900015 && HNL2 == -1) HNL2 = sistersOut1[i];              // another HNL
+      else if ((id == sn * 11 || (id == sn * 15)) && lep == -1)                      // primary e or tau
         lep = sistersOut1[i];
-      else if ((id == sn * 12 || (id == sn * 14)) && lnu == -1)
+      else if ((id == sn * 12 || (id == sn * 14) || (id == sn * 16))  && lnu == -1)  // primary nu
         lnu = sistersOut1[i];
     }
 
-    if      (tau > 0) idxOut2Top = tau;
-    else if (tnu > 0) idxOut2Top = tnu;
+    if      (mu > 0) idxOut2Top = mu;
+    else if (HNL2 > 0) idxOut2Top = HNL2;
     else if (lep > 0) idxOut2Top = lep;
     else if (lnu > 0) idxOut2Top = lnu;
   }
@@ -149,7 +145,7 @@ bool HNLDecays::decay(int idxOut1, Event& event) {
   }
 
   // Set the incoming particles of the hard process.
-  int idxMediatorTop = mediator.iTopCopyId();
+  int idxMediatorTop = mediator.iTopCopyId(); 
   int idxIn1         = event[idxMediatorTop].mother1();
   int idxIn2         = event[idxMediatorTop].mother2();
   in1                = HelicityParticle(event[idxIn1]);
@@ -163,15 +159,14 @@ bool HNLDecays::decay(int idxOut1, Event& event) {
   particles.push_back(in2);
   particles.push_back(out1);
   particles.push_back(out2);
+
   // Determine if correlated (allow lepton flavor violating partner).
   correlated = false;
-  //std::cout<<"abs(mediator.id())"<<abs(mediator.id())<<std::endl;
-  //std::cout<<"internalMechanism(event): "<<internalMechanism(event)<<std::endl;
   
   if (idxOut1 != idxOut2 &&
-      (abs(out2.id()) == 11 || abs(out2.id()) == 13 || abs(out2.id()) == 15)) {
-    //std::cout<<"determine if correlated"<<std::endl;
+    (abs(out2.id()) == 11 || abs(out2.id()) == 13 || abs(out2.id()) == 15 || abs(out2.id()) == 9900015)) {
     correlated = true;
+
     // Check partner vertex is within limits.
     if (limitTau0 && out2.tau0() > tau0Max) correlated = false;
     else if (limitTau && out2.tau() > tauMax) correlated = false;
@@ -183,6 +178,7 @@ bool HNLDecays::decay(int idxOut1, Event& event) {
     // Check partner can decay.
     else if (!out2.canDecay()) correlated = false;
     else if (!out2.mayDecay()) correlated = false;
+
   }
   // Set the production mechanism.
   bool known = false;
@@ -194,23 +190,8 @@ bool HNLDecays::decay(int idxOut1, Event& event) {
       known       = true;
       correlated  = false;
       double sign = out1.id() == -9900015 ? -1 : 1;
-      //std::cout<<"sign: "<< sign<<std::endl;      
       particles[2].rho[0][0] = (1 - sign * HNLPol) / 2;
       particles[2].rho[1][1] = (1 + sign * HNLPol) / 2;
-      
-      //std::cout<<"Inside HNLMode == 2 && abs(mediator.id()) == HNLMother) || HNLMode == 3"<<std::endl;
-      //std::cout<<"particles[2].rho[0][0] = "<<particles[2].rho[0][0]<<std::endl;
-      //std::cout<<"particles[2].rho[1][1] = "<<particles[2].rho[1][1]<<std::endl;
-      //std::cout<<"HNL mode"<<HNLMode<<std::endl;
-      //std::cout<<"HNL pol"<<HNLPol<<std::endl;
-      
-      
-      //std::cout<<" in1.id() "<< in1.id()<<std::endl;
-      //std::cout<<" in2.id() "<< in2.id()<<std::endl;
-      
-      //std::cout<<" out1.id() "<< out1.id()<<std::endl;
-      //std::cout<<" out2.id() "<< out2.id()<<std::endl;
-      
     } else {
       if (!externalMechanism(event)) known = internalMechanism(event);
       else known = true;
@@ -218,9 +199,6 @@ bool HNLDecays::decay(int idxOut1, Event& event) {
   }
   // Catch unknown production mechanims.
   if (!known) {
-    //std::cout<<"Inside !known"<<std::endl;
-    //std::cout<<"abs(mediator.id()):"<<abs(mediator.id())<<std::endl;
-    //std::cout<<"correlated:"<<correlated<<std::endl;
     particles[1] = mediator;
     if (abs(mediator.id()) == 22)
       hardME = hmeGamma2TwoFermions.initChannel(particles);
@@ -234,15 +212,13 @@ bool HNLDecays::decay(int idxOut1, Event& event) {
         idxOut2, 0, 0, p, p.mCalc(), 0, particleDataPtr);
       hardME = hmeGamma2TwoFermions.initChannel(particles);
       infoPtr->errorMsg("Warning in HNLDecays::decay: unknown correlated "
-                        "tau production, assuming from unpolarized photon");
+                        "HNL production, assuming from unpolarized photon");
     } else {
       infoPtr->errorMsg("Warning in HNLDecays::decay: unknown uncorrelated "
-                        "tau production, assuming unpolarized");
+                        "HNL production, assuming unpolarized");
     }
   }
-  //std::cout<<"known"<<known<<std::endl;
-  //std::cout<<"abs(mediator.id()):"<<abs(mediator.id())<<std::endl;
-  //std::cout<<"correlated:"<<correlated<<std::endl;
+ 
   // Undecay correlated partner if already decayed.
   if (correlated && !out2.isFinal()) event[out2.index()].undoDecay();
   
@@ -254,8 +230,6 @@ bool HNLDecays::decay(int idxOut1, Event& event) {
   }
 
   HNL = &particles[idx];
-
-  //std::cout<<"HNLDecays ID"<<HNL->id()<<std::endl;
 
   // Calculate the density matrix (if needed) and select channel.
   if (hardME)hardME->calculateRho(idx, particles);
@@ -316,7 +290,7 @@ bool HNLDecays::decay(int idxOut1, Event& event) {
       ++tries;
     }
     writeDecay(event,children);
-    //std::cout<<"inside correlated, after writeDecay:"<<correlated<<std::endl;
+    
   }
 
   // Done.
