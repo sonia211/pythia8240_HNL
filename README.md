@@ -5,9 +5,9 @@ This is a modified version of Pythia8.240. It incorporates the production of a n
 
 
 
-## Applied changes compared to version
+## Applied changes compared to original Pythia 8.240
 
-The exhaustive list of addings is the following:
+The list of addings is the following:
 
 ### File `src/HNLDecays.cc`
 The HNLDecays class is public TauDecays class and contains basically the same functions. Since tau and HNL are both leptons, most of the handling is similar. In the following there is a quick physics explanation.
