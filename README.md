@@ -1,7 +1,7 @@
 # Updated version of Pythia8: Heavy Neutral Lepton's polarized decay
 
 
-This is a modified version of Pythia8.240. It incorporates the production of a new type of particle (ID: 9900015), that can be produced. The xml file can be further fulfilled by different production channels. The decay channels of the HNL are let to be defined for the user. The main production and decay channels, as well as their decay width formulas, can be found in [arXiv:]. The implementation in a cxx environment can be found for example in [https://github.com/f-thiele/cHNLdecay]. A branch from sonia211, adding other features such as production channels from B hadrons, is currently WIP.
+This is a modified version of Pythia8.240. It incorporates the production of a new type of particle (ID: 9900015), that can be produced. The xml file can be further fulfilled by different production channels. The decay channels of the HNL are let to be defined for the user. The main production and decay channels, as well as their decay width formulas, can be found in [https://arxiv.org/abs/1805.08567]. The implementation in a cxx environment, further customed by us for this project, can be found on [https://github.com/f-thiele/cHNLdecay].
 
 
 
