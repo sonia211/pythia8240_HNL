@@ -1,18 +1,19 @@
 # Updated version of Pythia8: Heavy Neutral Lepton's polarized decay
 
 
-This is a modified version of Pythia8.240. It incorporates the production of a new type of particle (ID: 9900015), that can be produced. The xml file can be further fulfilled by different production channels. The decay channels of the HNL are let to be defined for the user. The main production and decay channels, as well as their decay width formulas, can be found in [https://arxiv.org/abs/1805.08567]. The implementation in a cxx environment, further customed by us for this project, can be found on [https://github.com/f-thiele/cHNLdecay].
+This is a modified version of Pythia v8r240, developped by T. Sjöstrand et. al. 
+It incorporates a new type of particle: a Heavy Neutral Lepton (HNL) of mass 1-10 GeV. The chosen ID is 9900015. This HNL was orginally purposed to be produced from beauty hadrons, though the user can add any production or decay channels in its Pythia script. The main production and decay channels, as well as their decay width formulas, can be found in [https://arxiv.org/abs/1805.08567]. Their implementation in a cxx environment, further customed by us for this project, and can be found on [https://github.com/f-thiele/cHNLdecay].
 
 
 
 ## Applied changes compared to original Pythia 8.240
 
-The list of addings is the following:
+The list of addings compared to the original version (http://home.thep.lu.se/~torbjorn/pythia8/pythia8240.tgz) is the following:
 
 ### File `src/HNLDecays.cc`
-The HNLDecays class is public TauDecays class and contains basically the same functions. Since tau and HNL are both leptons, most of the handling is similar. In the following there is a quick physics explanation.
+The HNLDecays class is public TauDecays class and contains basically the same functions. Since tau and HNL are both massive leptons, most of the handling is similar. In the following there is a quick physics explanation.
 
-Assuming a B+ creates an HNL particle produced together with a positive muon. In the B rest frame, $\vec{p(\l+)} = -\vec{p(HNL)}$. More over chirality is conserved, so 1=chirality(l+)=-chirality(N). Thus, the polarisations are the same (say pol = +1). Then, if this HNL keeps its negative chirality, it decays into a negatively charged lepton l2- and some positively charged hadron (e.g. pi+). Now due to their pseudo-Dirac nature, they can flip in chirality state (leptonic number violation) and thus changes polarisation as well (pol = -1). In this case it will decays into a positively charred lepton l2+ and some negative hadron (e.g. pi-). In summary, the LNC/LNV nature of HNLs and their possibility to chsage their chirality can be complete driven, in most of cases, by the only polarisation. This was hopefully already coded for tau particles. 
+Assuming a B+ creates an HNL particle produced together with a positive muon. In the B rest frame, $\vec{p(\l+)} = -\vec{p(HNL)}$. Moreover, chirality is conserved by weak interaction, so 1=chirality(l+)=-chirality(N). Thus, the polarizations are the same (say pol = +1). Then, if this HNL keeps its negative chirality, it decays into a negatively charged lepton l2- and some positively charged hadron (e.g. pi+). Now due to their pseudo-Dirac nature, they can flip in chirality state (leptonic number violation) and thus changes polarisation as well (pol = -1). In this case it will decays into a positively charged lepton l2+ and some negative hadron (e.g. pi-). In summary, the LNC/LNV nature of HNLs and their possibility to change their chirality can be complete driven, in most of cases, by the only polarization. This was hopefully already coded for tau particles, and then reused for HNLs.
 
 The redefined mode are the following (l.80):
 * `mode("HNLDecays:externalMode”)`
@@ -50,7 +51,7 @@ Here are the steps to use this code:
 * It uses the particle `9900015 ` (new HNL) and set HNLPolarization to 1 (can be 1,0,-1) and the HNLmode to 3. The definitions are the same than for TauDecays. The default HNLMode that should be used is the 3. It just means all the HNL should decay with 
 * It defines a B particle gun (the line `pythia.event.append(...)`). You should properly define the initial energy and momentum (always give at least one momentum component not zero, otherwise it doesn't work). in your case you shall replace the 521 with bbar ID and proper mass and energy
 * In the example of B -> mu1 N(->mu2 pi), the Event vector, containing Particle object, is : [some info, B (or whatever parent particle), mu1, N, mu2, pi].
-* It collects the HNL daughters (here there are only 2) and boost them back in HNL restframe
+* It collects the HNL daughters (here there are only 2) and boosts them back in HNL restframe
 * It produces two histogram
 * If other HNL decay channels are needed, the user should add them following the Pythia8 synthax. In the other hand, HNL is currently only produced from B so the user should precise by hand your production channels as well
 * For exemple with eta_b (551): `pythia.readString("551:oneChannel = 1 1. 22 9900015 -13")` for the production)and `pythia.readString("9900015:oneChannel = 1 1. 1521 9900015 -13")` for the decay (22 and 1521 are the decay modes, check http://home.thep.lu.se/~torbjorn/pythia82html/ParticleDecays.html)
