@@ -174,4 +174,4 @@ distclean: clean
 	rm -f $(LOCAL_SHARE)/AUTHORS
 	rm -f $(LOCAL_SHARE)/COPYING
 	rm -f $(LOCAL_SHARE)/GUIDELINES
-	rm -f $(LOCAL_SHARE)/README
+	rm -f $(LOCAL_SHARE)/README.md
