@@ -23,7 +23,7 @@ ifeq (,$(findstring clean, $(MAKECMDGOALS)))
   -include Makefile.inc
 endif
 LOCAL_BIN=bin
-LOCAL_DOCS=AUTHORS COPYING GUIDELINES README ../../examples/Makefile.inc
+LOCAL_DOCS=AUTHORS COPYING GUIDELINES README.md ../../examples/Makefile.inc
 LOCAL_EXAMPLE=examples
 LOCAL_INCLUDE=include
 LOCAL_LIB=lib
