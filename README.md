@@ -27,7 +27,7 @@ In the case of one than more sister, the handling for the tau is kept, but with 
 * Charged lepton (ID: 11, 15)
 * Neutrino (ID: 12, 14, 16)
 
-### File `src/HNLDecays.h`
+### File `include/Pythia8/HNLDecays.h`
 Header added with corresponding functions.
 
 ### File `share/Pythia8/xmldoc/ParticleData.xml`
